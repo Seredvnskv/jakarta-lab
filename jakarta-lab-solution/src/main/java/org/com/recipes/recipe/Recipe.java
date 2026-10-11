@@ -22,10 +22,10 @@ public class Recipe {
     @EqualsAndHashCode.Exclude
     private User author;
 
-    private LocalDate creationDate;
     private String title;
     private String description;
     private int servings;
     private double caloriesPerServing;
     private boolean vegetarian;
+    private LocalDate creationDate;
 }

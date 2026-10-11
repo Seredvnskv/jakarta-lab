@@ -22,4 +22,7 @@ public class User {
 
     @EqualsAndHashCode.Exclude
     private List<Recipe> recipes =  new ArrayList<>();
+
+    @EqualsAndHashCode.Exclude
+    private byte[] avatar;
 }
