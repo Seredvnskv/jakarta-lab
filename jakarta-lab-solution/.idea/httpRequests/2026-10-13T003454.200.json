@@ -1,0 +1,30 @@
+[
+  {
+    "id": "f5875513-bf7b-4ae1-b8a5-5b70a1b90e76",
+    "username": "adamcy",
+    "role": "USER",
+    "registrationDate": "2025-05-08",
+    "recipes": []
+  },
+  {
+    "id": "c4804e0f-769e-4ab9-9ebe-0578fb4f00a6",
+    "username": "mammon",
+    "role": "ADMIN",
+    "registrationDate": "2024-03-15",
+    "recipes": []
+  },
+  {
+    "id": "81e1c2a9-7f57-439b-b53d-6db88b071e4e",
+    "username": "demonzz1",
+    "role": "USER",
+    "registrationDate": "2024-06-02",
+    "recipes": []
+  },
+  {
+    "id": "ed6cfb2a-cad7-47dd-9b56-9d1e3c7a4197",
+    "username": "pajalock",
+    "role": "USER",
+    "registrationDate": "2025-01-20",
+    "recipes": []
+  }
+]

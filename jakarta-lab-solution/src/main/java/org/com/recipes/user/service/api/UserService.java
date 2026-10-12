@@ -12,4 +12,8 @@ public interface UserService {
     User findUserById(UUID id) throws NotFoundException;
     void createUser(User user) throws InvalidDataException;
     void deleteUser(UUID id) throws NotFoundException;
+    byte[] getUserAvatar(UUID id) throws NotFoundException;
+    void createUserAvatar(UUID id, byte[] avatar) throws NotFoundException, InvalidDataException;
+    void updateUserAvatar(UUID id, byte[] avatar) throws NotFoundException, InvalidDataException;
+    void deleteUserAvatar(UUID id) throws NotFoundException, InvalidDataException;
 }

@@ -1,6 +1,7 @@
 package org.com.recipes.user.service;
 
 import lombok.RequiredArgsConstructor;
+import org.com.recipes.core.exception.AlreadyExistsException;
 import org.com.recipes.core.exception.InvalidDataException;
 import org.com.recipes.core.exception.NotFoundException;
 import org.com.recipes.user.User;
@@ -37,5 +38,25 @@ public class UserDefaultService implements UserService {
     public void deleteUser(UUID id) throws NotFoundException {
         User user = userRepository.findById(id).orElseThrow(NotFoundException::new);
         userRepository.delete(user);
+    }
+
+    @Override
+    public byte[] getUserAvatar(UUID id) throws NotFoundException {
+        return userRepository.getUserAvatar(id);
+    }
+
+    @Override
+    public void createUserAvatar(UUID id, byte[] avatar) throws AlreadyExistsException {
+        userRepository.createUserAvatar(id, avatar);
+    }
+
+    @Override
+    public void updateUserAvatar(UUID id, byte[] avatar) throws NotFoundException, InvalidDataException {
+        userRepository.updateUserAvatar(id, avatar);
+    }
+
+    @Override
+    public void deleteUserAvatar(UUID id) throws NotFoundException, InvalidDataException {
+        userRepository.deleteUserAvatar(id);
     }
 }

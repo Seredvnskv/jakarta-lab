@@ -1,7 +1,5 @@
 package org.com.recipes.core.data;
 
-
-import jakarta.annotation.PostConstruct;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import org.com.recipes.core.exception.InvalidDataException;
@@ -27,12 +25,12 @@ public class DataStore {
             jsonb.close();
         }
         catch (Exception e) {
-            throw new IllegalArgumentException("Could not load users.json", e);
+            throw new InvalidDataException("Could not load users.json", e);
         }
     }
 
     public synchronized Optional<User> findById(UUID id) {
-        return Optional.ofNullable(copy(users.get(id)));
+        return Optional.ofNullable(users.get(id)).map(this::copy);
     }
 
     public synchronized List<User> findAll() {

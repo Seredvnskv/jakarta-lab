@@ -21,7 +21,7 @@
         <!-- biblioteki -->
         <lombok.version>1.18.46</lombok.version>
         <annotations.version>26.1.0</annotations.version>
-        <h2.version>2.4.240</h2.version> <!-- na później, lab z bazą danych -->
+        <h2.version>2.4.240</h2.version>
 
         <!-- testy -->
         <junit-jupiter.version>6.1.3</junit-jupiter.version>
@@ -111,6 +111,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${maven-war-plugin.version}</version>
+                    <configuration>
+                        <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>

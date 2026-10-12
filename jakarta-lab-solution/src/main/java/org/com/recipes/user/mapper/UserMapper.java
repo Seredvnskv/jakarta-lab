@@ -10,7 +10,8 @@ import java.util.List;
 @UtilityClass
 public final class UserMapper {
     public static UserDto toUserDto(User user) {
-        return new UserDto(user.getId().toString(), user.getUsername(), user.getRole().toString(), user.getRegistrationDate(), user.getRecipes().stream().map(RecipeMapper::toRecipeListDto).toList());
+        return new UserDto(user.getId().toString(), user.getUsername(), user.getRole().toString(),
+                user.getRegistrationDate(), user.getRecipes().stream().map(RecipeMapper::toRecipeListDto).toList());
     }
 
     public static List<UserDto> toUserDto(List<User> users) {

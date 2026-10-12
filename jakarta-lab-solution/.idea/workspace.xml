@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/exception/InvalidDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/exception/InvalidDataException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +32,8 @@
         <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
-        <option value="Exception" />
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -41,6 +51,12 @@
     &quot;url&quot;: &quot;https://github.com/Seredvnskv/jakarta-lab.git&quot;,
     &quot;accountId&quot;: &quot;4720a00d-ff74-400e-bffa-7f8820b255d6&quot;
   }
+}</component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
 }</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -63,6 +79,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.requests | #4.executor": "Run",
+    "HTTP Request.requests | #6.executor": "Run",
+    "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
+    "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
+    "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
+    "HTTP Request.requests | Create user avatar.executor": "Run",
+    "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Delete avatar.executor": "Run",
+    "HTTP Request.requests | Delete deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Get all users.executor": "Run",
+    "HTTP Request.requests | Get avatar of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Get deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Get non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Get updated avatar.executor": "Run",
+    "HTTP Request.requests | Get user avatar.executor": "Run",
+    "HTTP Request.requests | Get user by uuid.executor": "Run",
+    "HTTP Request.requests | Get user with invalid uuid (400).executor": "Run",
+    "HTTP Request.requests | Update deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Update user avatar.executor": "Run",
     "Maven.jakarta-lab-solution [clean].executor": "Run",
     "Maven.jakarta-lab-solution [compile].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -73,6 +108,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "lab-1",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +122,56 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.com.recipes.cuisine.entity" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\assets" />
+      <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="HttpClient.HttpRequestRunConfigurationType">
+          <value>
+            <map>
+              <entry key="requests | Create avator of non-existing user ()" value="STOPPED" />
+              <entry key="requests | Create user avatar" value="STOPPED" />
+              <entry key="requests | Delete avatar of non-existing user (404)" value="STOPPED" />
+              <entry key="requests | Get avatar of non-existing user (404)" value="STOPPED" />
+              <entry key="requests | Get user with invalid uuid (400)" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.requests | Get user with invalid uuid (400)">
+    <configuration name="requests | Create avator of non-existing user ()" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create avator of non-existing user ()" index="18" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Create user avatar" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create user avatar" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Delete avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar of non-existing user (404)" index="19" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Get avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get avatar of non-existing user (404)" index="17" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Get user with invalid uuid (400)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user with invalid uuid (400)" index="11" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.requests | Get user with invalid uuid (400)" />
+        <item itemvalue="HTTP Request.requests | Create user avatar" />
+        <item itemvalue="HTTP Request.requests | Delete avatar of non-existing user (404)" />
+        <item itemvalue="HTTP Request.requests | Create avator of non-existing user ()" />
+        <item itemvalue="HTTP Request.requests | Get avatar of non-existing user (404)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -105,7 +191,9 @@
       <workItem from="1791670496499" duration="3658000" />
       <workItem from="1791680160840" duration="1628000" />
       <workItem from="1791729765966" duration="9078000" />
-      <workItem from="1791757929679" duration="2007000" />
+      <workItem from="1791757929679" duration="2722000" />
+      <workItem from="1791810355639" duration="1509000" />
+      <workItem from="1791828184357" duration="16726000" />
     </task>
     <servers />
   </component>
