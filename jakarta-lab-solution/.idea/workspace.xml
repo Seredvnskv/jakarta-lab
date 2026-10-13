@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T151015.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T202508.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T202628.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T204942.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233441.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233450.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233505.200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T235937.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003223.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003454.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003513.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003519.500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T004213.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T004222.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005209.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005211.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005222.200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005227.200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005241.200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005312.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005432.500.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
@@ -96,6 +76,7 @@
     "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
     "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
     "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
+    "HTTP Request.requests | Create avator of non-existing user (404).executor": "Run",
     "HTTP Request.requests | Create user avatar.executor": "Run",
     "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
     "HTTP Request.requests | Delete avatar.executor": "Run",
@@ -148,10 +129,10 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="All in requests" value="STOPPED" />
-              <entry key="requests | #1" value="STOPPED" />
-              <entry key="requests | #6" value="STOPPED" />
-              <entry key="requests | Get user avatar" value="STOPPED" />
+              <entry key="requests | Create avator of non-existing user (404)" value="STOPPED" />
+              <entry key="requests | Delete avatar of non-existing user (404)" value="STOPPED" />
+              <entry key="requests | Delete deleted avatar (404)" value="STOPPED" />
+              <entry key="requests | Get avatar of non-existing user (404)" value="STOPPED" />
               <entry key="requests | Update deleted avatar (404)" value="STOPPED" />
             </map>
           </value>
@@ -159,28 +140,28 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | #6">
-    <configuration name="All in requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/requests.http">
+  <component name="RunManager" selected="HTTP Request.requests | Delete avatar of non-existing user (404)">
+    <configuration name="requests | Create avator of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create avator of non-existing user (404)" index="18" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get user avatar" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user avatar" index="6" runType="Run single request">
+    <configuration name="requests | Delete avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar of non-existing user (404)" index="19" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Delete deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete deleted avatar (404)" index="16" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Get avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get avatar of non-existing user (404)" index="17" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="requests | Update deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Update deleted avatar (404)" index="15" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="#6" index="6" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests | #6" />
-        <item itemvalue="HTTP Request.requests | Get user avatar" />
-        <item itemvalue="HTTP Request.All in requests" />
-        <item itemvalue="HTTP Request.requests | #1" />
+        <item itemvalue="HTTP Request.requests | Delete avatar of non-existing user (404)" />
+        <item itemvalue="HTTP Request.requests | Create avator of non-existing user (404)" />
+        <item itemvalue="HTTP Request.requests | Get avatar of non-existing user (404)" />
+        <item itemvalue="HTTP Request.requests | Delete deleted avatar (404)" />
         <item itemvalue="HTTP Request.requests | Update deleted avatar (404)" />
       </list>
     </recent_temporary>

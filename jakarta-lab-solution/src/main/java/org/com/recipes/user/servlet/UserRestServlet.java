@@ -54,7 +54,7 @@ public class UserRestServlet extends HttpServlet {
         } else if (path.endsWith("/avatar")) {
             getAvatar(provideAvatarUserId(req), resp);
         } else {
-            getUser(provideAvatarUserId(req), resp);
+            getUser(provideUserId(req), resp);
         }
     }
 

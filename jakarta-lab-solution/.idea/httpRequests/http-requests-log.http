@@ -1,3 +1,95 @@
+DELETE http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+
+###
+POST http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
+
+###
+GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+
+###
+DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+###
+PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+###
+POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+Content-Type: image/png
+
+###
+POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+
+###
+GET http://localhost:9080/api/servlet/users/abc
+
+###
+GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+###
+DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+<> 2026-10-13T155523.200.png
+
+###
+PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/demonzz1.png
+
+###
+GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
+
+<> 2026-10-13T155450.200.png
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+<> 2026-10-13T155446.200.png
+
+###
+POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
+
+###
+POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+Content-Type: image/png
+
+< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+
+<> 2026-10-13T155430.200.json
+
+###
+GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+
+###
+GET http://localhost:9080/api/servlet/users
+
+<> 2026-10-13T155342.200.json
+
+###
 GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
 
 <> 2026-10-13T154539.200.png
@@ -130,139 +222,6 @@ POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e7
 Content-Type: image/png
 
 < C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-GET http://localhost:9080/api/servlet/users/abc
-
-###
-GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-###
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T125323.200.png
-
-###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/demonzz1.png
-
-###
-GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-
-<> 2026-10-13T125230.200.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T125219.200.png
-
-###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
-
-<> 2026-10-13T125040.200.json
-
-###
-GET http://localhost:9080/api/servlet/users
-
-<> 2026-10-13T125015.200.json
-
-###
-GET http://localhost:9080/api/servlet/users/abc
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-Content-Length: 22419
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/abc
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-13T005432.500.html
-
-###
-
-DELETE http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-POST http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-Content-Type: image/png
-Content-Length: 30240
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-Content-Length: 22419
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
 
 ###
 
