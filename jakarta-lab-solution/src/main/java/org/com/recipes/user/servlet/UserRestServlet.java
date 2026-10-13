@@ -52,9 +52,9 @@ public class UserRestServlet extends HttpServlet {
         if (path == null || path.equals("/")) {
             getUsers(resp);
         } else if (path.endsWith("/avatar")) {
-            getAvatar(provideUserId(req), resp);
+            getAvatar(provideAvatarUserId(req), resp);
         } else {
-            getUser(provideUserId(req), resp);
+            getUser(provideAvatarUserId(req), resp);
         }
     }
 
@@ -78,22 +78,29 @@ public class UserRestServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        UUID id = provideUserId(req);
-        userService.createUserAvatar(id, readAvatar(req));
+        userService.createUserAvatar(provideAvatarUserId(req), readAvatar(req));
         resp.setStatus(HttpServletResponse.SC_CREATED);
         resp.setHeader("Location", req.getRequestURI());
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        userService.updateUserAvatar(provideUserId(req), readAvatar(req));
+        userService.updateUserAvatar(provideAvatarUserId(req), readAvatar(req));
         resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
-        userService.deleteUserAvatar(provideUserId(req));
+        userService.deleteUserAvatar(provideAvatarUserId(req));
         resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+    }
+
+    private UUID provideAvatarUserId(HttpServletRequest req) {
+        String path = req.getPathInfo();
+        if (!path.endsWith("/avatar")) {
+            throw new NotFoundException();
+        }
+        return provideUserId(req);
     }
 
     private UUID provideUserId(HttpServletRequest req) {

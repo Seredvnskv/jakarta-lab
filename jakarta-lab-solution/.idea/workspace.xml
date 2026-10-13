@@ -5,20 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T151015.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T202508.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T202628.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T204942.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233441.404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233450.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T233505.200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-12T235937.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003223.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003454.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003513.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T003519.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T004213.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T004222.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005209.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005211.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005222.200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005227.200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005241.200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005312.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/exception/InvalidDataException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/exception/InvalidDataException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +89,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.All in requests.executor": "Run",
+    "HTTP Request.requests | #1.executor": "Run",
     "HTTP Request.requests | #4.executor": "Run",
     "HTTP Request.requests | #6.executor": "Run",
     "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
@@ -108,7 +120,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "lab-1",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/assets",
+    "last_opened_file_path": "C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -136,48 +148,48 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="requests | Create avator of non-existing user ()" value="STOPPED" />
-              <entry key="requests | Create user avatar" value="STOPPED" />
-              <entry key="requests | Delete avatar of non-existing user (404)" value="STOPPED" />
-              <entry key="requests | Get avatar of non-existing user (404)" value="STOPPED" />
-              <entry key="requests | Get user with invalid uuid (400)" value="STOPPED" />
+              <entry key="All in requests" value="STOPPED" />
+              <entry key="requests | #1" value="STOPPED" />
+              <entry key="requests | #6" value="STOPPED" />
+              <entry key="requests | Get user avatar" value="STOPPED" />
+              <entry key="requests | Update deleted avatar (404)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | Get user with invalid uuid (400)">
-    <configuration name="requests | Create avator of non-existing user ()" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create avator of non-existing user ()" index="18" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.requests | #6">
+    <configuration name="All in requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/requests.http">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Create user avatar" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create user avatar" index="3" runType="Run single request">
+    <configuration name="requests | Get user avatar" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user avatar" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar of non-existing user (404)" index="19" runType="Run single request">
+    <configuration name="requests | Update deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Update deleted avatar (404)" index="15" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get avatar of non-existing user (404)" index="17" runType="Run single request">
+    <configuration name="requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get user with invalid uuid (400)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user with invalid uuid (400)" index="11" runType="Run single request">
+    <configuration name="requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="#6" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests | Get user with invalid uuid (400)" />
-        <item itemvalue="HTTP Request.requests | Create user avatar" />
-        <item itemvalue="HTTP Request.requests | Delete avatar of non-existing user (404)" />
-        <item itemvalue="HTTP Request.requests | Create avator of non-existing user ()" />
-        <item itemvalue="HTTP Request.requests | Get avatar of non-existing user (404)" />
+        <item itemvalue="HTTP Request.requests | #6" />
+        <item itemvalue="HTTP Request.requests | Get user avatar" />
+        <item itemvalue="HTTP Request.All in requests" />
+        <item itemvalue="HTTP Request.requests | #1" />
+        <item itemvalue="HTTP Request.requests | Update deleted avatar (404)" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.27258.48" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.27258.48" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>
