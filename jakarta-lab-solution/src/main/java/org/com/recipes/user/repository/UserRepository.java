@@ -46,13 +46,12 @@ public class UserRepository implements Repository<User, UUID> {
 
     @Override
     public User save(User user) {
-        em.merge(user);
-        return user;
+        return em.merge(user);
     }
 
     @Override
     public void delete(User user) {
-        em.remove(user);
+        em.remove(em.merge(user));
     }
 
     public User createUser(User user) {
@@ -70,7 +69,7 @@ public class UserRepository implements Repository<User, UUID> {
         if (user.getAvatar() != null) {
             deleteUserAvatar(id);
         }
-        em.remove(user);
+        delete(user);
     }
 
     public byte[] provideUserAvatar(UUID id) {

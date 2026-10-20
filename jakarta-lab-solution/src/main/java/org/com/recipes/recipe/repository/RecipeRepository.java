@@ -4,6 +4,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
+import org.com.recipes.core.exception.NotFoundException;
 import org.com.recipes.core.repository.Repository;
 import org.com.recipes.recipe.Recipe;
 
@@ -42,12 +43,15 @@ public class RecipeRepository implements Repository<Recipe, UUID> {
 
     @Override
     public Recipe save(Recipe recipe) {
-        em.merge(recipe);
-        return recipe;
+        return em.merge(recipe);
     }
 
     @Override
     public void delete(Recipe recipe) {
-        em.remove(recipe);
+        em.remove(em.merge(recipe));
+    }
+
+    public void deleteRecipe(UUID id) {
+        delete(findById(id).orElseThrow(NotFoundException::new));
     }
 }

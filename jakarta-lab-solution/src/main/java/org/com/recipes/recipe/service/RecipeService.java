@@ -43,7 +43,6 @@ public class RecipeService {
     }
 
     public void deleteRecipe(UUID id) throws NotFoundException {
-        Recipe recipe = recipeRepository.findById(id).orElseThrow(NotFoundException::new);
-        recipeRepository.delete(recipe);
+        recipeRepository.deleteRecipe(id);
     }
 }

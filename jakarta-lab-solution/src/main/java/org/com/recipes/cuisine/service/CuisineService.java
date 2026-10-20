@@ -39,7 +39,6 @@ public class CuisineService {
     }
 
     public void deleteCuisine(UUID id) throws NotFoundException {
-        Cuisine cuisine = cuisineRepository.findById(id).orElseThrow(NotFoundException::new);
-        cuisineRepository.delete(cuisine);
+        cuisineRepository.deleteCuisine(id);
     }
 }
