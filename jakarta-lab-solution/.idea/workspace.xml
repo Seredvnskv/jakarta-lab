@@ -6,33 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/adamcy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/demonzz1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/mammon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pajalock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/listener/JsonbContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeListDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +193,7 @@
       <workItem from="1792500657883" duration="9494000" />
       <workItem from="1792514954972" duration="160000" />
       <workItem from="1792515537116" duration="17548000" />
-      <workItem from="1792533303612" duration="683000" />
+      <workItem from="1792533303612" duration="1077000" />
     </task>
     <servers />
   </component>
