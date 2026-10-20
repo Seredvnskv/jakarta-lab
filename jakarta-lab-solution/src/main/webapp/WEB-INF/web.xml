@@ -6,18 +6,8 @@
     
     <context-param>
         <param-name>avatarDirectory</param-name>
-        <param-value>${project.basedir}/assets/avatars</param-value>
+        <param-value>${project.basedir}/src/main/resources/assets/avatars</param-value>
     </context-param>
-    
-    <listener>
-        <listener-class>org.com.recipes.core.listener.JsonbContextListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>org.com.recipes.core.data.listener.DataStoreContextListener</listener-class>
-    </listener>
-    <listener>
-        <listener-class>org.com.recipes.user.listener.UserServletContextListener</listener-class>
-    </listener>
     
     <servlet>
         <servlet-name>UserRestServlet</servlet-name>

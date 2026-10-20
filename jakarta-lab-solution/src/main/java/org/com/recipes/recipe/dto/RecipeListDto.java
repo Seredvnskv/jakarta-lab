@@ -1,4 +1,6 @@
 package org.com.recipes.recipe.dto;
 
-public record RecipeListDto(String cuisine, String title, String author) {
+import java.util.List;
+
+public record RecipeListDto(String cuisine, String title, List<String> ingredients, String author) {
 }

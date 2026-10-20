@@ -2,46 +2,54 @@
 
 GET http://localhost:9080/api/servlet/users
 
-### Get user by uuid
+### Get user by uuid (Triss)
 
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
 
-### Create user avatar
+### Get user avatar (Triss - seeded on startup)
 
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+
+### Create avatar that already exists (409) - Triss already has one from seed data
+
+POST http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
 Content-Type: image/png
 
-< ./assets/mammon.png
+< ./src/main/resources/assets/triss.png
 
-###
+### Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)
 
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
-< ./assets/adamcy.png
+### Get deleted avatar (404)
 
-### Get user avatar
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+### Create user avatar (201) - Geralt
 
-###
+POST http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
 
-GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
+< ./src/main/resources/assets/geralt.jpg
 
-### Update user avatar
+### Get created avatar
 
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
-< ./assets/demonzz1.png
+### Update user avatar - Geralt
+
+PUT http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
+
+< ./src/main/resources/assets/jaskier.jpg
 
 ### Get updated avatar
 
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
-### Delete avatar
+### Delete avatar - Geralt
 
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
 ### Get non-existing user (404)
 
@@ -51,43 +59,36 @@ GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000
 
 GET http://localhost:9080/api/servlet/users/abc
 
-### Create avatar that already exists (409)
+### Create avatar with empty body (400) - Zoltan
 
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
+POST http://localhost:9080/api/servlet/users/60c2bd65-4f21-426d-91f3-070c2f867336/avatar
 Content-Type: image/png
 
-< ./assets/mammon.png
+### Get deleted avatar (404) - Geralt
 
-### Create avatar with empty body (400)
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
+### Update deleted avatar (404) - Geralt
 
-### Get deleted avatar (404)
+PUT http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
 
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+< ./src/main/resources/assets/geralt.jpg
 
-### Update deleted avatar (404)
+### Delete deleted avatar (404) - Geralt
 
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< ./assets/mammon.png
-
-### Delete deleted avatar (404)
-
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
 ### Get avatar of non-existing user (404)
 
 GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
 
-### Create avator of non-existing user (404)
+### Create avatar of non-existing user (404)
 
 POST http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-Content-Type: image/png
+Content-Type: image/jpeg
 
-< ./assets/adamcy.png
+< ./src/main/resources/assets/ciri.jpg
 
 ### Delete avatar of non-existing user (404)
 

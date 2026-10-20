@@ -3,7 +3,17 @@
         <feature>servlet-6.1</feature>
         <feature>persistence-3.2</feature>
         <feature>jsonb-3.0</feature>
+        <feature>cdi-4.1</feature>
     </featureManager>
+
+    <library id="h2Lib">
+        <fileset dir="${shared.resource.dir}/h2" includes="*.jar"/>
+    </library>
+
+    <dataSource jndiName="jdbc/recipes">
+        <jdbcDriver libraryRef="h2Lib"/>
+        <properties url="jdbc:h2:file:/tmp/recipes;AUTO_SERVER=TRUE" user="admin" password="password"/>
+    </dataSource>
 
     <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443"/>
 

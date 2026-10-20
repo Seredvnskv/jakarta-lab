@@ -3,7 +3,16 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
              version="3.2">
-    <persistence-unit name="default">
 
+    <persistence-unit name="recipes" transaction-type="JTA">
+        <jta-data-source>jdbc/recipes</jta-data-source>
+        <class>org.com.recipes.recipe.Recipe</class>
+        <class>org.com.recipes.cuisine.Cuisine</class>
+        <class>org.com.recipes.user.User</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+        </properties>
     </persistence-unit>
+
 </persistence>

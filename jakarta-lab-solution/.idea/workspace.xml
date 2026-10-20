@@ -5,10 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2026-10-13T005432.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/adamcy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/demonzz1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/mammon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pajalock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataStore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/listener/DataStoreContextListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/listener/JsonbContextListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/RecipeListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/listener/UserServletContextListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserDefaultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/api/UserService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +46,8 @@
         <option value="Enum" />
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,58 +91,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.All in requests.executor": "Run",
-    "HTTP Request.requests | #1.executor": "Run",
-    "HTTP Request.requests | #4.executor": "Run",
-    "HTTP Request.requests | #6.executor": "Run",
-    "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
-    "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
-    "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
-    "HTTP Request.requests | Create avator of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Create user avatar.executor": "Run",
-    "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Delete avatar.executor": "Run",
-    "HTTP Request.requests | Delete deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Get all users.executor": "Run",
-    "HTTP Request.requests | Get avatar of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Get deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Get non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Get updated avatar.executor": "Run",
-    "HTTP Request.requests | Get user avatar.executor": "Run",
-    "HTTP Request.requests | Get user by uuid.executor": "Run",
-    "HTTP Request.requests | Get user with invalid uuid (400).executor": "Run",
-    "HTTP Request.requests | Update deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Update user avatar.executor": "Run",
-    "Maven.jakarta-lab-solution [clean].executor": "Run",
-    "Maven.jakarta-lab-solution [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "lab-1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.All in requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar that already exists (409).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar with empty body (400).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avator of non-existing user ().executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avator of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get all users.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get updated avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user by uuid (Triss).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user by uuid.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user with invalid uuid (400).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Update deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Update user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jakarta-lab-solution [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jakarta-lab-solution [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab-2&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.com.recipes.cuisine.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\src\main\resources\assets" />
       <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\src\main\resources" />
       <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution\assets" />
       <recent name="C:\Users\Sambor\IdeaProjects\MyProjects\jakarta-lab\jakarta-lab-solution" />
     </key>
@@ -129,48 +158,48 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="requests | Create avator of non-existing user (404)" value="STOPPED" />
-              <entry key="requests | Delete avatar of non-existing user (404)" value="STOPPED" />
-              <entry key="requests | Delete deleted avatar (404)" value="STOPPED" />
-              <entry key="requests | Get avatar of non-existing user (404)" value="STOPPED" />
-              <entry key="requests | Update deleted avatar (404)" value="STOPPED" />
+              <entry key="All in requests" value="STOPPED" />
+              <entry key="requests | Create avatar that already exists (409) - Triss already has one from seed data" value="STOPPED" />
+              <entry key="requests | Get all users" value="STOPPED" />
+              <entry key="requests | Get user avatar (Triss - seeded on startup)" value="STOPPED" />
+              <entry key="requests | Get user by uuid (Triss)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | Delete avatar of non-existing user (404)">
-    <configuration name="requests | Create avator of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create avator of non-existing user (404)" index="18" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.All in requests">
+    <configuration name="All in requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/requests.http">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar of non-existing user (404)" index="19" runType="Run single request">
+    <configuration name="requests | Create avatar that already exists (409) - Triss already has one from seed data" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create avatar that already exists (409) - Triss already has one from seed data" index="4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete deleted avatar (404)" index="16" runType="Run single request">
+    <configuration name="requests | Get all users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get all users" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get avatar of non-existing user (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get avatar of non-existing user (404)" index="17" runType="Run single request">
+    <configuration name="requests | Get user avatar (Triss - seeded on startup)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user avatar (Triss - seeded on startup)" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Update deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Update deleted avatar (404)" index="15" runType="Run single request">
+    <configuration name="requests | Get user by uuid (Triss)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user by uuid (Triss)" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests | Delete avatar of non-existing user (404)" />
-        <item itemvalue="HTTP Request.requests | Create avator of non-existing user (404)" />
-        <item itemvalue="HTTP Request.requests | Get avatar of non-existing user (404)" />
-        <item itemvalue="HTTP Request.requests | Delete deleted avatar (404)" />
-        <item itemvalue="HTTP Request.requests | Update deleted avatar (404)" />
+        <item itemvalue="HTTP Request.All in requests" />
+        <item itemvalue="HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data" />
+        <item itemvalue="HTTP Request.requests | Get user avatar (Triss - seeded on startup)" />
+        <item itemvalue="HTTP Request.requests | Get user by uuid (Triss)" />
+        <item itemvalue="HTTP Request.requests | Get all users" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
-        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.27258.48" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.27258.48" />
       </set>
     </attachedChunks>
   </component>
@@ -187,6 +216,11 @@
       <workItem from="1791757929679" duration="2722000" />
       <workItem from="1791810355639" duration="1509000" />
       <workItem from="1791828184357" duration="16726000" />
+      <workItem from="1792442855887" duration="9055000" />
+      <workItem from="1792500657883" duration="9494000" />
+      <workItem from="1792514954972" duration="160000" />
+      <workItem from="1792515537116" duration="17548000" />
+      <workItem from="1792533303612" duration="683000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,6 @@ import org.com.recipes.recipe.dto.RecipeListDto;
 @UtilityClass
 public final class RecipeMapper {
     public static RecipeListDto toRecipeListDto(Recipe recipe) {
-        return new RecipeListDto(recipe.getTitle(), recipe.getAuthor().getUsername(), recipe.getCuisine().getName());
+        return new RecipeListDto(recipe.getCuisine().getName(), recipe.getTitle(), recipe.getIngredients(), recipe.getAuthor().getUsername());
     }
 }

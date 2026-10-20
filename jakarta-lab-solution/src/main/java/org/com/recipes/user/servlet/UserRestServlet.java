@@ -1,5 +1,6 @@
 package org.com.recipes.user.servlet;
 
+import jakarta.inject.Inject;
 import jakarta.json.bind.Jsonb;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
@@ -7,12 +8,14 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.com.recipes.core.data.InitializeData;
 import org.com.recipes.core.exception.AlreadyExistsException;
 import org.com.recipes.core.exception.InvalidDataException;
 import org.com.recipes.core.exception.NotFoundException;
+import org.com.recipes.core.util.ImageTypeDetector;
 import org.com.recipes.user.User;
 import org.com.recipes.user.mapper.UserMapper;
-import org.com.recipes.user.service.api.UserService;
+import org.com.recipes.user.service.UserService;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -21,14 +24,11 @@ import java.util.UUID;
 @MultipartConfig
 public class UserRestServlet extends HttpServlet {
 
+    @Inject
     private UserService userService;
-    private Jsonb jsonb;
 
-    @Override
-    public void init() {
-        jsonb = (Jsonb) getServletContext().getAttribute(Jsonb.class.getName());
-        userService = (UserService) getServletContext().getAttribute(UserService.class.getName());
-    }
+    @Inject
+    private Jsonb jsonb;
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -44,6 +44,9 @@ public class UserRestServlet extends HttpServlet {
         catch (AlreadyExistsException e) {
             resp.setStatus(HttpServletResponse.SC_CONFLICT);
         }
+        catch (Exception e) {
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+        }
     }
 
     @Override
@@ -52,7 +55,7 @@ public class UserRestServlet extends HttpServlet {
         if (path == null || path.equals("/")) {
             getUsers(resp);
         } else if (path.endsWith("/avatar")) {
-            getAvatar(provideAvatarUserId(req), resp);
+            provideAvatar(provideAvatarUserId(req), resp);
         } else {
             getUser(provideUserId(req), resp);
         }
@@ -69,9 +72,9 @@ public class UserRestServlet extends HttpServlet {
         jsonb.toJson(UserMapper.toUserDto(user), resp.getWriter());
     }
 
-    private void getAvatar(UUID id, HttpServletResponse resp) throws IOException {
+    private void provideAvatar(UUID id, HttpServletResponse resp) throws IOException {
         byte[] avatar = userService.getUserAvatar(id);
-        resp.setContentType("image/png");
+        resp.setContentType(ImageTypeDetector.detectImageType(avatar));
         resp.setContentLength(avatar.length);
         resp.getOutputStream().write(avatar);
     }
@@ -95,17 +98,31 @@ public class UserRestServlet extends HttpServlet {
         resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
     }
 
-    private UUID provideAvatarUserId(HttpServletRequest req) {
-        String path = req.getPathInfo();
-        if (!path.endsWith("/avatar")) {
+    private UUID provideUserId(HttpServletRequest req) {
+        String[] segments = pathSegments(req);
+        if (segments.length != 1) {
             throw new NotFoundException();
         }
-        return provideUserId(req);
+        return parseUserId(segments[0]);
     }
 
-    private UUID provideUserId(HttpServletRequest req) {
-        String path = req.getPathInfo().substring(1);
-        String id = path.endsWith("/avatar") ? path.split("/")[0] : path;
+    private UUID provideAvatarUserId(HttpServletRequest req) {
+        String[] segments = pathSegments(req);
+        if (segments.length != 2 || !"avatar".equals(segments[1])) {
+            throw new NotFoundException();
+        }
+        return parseUserId(segments[0]);
+    }
+
+    private String[] pathSegments(HttpServletRequest req) {
+        String path = req.getPathInfo();
+        if (path == null || path.equals("/")) {
+            throw new NotFoundException();
+        }
+        return path.substring(1).split("/");
+    }
+
+    private UUID parseUserId(String id) {
         try {
             return UUID.fromString(id);
         } catch (IllegalArgumentException e) {

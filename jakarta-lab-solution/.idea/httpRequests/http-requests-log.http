@@ -1,227 +1,440 @@
 DELETE http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
 
 ###
+
 POST http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-Content-Type: image/png
+Content-Type: image/jpeg
+Content-Length: 19901
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/ciri.jpg
 
 ###
+
 GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
 ###
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
 
 ###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+PUT http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
+Content-Length: 23133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/geralt.jpg
+
+###
+
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+POST http://localhost:9080/api/servlet/users/60c2bd65-4f21-426d-91f3-070c2f867336/avatar
 Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
 
 ###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
 GET http://localhost:9080/api/servlet/users/abc
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
 ###
+
 GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
 ###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
 
 ###
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-21T000004-1.200.jpeg
 
 ###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
 
-<> 2026-10-13T155523.200.png
+PUT http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
+Content-Length: 20830
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/jaskier.jpg
 
 ###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-21T000004.200.jpeg
+
+###
+
+POST http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+Content-Type: image/jpeg
+Content-Length: 23133
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/geralt.jpg
+
+###
+
+GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
 Content-Type: image/png
+Content-Length: 120261
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/demonzz1.png
-
-###
-GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-
-<> 2026-10-13T155450.200.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T155446.200.png
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
 
 ###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+<> 2026-10-21T000004.200.png
 
 ###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
-<> 2026-10-13T155430.200.json
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-21T000004-1.200.json
 
 ###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
 
-###
 GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-<> 2026-10-13T155342.200.json
-
-###
-GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-
-<> 2026-10-13T154539.200.png
+<> 2026-10-21T000004.200.json
 
 ###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
 
-###
-DELETE http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-
-###
-POST http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
+POST http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
 Content-Type: image/png
+Content-Length: 120261
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
-
-###
-GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000/avatar
-
-###
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
+< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
 
 ###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
+<> 2026-10-20T235040.200.png
 
 ###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-###
-GET http://localhost:9080/api/servlet/users/abc
-
-###
-GET http://localhost:9080/api/servlet/users/00000000-0000-0000-0000-000000000000
+<> 2026-10-20T235038.200.json
 
 ###
-DELETE http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
 
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T154447-2.200.png
-
-###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/demonzz1.png
-
-###
-GET http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-
-<> 2026-10-13T154447-1.200.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T154447.200.png
-
-###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/adamcy.png
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
-
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
-
-###
 GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-<> 2026-10-13T154447.200.json
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/pajalock.png
+<> 2026-10-20T235031.200.json
 
 ###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/pajalock.png
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T233707.200.png
 
 ###
+
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T233654.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T233648.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T233340.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T230403.404.html
+
+###
+
 GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-<> 2026-10-13T153450.200.png
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6
-Content-Type: image/png
-
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/pajalock.png
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
 ###
-PUT http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
 
-###
-GET http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-
-###
-POST http://localhost:9080/api/servlet/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/avatar
-Content-Type: image/png
+<> 2026-10-20T225947.200.json
 
 ###
-POST http://localhost:9080/api/servlet/users/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/avatar
-Content-Type: image/png
 
-< C:/Users/Sered/Desktop/jakarta-lab/jakarta-lab-solution/assets/mammon.png
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T224822.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T224742.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T223046.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T222136.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T221432.404.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T202822.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T195222.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T193256.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T192435.500.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T192124.500.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T190151.500.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T182159.500.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T160051.404.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T155543.404.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T152625.500.html
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-20T151252.404.html
 
 ###
 
