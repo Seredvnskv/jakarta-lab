@@ -1,6 +1,7 @@
 package org.com.recipes.core.data;
 
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.BeforeDestroyed;
 import jakarta.enterprise.context.Initialized;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
@@ -55,6 +56,12 @@ public final class InitializeData {
 
         logRecipesForCuisine(cuisineService.findCuisineById(ITALIAN_ID));
         logRecipesForCuisine(cuisineService.findCuisineById(MEXICAN_ID));
+    }
+
+    public void clean(@Observes @BeforeDestroyed(ApplicationScoped.class) Object event) {
+        recipeService.findAllRecipes().forEach(recipe -> recipeService.deleteRecipe(recipe.getId()));
+        cuisineService.findAllCuisines().forEach(cuisine -> cuisineService.deleteCuisine(cuisine.getId()));
+        userService.findAllUsers().forEach(user -> userService.deleteUser(user.getId()));
     }
 
     private void logRecipesForCuisine(Cuisine cuisine) {
