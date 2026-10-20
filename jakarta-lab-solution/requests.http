@@ -17,7 +17,7 @@ Content-Type: image/png
 
 < ./src/main/resources/assets/triss.png
 
-### Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)
+### Delete avatar (Geralt)
 
 DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
 
