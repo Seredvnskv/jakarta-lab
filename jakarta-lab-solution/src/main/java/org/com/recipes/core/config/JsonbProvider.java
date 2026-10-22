@@ -1,4 +1,4 @@
-package org.com.recipes.core.util;
+package org.com.recipes.core.config;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.inject.Disposes;
@@ -7,7 +7,7 @@ import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 
 @ApplicationScoped
-public final class JsonbProvider {
+public class JsonbProvider {
 
     @Produces
     @ApplicationScoped

@@ -5,8 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/InitializeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/InitializeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/InitializeData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/util/AvatarDirectoryProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/util/JsonbProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Region.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/repository/CuisineRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/repository/CuisineRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/repository/RecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/repository/RecipeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +34,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Enum" />
-        <option value="Record" />
         <option value="Interface" />
         <option value="Exception" />
+        <option value="Record" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -76,6 +94,7 @@
     "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
     "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
     "HTTP Request.requests | Create avator of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Create user avatar (200) - Geralt.executor": "Run",
     "HTTP Request.requests | Create user avatar (201) - Geralt.executor": "Run",
     "HTTP Request.requests | Create user avatar.executor": "Run",
     "HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below).executor": "Run",
@@ -83,18 +102,22 @@
     "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
     "HTTP Request.requests | Delete avatar.executor": "Run",
     "HTTP Request.requests | Delete deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Delete user (Jaskier).executor": "Run",
     "HTTP Request.requests | Get all users.executor": "Run",
     "HTTP Request.requests | Get avatar of non-existing user (404).executor": "Run",
     "HTTP Request.requests | Get created avatar.executor": "Run",
     "HTTP Request.requests | Get deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Get deleted user (404) - Jaskier.executor": "Run",
     "HTTP Request.requests | Get non-existing user (404).executor": "Run",
     "HTTP Request.requests | Get updated avatar.executor": "Run",
     "HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor": "Run",
+    "HTTP Request.requests | Get user avatar (Triss).executor": "Run",
     "HTTP Request.requests | Get user avatar.executor": "Run",
     "HTTP Request.requests | Get user by uuid (Triss).executor": "Run",
     "HTTP Request.requests | Get user by uuid.executor": "Run",
     "HTTP Request.requests | Get user with invalid uuid (400).executor": "Run",
     "HTTP Request.requests | Update deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Update user avatar - Geralt.executor": "Run",
     "HTTP Request.requests | Update user avatar.executor": "Run",
     "Maven.jakarta-lab-solution [clean].executor": "Run",
     "Maven.jakarta-lab-solution [compile].executor": "Run",
@@ -136,40 +159,40 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="requests | Create user avatar (201) - Geralt" value="STOPPED" />
-              <entry key="requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)" value="STOPPED" />
-              <entry key="requests | Delete avatar (Geralt)" value="STOPPED" />
-              <entry key="requests | Get created avatar" value="STOPPED" />
-              <entry key="requests | Get deleted avatar (404)" value="STOPPED" />
+              <entry key="requests | Delete user (Jaskier)" value="STOPPED" />
+              <entry key="requests | Get all users" value="STOPPED" />
+              <entry key="requests | Get deleted user (404) - Jaskier" value="STOPPED" />
+              <entry key="requests | Get user avatar (Triss)" value="STOPPED" />
+              <entry key="requests | Get user by uuid (Triss)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | Delete avatar (Geralt)">
-    <configuration name="requests | Create user avatar (201) - Geralt" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create user avatar (201) - Geralt" index="7" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.requests | Get all users">
+    <configuration name="requests | Delete user (Jaskier)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete user (Jaskier)" index="20" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)" index="5" runType="Run single request">
+    <configuration name="requests | Get all users" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get all users" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete avatar (Geralt)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete avatar (Geralt)" index="5" runType="Run single request">
+    <configuration name="requests | Get deleted user (404) - Jaskier" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get deleted user (404) - Jaskier" index="21" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get created avatar" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get created avatar" index="8" runType="Run single request">
+    <configuration name="requests | Get user avatar (Triss)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user avatar (Triss)" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get deleted avatar (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get deleted avatar (404)" index="6" runType="Run single request">
+    <configuration name="requests | Get user by uuid (Triss)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get user by uuid (Triss)" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests | Delete avatar (Geralt)" />
-        <item itemvalue="HTTP Request.requests | Get deleted avatar (404)" />
-        <item itemvalue="HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below)" />
-        <item itemvalue="HTTP Request.requests | Create user avatar (201) - Geralt" />
-        <item itemvalue="HTTP Request.requests | Get created avatar" />
+        <item itemvalue="HTTP Request.requests | Get all users" />
+        <item itemvalue="HTTP Request.requests | Get user by uuid (Triss)" />
+        <item itemvalue="HTTP Request.requests | Get user avatar (Triss)" />
+        <item itemvalue="HTTP Request.requests | Get deleted user (404) - Jaskier" />
+        <item itemvalue="HTTP Request.requests | Delete user (Jaskier)" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +221,10 @@
       <workItem from="1792500657883" duration="9494000" />
       <workItem from="1792514954972" duration="160000" />
       <workItem from="1792515537116" duration="17548000" />
-      <workItem from="1792533303612" duration="3657000" />
+      <workItem from="1792533303612" duration="5017000" />
+      <workItem from="1792603594173" duration="13735000" />
+      <workItem from="1792624160820" duration="5721000" />
+      <workItem from="1792671166917" duration="12840000" />
     </task>
     <servers />
   </component>

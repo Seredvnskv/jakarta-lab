@@ -5,8 +5,8 @@
          version="6.0">
     
     <context-param>
-        <param-name>avatarDirectory</param-name>
-        <param-value>${project.basedir}/assets/avatars</param-value>
+        <param-name>avatarPath</param-name>
+        <param-value>${project.basedir}/avatars</param-value>
     </context-param>
     
     <servlet>

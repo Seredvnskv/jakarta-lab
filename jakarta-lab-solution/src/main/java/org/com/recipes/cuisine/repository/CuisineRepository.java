@@ -8,6 +8,7 @@ import org.com.recipes.core.exception.NotFoundException;
 import org.com.recipes.core.repository.Repository;
 import org.com.recipes.cuisine.Cuisine;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -41,8 +42,18 @@ public class CuisineRepository implements Repository<Cuisine, UUID> {
     }
 
     @Override
+    public void saveAll(Collection<Cuisine> e) {
+        e.forEach(this::save);
+    }
+
+    @Override
     public void delete(Cuisine cuisine) {
         em.remove(em.merge(cuisine));
+    }
+
+    @Override
+    public void deleteAll() {
+        em.createQuery("DELETE FROM Cuisine").executeUpdate();
     }
 
     public void deleteCuisine(UUID id) {

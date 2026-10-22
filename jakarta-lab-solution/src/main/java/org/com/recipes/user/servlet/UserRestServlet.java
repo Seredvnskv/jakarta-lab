@@ -8,12 +8,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.com.recipes.core.data.InitializeData;
-import org.com.recipes.core.exception.AlreadyExistsException;
-import org.com.recipes.core.exception.InvalidDataException;
-import org.com.recipes.core.exception.NotFoundException;
+import jakarta.servlet.http.Part;
+import jakarta.ws.rs.core.MediaType;
 import org.com.recipes.core.util.ImageTypeDetector;
 import org.com.recipes.user.User;
+import org.com.recipes.user.dto.CreateUserDto;
 import org.com.recipes.user.mapper.UserMapper;
 import org.com.recipes.user.service.UserService;
 
@@ -31,108 +30,70 @@ public class UserRestServlet extends HttpServlet {
     private Jsonb jsonb;
 
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            super.service(req, resp);
-        }
-        catch (NotFoundException e) {
-            resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
-        }
-        catch (InvalidDataException e) {
-            resp.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-        }
-        catch (AlreadyExistsException e) {
-            resp.setStatus(HttpServletResponse.SC_CONFLICT);
-        }
-        catch (Exception e) {
-            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String path = req.getPathInfo();
         if (path == null || path.equals("/")) {
-            getUsers(resp);
-        } else if (path.endsWith("/avatar")) {
-            provideAvatar(provideAvatarUserId(req), resp);
-        } else {
-            getUser(provideUserId(req), resp);
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.setContentType("application/json");
+            jsonb.toJson(UserMapper.toUserDto(userService.provideUsers()), resp.getWriter());
+        }
+        else if (!path.endsWith("/avatar")) {
+            String id = path.substring(1);
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.setContentType("application/json");
+            jsonb.toJson(UserMapper.toUserDto(userService.provideUser(UUID.fromString(id))), resp.getWriter());
+        }
+        else {
+            String id = path.substring(1).split("/")[0];
+            byte[] avatar = userService.provideAvatar(UUID.fromString(id));
+            resp.setContentType(ImageTypeDetector.detectImageType(avatar));
+            resp.setStatus(HttpServletResponse.SC_OK);
+            resp.setContentLength(avatar.length);
+            resp.getOutputStream().write(avatar);
         }
     }
 
-    private void getUsers(HttpServletResponse resp) throws IOException {
-        resp.setContentType("application/json");
-        jsonb.toJson(UserMapper.toUserDto(userService.findAllUsers()), resp.getWriter());
-    }
-
-    private void getUser(UUID id, HttpServletResponse resp) throws IOException {
-        User user = userService.findUserById(id);
-        resp.setContentType("application/json");
-        jsonb.toJson(UserMapper.toUserDto(user), resp.getWriter());
-    }
-
-    private void provideAvatar(UUID id, HttpServletResponse resp) throws IOException {
-        byte[] avatar = userService.getUserAvatar(id);
-        resp.setContentType(ImageTypeDetector.detectImageType(avatar));
-        resp.setContentLength(avatar.length);
-        resp.getOutputStream().write(avatar);
-    }
-
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        userService.createUserAvatar(provideAvatarUserId(req), readAvatar(req));
-        resp.setStatus(HttpServletResponse.SC_CREATED);
-        resp.setHeader("Location", req.getRequestURI());
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        String contentType = req.getContentType();
+        String path = req.getPathInfo();
+        if (contentType != null && contentType.equals(MediaType.MULTIPART_FORM_DATA)) {
+            Part userPart = req.getPart("user");
+            Part avatarPart = req.getPart("avatar");
+            User user = UserMapper.toEntity(jsonb.fromJson(userPart.getInputStream(), CreateUserDto.class));
+            userService.createUser(user, avatarPart.getInputStream());
+        }
+
+        if (!path.endsWith("/avatar")) {
+            User user = UserMapper.toEntity(jsonb.fromJson(req.getInputStream(), CreateUserDto.class));
+            userService.createUser(user, null);
+        }
+        else {
+            String id = path.substring(1).split("/")[0];
+            userService.updateAvatar(UUID.fromString(id), req.getInputStream());
+        }
+        resp.setStatus(HttpServletResponse.SC_OK);
     }
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        userService.updateUserAvatar(provideAvatarUserId(req), readAvatar(req));
+        String path = req.getPathInfo();
+        if (path.endsWith("/avatar")) {
+            String id = path.substring(1).split("/")[0];
+            userService.updateAvatar(UUID.fromString(id), req.getInputStream());
+        }
         resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
     }
 
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
-        userService.deleteUserAvatar(provideAvatarUserId(req));
-        resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
-    }
-
-    private UUID provideUserId(HttpServletRequest req) {
-        String[] segments = pathSegments(req);
-        if (segments.length != 1) {
-            throw new NotFoundException();
-        }
-        return parseUserId(segments[0]);
-    }
-
-    private UUID provideAvatarUserId(HttpServletRequest req) {
-        String[] segments = pathSegments(req);
-        if (segments.length != 2 || !"avatar".equals(segments[1])) {
-            throw new NotFoundException();
-        }
-        return parseUserId(segments[0]);
-    }
-
-    private String[] pathSegments(HttpServletRequest req) {
         String path = req.getPathInfo();
-        if (path == null || path.equals("/")) {
-            throw new NotFoundException();
+        if (!path.endsWith("/avatar")) {
+            userService.deleteUser(UUID.fromString(path.substring(1)));
         }
-        return path.substring(1).split("/");
-    }
-
-    private UUID parseUserId(String id) {
-        try {
-            return UUID.fromString(id);
-        } catch (IllegalArgumentException e) {
-            throw new InvalidDataException(e);
+        else  {
+            userService.deleteAvatar(UUID.fromString(path.substring(1).split("/")[0]));
         }
-    }
-
-    private byte[] readAvatar(HttpServletRequest req) throws IOException {
-        byte[] data = req.getInputStream().readAllBytes();
-        if (data.length == 0) throw new InvalidDataException();
-        return data;
+        resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
     }
 }

@@ -2,10 +2,7 @@ package org.com.recipes.cuisine;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.com.recipes.recipe.Recipe;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -22,7 +19,7 @@ public class Cuisine {
     private UUID id;
 
     @Enumerated(EnumType.STRING)
-    private Continent continent;
+    private Region region;
     private String name;
     private boolean spicy;
 }
