@@ -6,8 +6,8 @@ import jakarta.enterprise.context.Initialized;
 import jakarta.enterprise.event.Observes;
 import jakarta.inject.Inject;
 import lombok.NoArgsConstructor;
+import org.com.recipes.cuisine.Continent;
 import org.com.recipes.cuisine.Cuisine;
-import org.com.recipes.cuisine.Region;
 import org.com.recipes.cuisine.service.CuisineService;
 import org.com.recipes.recipe.Recipe;
 import org.com.recipes.recipe.service.RecipeService;
@@ -78,36 +78,29 @@ public class DataLoader {
 
     private final Set<User> users = Set.of(userTriss, userCiri, userGeralt, userJaskier, userZoltan);
 
-    private final Cuisine cuisineTemeria = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0001"))
-            .name("Temerian").region(Region.TEMERIA).spicy(false).build();
+    private final Cuisine cuisinePolish = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0001"))
+            .name("Polish").continent(Continent.EUROPE).spicy(false).build();
 
-    private final Cuisine cuisineRedania = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0002"))
-            .name("Redanian").region(Region.REDANIA).spicy(false).build();
+    private final Cuisine cuisineItalian = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0002"))
+            .name("Italian").continent(Continent.EUROPE).spicy(false).build();
 
-    private final Cuisine cuisineNilfgaard = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0003"))
-            .name("Nilfgaardian").region(Region.NILFGAARD).spicy(true).build();
+    private final Cuisine cuisineFrench = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0003"))
+            .name("French").continent(Continent.EUROPE).spicy(false).build();
 
-    private final Cuisine cuisineToussaint = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0004"))
-            .name("Toussaintois").region(Region.TOUSSAINT).spicy(false).build();
+    private final Cuisine cuisineScandinavian = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0004"))
+            .name("Scandinavian").continent(Continent.EUROPE).spicy(false).build();
 
-    private final Cuisine cuisineSkellige = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0005"))
-            .name("Skelligan").region(Region.SKELLIGE).spicy(false).build();
+    private final Cuisine cuisineMoroccan = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0005"))
+            .name("Moroccan").continent(Continent.AFRICA).spicy(true).build();
 
-    private final Cuisine cuisineKovir = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0006"))
-            .name("Kovirian").region(Region.KOVIR).spicy(false).build();
-
-    private final Cuisine cuisineZerrikania = Cuisine.builder().id(UUID.fromString("d290f1ee-6c54-4b01-90e6-d701748f0007"))
-            .name("Zerrikanian").region(Region.ZERRIKANIA).spicy(true).build();
-
-    private final Set<Cuisine> cuisines = Set.of(cuisineTemeria, cuisineRedania, cuisineNilfgaard, cuisineToussaint,
-            cuisineSkellige, cuisineKovir, cuisineZerrikania);
+    private final Set<Cuisine> cuisines = Set.of(cuisinePolish, cuisineItalian, cuisineFrench, cuisineScandinavian, cuisineMoroccan);
 
     private final Set<Recipe> recipes = Set.of(
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a01"))
-                    .cuisine(cuisineTemeria)
+                    .cuisine(cuisinePolish)
                     .author(userGeralt)
                     .title("Bigos")
-                    .description("A hearty hunter's stew of sauerkraut and smoked meats, favored by witchers resting between contracts.")
+                    .description("A hearty hunter's stew of sauerkraut and smoked meats - the kind Geralt swears is the only thing that chases away a Kaer Morhen winter.")
                     .ingredients(List.of("sauerkraut", "cabbage", "smoked bacon", "kielbasa", "wild boar meat", "prunes", "juniper berries", "onion"))
                     .servings(4)
                     .caloriesPerServing(650)
@@ -116,10 +109,10 @@ public class DataLoader {
                     .build(),
 
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a02"))
-                    .cuisine(cuisineRedania)
+                    .cuisine(cuisinePolish)
                     .author(userTriss)
                     .title("Zurek")
-                    .description("Tangy fermented rye soup served in a bread bowl, warming for long rides across Redania.")
+                    .description("Tangy fermented rye soup served in a bread bowl - Triss swears it cures a Kaer Morhen reunion hangover faster than any potion.")
                     .ingredients(List.of("fermented rye starter", "white sausage", "potatoes", "marjoram", "garlic", "hard-boiled egg"))
                     .servings(4)
                     .caloriesPerServing(420)
@@ -128,10 +121,10 @@ public class DataLoader {
                     .build(),
 
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a03"))
-                    .cuisine(cuisineKovir)
+                    .cuisine(cuisinePolish)
                     .author(userCiri)
                     .title("Pierogi Ruskie")
-                    .description("Dumplings stuffed with potato and curd cheese, a traveler's favorite on the road to Kovir.")
+                    .description("Dumplings stuffed with potato and curd cheese - Ciri begs for a plate at every Northern Kingdoms inn she passes.")
                     .ingredients(List.of("potatoes", "twarog cheese", "onion", "flour", "butter"))
                     .servings(6)
                     .caloriesPerServing(380)
@@ -140,10 +133,22 @@ public class DataLoader {
                     .build(),
 
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a04"))
-                    .cuisine(cuisineNilfgaard)
+                    .cuisine(cuisinePolish)
+                    .author(userJaskier)
+                    .title("Krupnik")
+                    .description("A simple barley soup - comfort food Jaskier insists is still better than anything served at Kaer Morhen.")
+                    .ingredients(List.of("barley", "potatoes", "carrots", "celery", "butter", "marjoram"))
+                    .servings(4)
+                    .caloriesPerServing(290)
+                    .vegetarian(true)
+                    .creationDate(LocalDate.now())
+                    .build(),
+
+            Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a05"))
+                    .cuisine(cuisineItalian)
                     .author(userZoltan)
-                    .title("Nilfgaardian Roast Boar")
-                    .description("Slow-roasted boar marinated in imperial red wine, served at a Nilfgaardian officers' table.")
+                    .title("Tuscan-Style Roast Boar")
+                    .description("Slow-roasted wild boar marinated in Chianti red wine with rosemary and garlic, a classic Tuscan countryside feast.")
                     .ingredients(List.of("wild boar leg", "rosemary", "garlic", "red wine", "root vegetables"))
                     .servings(8)
                     .caloriesPerServing(720)
@@ -151,24 +156,12 @@ public class DataLoader {
                     .creationDate(LocalDate.now())
                     .build(),
 
-            Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a05"))
-                    .cuisine(cuisineSkellige)
-                    .author(userJaskier)
-                    .title("Skellige Herring Platter")
-                    .description("Salted herring and rye, the staple of Skellige longship crews.")
-                    .ingredients(List.of("pickled herring", "rye bread", "onion", "sour cream", "dill"))
-                    .servings(2)
-                    .caloriesPerServing(310)
-                    .vegetarian(false)
-                    .creationDate(LocalDate.now())
-                    .build(),
-
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a06"))
-                    .cuisine(cuisineToussaint)
+                    .cuisine(cuisineFrench)
                     .author(userTriss)
-                    .title("Toussaint Duck with Blood Wine Reduction")
-                    .description("Duck glazed in Toussaint's famed blood-red wine, fit for a knight's feast.")
-                    .ingredients(List.of("duck breast", "Est Est blood wine", "honey", "thyme", "shallots"))
+                    .title("Duck Breast with Red Wine Reduction")
+                    .description("Pan-seared duck breast glazed in a Bordelaise red wine reduction, a classic of French bistro cooking.")
+                    .ingredients(List.of("duck breast", "red wine", "honey", "thyme", "shallots"))
                     .servings(2)
                     .caloriesPerServing(540)
                     .vegetarian(false)
@@ -176,26 +169,26 @@ public class DataLoader {
                     .build(),
 
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a07"))
-                    .cuisine(cuisineZerrikania)
-                    .author(userGeralt)
-                    .title("Zerrikanian Spiced Lamb Skewers")
-                    .description("Fire-charred lamb skewers rubbed with exotic Zerrikanian spices.")
-                    .ingredients(List.of("lamb shoulder", "cumin", "chili", "yogurt", "saffron", "lemon"))
-                    .servings(4)
-                    .caloriesPerServing(480)
+                    .cuisine(cuisineScandinavian)
+                    .author(userJaskier)
+                    .title("Pickled Herring Platter")
+                    .description("Classic Nordic platter of pickled herring, rye bread, and soured cream, a staple of Scandinavian smorgasbords.")
+                    .ingredients(List.of("pickled herring", "rye bread", "onion", "sour cream", "dill"))
+                    .servings(2)
+                    .caloriesPerServing(310)
                     .vegetarian(false)
                     .creationDate(LocalDate.now())
                     .build(),
 
             Recipe.builder().id(UUID.fromString("a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a08"))
-                    .cuisine(cuisineTemeria)
-                    .author(userCiri)
-                    .title("Krupnik")
-                    .description("A simple barley soup, the kind served in every Temerian village inn.")
-                    .ingredients(List.of("barley", "potatoes", "carrots", "celery", "butter", "marjoram"))
+                    .cuisine(cuisineMoroccan)
+                    .author(userGeralt)
+                    .title("Moroccan Spiced Lamb Skewers")
+                    .description("Fire-charred lamb skewers rubbed with cumin, chili, and saffron, inspired by Moroccan street food stalls.")
+                    .ingredients(List.of("lamb shoulder", "cumin", "chili", "yogurt", "saffron", "lemon"))
                     .servings(4)
-                    .caloriesPerServing(290)
-                    .vegetarian(true)
+                    .caloriesPerServing(480)
+                    .vegetarian(false)
                     .creationDate(LocalDate.now())
                     .build()
     );

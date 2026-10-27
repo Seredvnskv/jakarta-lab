@@ -1,0 +1,264 @@
+:root {
+    --color-bg: #eef7f6;
+    --color-surface: #ffffff;
+    --color-surface-alt: #e4f1ee;
+    --color-primary: #1f7a8c;
+    --color-primary-dark: #145a68;
+    --color-accent: #7fae55;
+    --color-danger: #c1543f;
+    --color-text: #1f2d2e;
+    --color-muted: #5f7a7a;
+    --color-border: #cfe3e3;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-header {
+    background: var(--color-surface);
+    border-bottom: 3px solid var(--color-primary);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.site-header__logo {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.site-header__title {
+    margin: 0;
+    font-size: 1.6rem;
+    color: var(--color-primary-dark);
+}
+
+.site-header__tagline {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+.site-nav {
+    background: var(--color-primary);
+    padding: 0.85rem 2rem;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-nav a:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+.site-main {
+    flex: 1;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+.site-footer {
+    background: var(--color-primary-dark);
+    color: #eaf6f2;
+    text-align: center;
+    padding: 1.25rem;
+    font-size: 0.85rem;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary-dark);
+}
+
+h2 {
+    margin: 0 0 1rem;
+}
+
+h3 {
+    margin: 2rem 0 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+th {
+    background: var(--color-surface-alt);
+    color: var(--color-primary-dark);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    margin: 0.5rem 0;
+}
+
+.form-intro {
+    color: var(--color-muted);
+    margin-top: -0.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.form-card {
+    max-width: 640px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.field {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.field label {
+    font-weight: 600;
+}
+
+.checkbox-field {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.checkbox-field label {
+    font-weight: 600;
+    margin: 0;
+}
+
+input[type="text"],
+select,
+textarea {
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    width: 100%;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(31, 122, 140, 0.15);
+}
+
+input[type="checkbox"] {
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+textarea {
+    min-height: 5.5rem;
+    resize: vertical;
+}
+
+.ingredients-input {
+    min-height: 8rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.action-holder {
+    display: flex !important;
+    gap: 0.5rem !important;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.btn-secondary {
+    background: var(--color-accent);
+}
+
+.btn-primary {
+    background: var(--color-primary);
+}
+
+.btn-danger {
+    background: var(--color-danger);
+}

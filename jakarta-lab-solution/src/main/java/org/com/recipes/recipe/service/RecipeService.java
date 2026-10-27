@@ -47,6 +47,10 @@ public class RecipeService {
         recipeRepository.saveAll(recipes);
     }
 
+    public void updateRecipe(Recipe recipe) {
+        recipeRepository.save(recipe);
+    }
+
     public void deleteRecipe(UUID id) {
         recipeRepository.deleteRecipe(id);
     }

@@ -9,6 +9,7 @@ import org.com.recipes.recipe.dto.RecipeListDto;
 import org.com.recipes.user.User;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 @UtilityClass
@@ -17,7 +18,7 @@ public final class RecipeMapper {
         return new RecipeListDto(recipe.getCuisine().getName(), recipe.getTitle(), recipe.getIngredients(), authorUsername(recipe));
     }
 
-    public static RecipeDto toRecipeDto(Recipe recipe) {
+    public static RecipeDto toDto(Recipe recipe) {
         return new RecipeDto(recipe.getTitle(), recipe.getIngredients(), recipe.getDescription(), recipe.getServings(),
                 recipe.getCaloriesPerServing(), recipe.isVegetarian(), recipe.getCreationDate(),
                 recipe.getCuisine().getName(), authorUsername(recipe));
@@ -40,5 +41,9 @@ public final class RecipeMapper {
                 .vegetarian(dto.vegetarian())
                 .creationDate(LocalDate.now())
                 .build();
+    }
+
+    public static List<RecipeDto> toDtos(List<Recipe> recipes) {
+        return recipes.stream().map(RecipeMapper::toDto).toList();
     }
 }

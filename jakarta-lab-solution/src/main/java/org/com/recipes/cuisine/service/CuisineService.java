@@ -6,6 +6,7 @@ import org.com.recipes.core.exception.InvalidDataException;
 import org.com.recipes.core.exception.NotFoundException;
 import org.com.recipes.cuisine.Cuisine;
 import org.com.recipes.cuisine.repository.CuisineRepository;
+import org.com.recipes.recipe.service.RecipeService;
 
 import java.util.Collection;
 import java.util.List;
@@ -15,12 +16,14 @@ import java.util.UUID;
 public class CuisineService {
 
     private CuisineRepository cuisineRepository;
+    private RecipeService recipeService;
 
     protected CuisineService() {}
 
     @Inject
-    public CuisineService(CuisineRepository cuisineRepository) {
+    public CuisineService(CuisineRepository cuisineRepository, RecipeService recipeService) {
         this.cuisineRepository = cuisineRepository;
+        this.recipeService = recipeService;
     }
 
     public List<Cuisine> findAllCuisines() {
@@ -44,6 +47,7 @@ public class CuisineService {
     }
 
     public void deleteCuisine(UUID id) {
+        recipeService.findRecipesByCuisine(id).forEach(recipe -> recipeService.deleteRecipe(recipe.getId()));
         cuisineRepository.deleteCuisine(id);
     }
 

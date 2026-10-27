@@ -19,7 +19,7 @@ public class Cuisine {
     private UUID id;
 
     @Enumerated(EnumType.STRING)
-    private Region region;
+    private Continent continent;
     private String name;
     private boolean spicy;
 }

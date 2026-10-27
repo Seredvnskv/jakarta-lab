@@ -1,0 +1,67 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="cuisineId" value="#{recipeFormView.cuisineId}"/>
+        <f:viewParam name="recipeId" value="#{recipeFormView.recipeId}"/>
+        <f:viewAction action="#{recipeFormView.init}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{recipeFormView.editMode ? 'Edit recipe' : 'Add recipe'}</ui:define>
+
+    <ui:define name="content">
+        <h2>#{recipeFormView.editMode ? 'Edit recipe' : 'Add recipe'}</h2>
+        <p class="form-intro">#{recipeFormView.editMode ? 'Update the details below and save your changes.' : 'Fill in the details below to add a new recipe.'}</p>
+
+        <h:form id="recipeForm">
+            <div class="card form-card">
+                <div class="field">
+                    <h:outputLabel for="title" value="Title *"/>
+                    <h:inputText id="title" value="#{recipeFormView.title}" required="true"/>
+                </div>
+
+                <div class="field">
+                    <h:outputLabel for="description" value="Description"/>
+                    <h:inputTextarea id="description" value="#{recipeFormView.description}"/>
+                </div>
+
+                <div class="field">
+                    <h:outputLabel for="ingredients" value="Ingredients (one per line)"/>
+                    <h:inputTextarea id="ingredients" styleClass="ingredients-input" value="#{recipeFormView.ingredientsText}"/>
+                </div>
+
+                <div class="form-row">
+                    <div class="field">
+                        <h:outputLabel for="servings" value="Servings"/>
+                        <h:inputText id="servings" value="#{recipeFormView.servings}"/>
+                    </div>
+
+                    <div class="field">
+                        <h:outputLabel for="calories" value="Calories per serving"/>
+                        <h:inputText id="calories" value="#{recipeFormView.caloriesPerServing}"/>
+                    </div>
+
+                    <div class="field">
+                        <h:outputLabel for="cuisine" value="Cuisine"/>
+                        <h:selectOneMenu id="cuisine" value="#{recipeFormView.selectedCuisine}" converter="cuisineConverter">
+                            <f:selectItems value="#{recipeFormView.allCuisines}" var="c" itemValue="#{c}" itemLabel="#{c.name}"/>
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+
+                <div class="checkbox-field">
+                    <h:selectBooleanCheckbox id="vegetarian" value="#{recipeFormView.vegetarian}"/>
+                    <h:outputLabel for="vegetarian" value="Vegetarian"/>
+                </div>
+
+                <div class="actions">
+                    <h:commandButton value="Save" styleClass="btn" action="#{recipeFormView.save()}"/>
+                    <h:commandButton value="Cancel" styleClass="btn btn-secondary" action="#{recipeFormView.cancel()}" immediate="true"/>
+                </div>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>

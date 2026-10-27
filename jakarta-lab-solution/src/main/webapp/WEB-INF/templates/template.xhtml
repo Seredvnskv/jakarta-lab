@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:ui="jakarta.faces.facelets">
+
+<h:head>
+    <meta charset="UTF-8"/>
+    <title><ui:insert name="title">Recipes</ui:insert></title>
+    <h:outputStylesheet library="css" name="styles.css"/>
+</h:head>
+
+<h:body>
+    <header class="site-header">
+        <h:graphicImage library="images" name="grill-svgrepo-com.svg" alt="Recipes logo" styleClass="site-header__logo" width="56" height="56"/>
+        <div>
+            <h1 class="site-header__title">Recipes</h1>
+            <p class="site-header__tagline">Browse cuisines and the recipes that belong to them.</p>
+        </div>
+    </header>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="#{request.contextPath}/cuisines/cuisines_list.xhtml">Cuisines</a></li>
+        </ul>
+    </nav>
+
+    <main class="site-main">
+        <ui:insert name="content">
+            <p>No content provided for this page.</p>
+        </ui:insert>
+    </main>
+
+    <footer class="site-footer">
+        <p>&#169; 2026 Recipes Lab &#8212; Jakarta EE / Jakarta Faces demo application.</p>
+    </footer>
+</h:body>
+</html>

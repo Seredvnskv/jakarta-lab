@@ -43,15 +43,15 @@ public class RecipeRestServlet extends HttpServlet {
             String cuisineId = req.getParameter("cuisineId");
             if (cuisineId != null) {
                 jsonb.toJson(new ListResponseDto<>(recipeService.findRecipesByCuisine(UUID.fromString(cuisineId)).stream()
-                        .map(RecipeMapper::toRecipeDto).toList()), resp.getWriter());
+                        .map(RecipeMapper::toDto).toList()), resp.getWriter());
             }
             else {
-                jsonb.toJson(new ListResponseDto<>(recipeService.findAllRecipes().stream().map(RecipeMapper::toRecipeDto).toList()), resp.getWriter());
+                jsonb.toJson(new ListResponseDto<>(recipeService.findAllRecipes().stream().map(RecipeMapper::toDto).toList()), resp.getWriter());
             }
         }
         else {
             String id = path.substring(1);
-            jsonb.toJson(RecipeMapper.toRecipeDto(recipeService.findRecipeById(UUID.fromString(id))), resp.getWriter());
+            jsonb.toJson(RecipeMapper.toDto(recipeService.findRecipeById(UUID.fromString(id))), resp.getWriter());
         }
     }
 

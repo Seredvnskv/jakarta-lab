@@ -1,0 +1,39 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:f="jakarta.faces.core"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <ui:define name="title">Cuisines</ui:define>
+
+    <ui:define name="content">
+        <h2>Cuisines</h2>
+
+        <h:form id="cuisineListForm">
+            <h:panelGroup rendered="#{empty cuisineList.cuisines}">
+                <p>No cuisines have been added yet.</p>
+            </h:panelGroup>
+
+            <h:dataTable value="#{cuisineList.cuisines}" var="cuisine"
+                         rendered="#{not empty cuisineList.cuisines}">
+                <h:column>
+                    <f:facet name="header">Name</f:facet>
+                    #{cuisine.name}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Continent</f:facet>
+                    #{cuisine.continent}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Spicy</f:facet>
+                    #{cuisine.spicy ? 'Yes' : 'No'}
+                </h:column>
+                <h:column styleClass="action-holder">
+                    <f:facet name="header">Actions</f:facet>
+                    <h:commandButton value="View" styleClass="btn btn-secondary" action="#{cuisineList.viewCuisine(cuisine)}"/>
+                    <h:commandButton value="Delete" styleClass="btn btn-danger" action="#{cuisineList.deleteCuisine(cuisine)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:form>
+    </ui:define>
+</ui:composition>

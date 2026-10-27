@@ -1,0 +1,60 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="cuisineId" value="#{cuisineView.cuisineId}"/>
+        <f:viewAction action="#{cuisineView.init}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{cuisineView.cuisine.name}</ui:define>
+
+    <ui:define name="content">
+        <div class="card">
+            <h2>#{cuisineView.cuisine.name}</h2>
+            <p>Continent: #{cuisineView.cuisine.continent}</p>
+            <p>Spicy: #{cuisineView.cuisine.spicy ? 'Yes' : 'No'}</p>
+        </div>
+
+        <h3>Recipes</h3>
+
+        <h:form id="recipeListForm">
+            <h:panelGroup rendered="#{empty cuisineView.recipes}">
+                <p>No recipes have been added for this cuisine yet.</p>
+            </h:panelGroup>
+
+            <h:dataTable value="#{cuisineView.recipes}" var="recipe"
+                         rendered="#{not empty cuisineView.recipes}">
+                <h:column>
+                    <f:facet name="header">Title</f:facet>
+                    #{recipe.title}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Servings</f:facet>
+                    #{recipe.servings}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Calories per serving</f:facet>
+                    #{recipe.caloriesPerServing}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Vegetarian</f:facet>
+                    #{recipe.vegetarian ? 'Yes' : 'No'}
+                </h:column>
+                <h:column styleClass="action-holder">
+                    <f:facet name="header">Actions</f:facet>
+                    <h:commandButton value="View" styleClass="btn btn-secondary" action="#{cuisineView.viewRecipe(recipe)}"/>
+                    <h:commandButton value="Edit" styleClass="btn btn-primary" action="#{cuisineView.editRecipe(recipe)}"/>
+                    <h:commandButton value="Delete" styleClass="btn btn-danger" action="#{cuisineView.deleteRecipe(recipe)}"/>
+                </h:column>
+            </h:dataTable>
+
+            <div class="actions">
+                <h:commandButton value="Add recipe" styleClass="btn" action="#{cuisineView.addRecipe()}"/>
+                <h:commandButton value="Back to cuisines" styleClass="btn btn-secondary" action="cuisines_list?faces-redirect=true"/>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>

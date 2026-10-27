@@ -1,0 +1,39 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+    <f:metadata>
+        <f:viewParam name="recipeId" value="#{recipeView.recipeId}"/>
+        <f:viewAction action="#{recipeView.init}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{recipeView.recipe.title}</ui:define>
+
+    <ui:define name="content">
+        <div class="card">
+            <h2>#{recipeView.recipe.title}</h2>
+            <p>#{recipeView.recipe.description}</p>
+
+            <p>Cuisine: #{recipeView.recipe.cuisine}</p>
+            <p>Author: #{recipeView.recipe.author}</p>
+            <p>Servings: #{recipeView.recipe.servings}</p>
+            <p>Calories per serving: #{recipeView.recipe.caloriesPerServing}</p>
+            <p>Vegetarian: #{recipeView.recipe.vegetarian ? 'Yes' : 'No'}</p>
+            <p>Created: #{recipeView.recipe.creationDate}</p>
+
+            <h3>Ingredients</h3>
+            <ul>
+                <ui:repeat value="#{recipeView.recipe.ingredients}" var="ingredient">
+                    <li>#{ingredient}</li>
+                </ui:repeat>
+            </ul>
+        </div>
+
+        <h:form id="recipeViewForm">
+            <div class="actions">
+                <h:commandButton value="Back to cuisine" styleClass="btn btn-secondary" action="#{recipeView.backToCuisine()}"/>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>
