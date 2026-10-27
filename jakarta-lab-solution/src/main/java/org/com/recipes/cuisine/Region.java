@@ -7,5 +7,9 @@ public enum Region {
     TOUSSAINT,
     SKELLIGE,
     KOVIR,
-    ZERRIKANIA
+    ZERRIKANIA;
+
+    public static Region fromString(String s){
+        return Region.valueOf(s.toUpperCase());
+    }
 }

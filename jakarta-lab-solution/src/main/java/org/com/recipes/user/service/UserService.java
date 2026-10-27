@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
@@ -69,10 +70,19 @@ public class UserService {
         userRepository.save(user);
     }
 
+    public void createAllUsers(Collection<User> users) {
+        users.forEach(this::createUser);
+    }
+
     public void deleteUser(UUID id) {
         User user = provideUser(id);
         deleteAvatar(id);
         userRepository.delete(user);
+    }
+
+    public void deleteAllUsers() {
+        provideUsers().forEach(user -> deleteAvatar(user.getId()));
+        userRepository.deleteAll();
     }
 
     public byte[] provideAvatar(UUID id) {

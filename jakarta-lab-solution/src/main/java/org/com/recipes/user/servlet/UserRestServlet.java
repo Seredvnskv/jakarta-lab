@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 import jakarta.ws.rs.core.MediaType;
+import org.com.recipes.core.dto.ListResponseDto;
 import org.com.recipes.core.util.ImageTypeDetector;
 import org.com.recipes.user.User;
 import org.com.recipes.user.dto.CreateUserDto;
@@ -23,11 +24,14 @@ import java.util.UUID;
 @MultipartConfig
 public class UserRestServlet extends HttpServlet {
 
-    @Inject
-    private UserService userService;
+    private final UserService userService;
+    private final Jsonb jsonb;
 
     @Inject
-    private Jsonb jsonb;
+    public UserRestServlet(UserService userService, Jsonb jsonb) {
+        this.userService = userService;
+        this.jsonb = jsonb;
+    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -35,7 +39,7 @@ public class UserRestServlet extends HttpServlet {
         if (path == null || path.equals("/")) {
             resp.setStatus(HttpServletResponse.SC_OK);
             resp.setContentType("application/json");
-            jsonb.toJson(UserMapper.toUserDto(userService.provideUsers()), resp.getWriter());
+            jsonb.toJson(new ListResponseDto<>(UserMapper.toUserDto(userService.provideUsers())), resp.getWriter());
         }
         else if (!path.endsWith("/avatar")) {
             String id = path.substring(1);
@@ -62,17 +66,19 @@ public class UserRestServlet extends HttpServlet {
             Part avatarPart = req.getPart("avatar");
             User user = UserMapper.toEntity(jsonb.fromJson(userPart.getInputStream(), CreateUserDto.class));
             userService.createUser(user, avatarPart.getInputStream());
+            resp.setHeader("Location", req.getServletPath() + "/" + user.getId());
         }
-
-        if (!path.endsWith("/avatar")) {
-            User user = UserMapper.toEntity(jsonb.fromJson(req.getInputStream(), CreateUserDto.class));
-            userService.createUser(user, null);
-        }
-        else {
+        else if (path != null && path.endsWith("/avatar")) {
             String id = path.substring(1).split("/")[0];
             userService.updateAvatar(UUID.fromString(id), req.getInputStream());
+            resp.setHeader("Location", req.getServletPath() + path);
         }
-        resp.setStatus(HttpServletResponse.SC_OK);
+        else {
+            User user = UserMapper.toEntity(jsonb.fromJson(req.getInputStream(), CreateUserDto.class));
+            userService.createUser(user, null);
+            resp.setHeader("Location", req.getServletPath() + "/" + user.getId());
+        }
+        resp.setStatus(HttpServletResponse.SC_CREATED);
     }
 
     @Override

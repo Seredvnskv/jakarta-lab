@@ -7,6 +7,7 @@ import org.com.recipes.core.exception.NotFoundException;
 import org.com.recipes.recipe.Recipe;
 import org.com.recipes.recipe.repository.RecipeRepository;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
@@ -26,7 +27,7 @@ public class RecipeService {
         return recipeRepository.findAll();
     }
 
-    public Recipe findRecipeById(UUID id) throws NotFoundException {
+    public Recipe findRecipeById(UUID id) {
         return recipeRepository.findById(id).orElseThrow(NotFoundException::new);
     }
 
@@ -34,7 +35,7 @@ public class RecipeService {
         return recipeRepository.findByCuisineId(cuisineId);
     }
 
-    public void createRecipe(Recipe recipe) throws InvalidDataException {
+    public void createRecipe(Recipe recipe) {
         recipeRepository.findById(recipe.getId()).ifPresent(_ -> {
             throw new InvalidDataException("Recipe already exists");
         });
@@ -42,7 +43,15 @@ public class RecipeService {
         System.out.println("Created recipe: %s (%s)".formatted(recipe.getTitle(), recipe.getId()));
     }
 
-    public void deleteRecipe(UUID id) throws NotFoundException {
+    public void createAllRecipes(Collection<Recipe> recipes) {
+        recipeRepository.saveAll(recipes);
+    }
+
+    public void deleteRecipe(UUID id) {
         recipeRepository.deleteRecipe(id);
+    }
+
+    public void deleteAllRecipes() {
+        recipeRepository.deleteAll();
     }
 }

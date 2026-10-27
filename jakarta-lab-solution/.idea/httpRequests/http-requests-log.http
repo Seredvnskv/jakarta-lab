@@ -1,3 +1,173 @@
+GET http://localhost:9080/api/servlet/recipes?cuisineId=d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T033113.200.json
+
+###
+
+POST http://localhost:9080/api/servlet/recipes
+Content-Type: application/json
+Content-Length: 277
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "cuisineId": "00000000-0000-0000-0000-000000000000",
+  "authorId": "2ac72290-178b-495d-9c73-3fc3abe98533",
+  "ingredients": ["snails"],
+  "title": "Ghost Cuisine Recipe",
+  "description": "Should fail.",
+  "servings": 1,
+  "caloriesPerServing": 100,
+  "vegetarian": false
+}
+
+###
+
+GET http://localhost:9080/api/servlet/cuisines
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T033038.200.json
+
+###
+
+POST http://localhost:9080/api/servlet/cuisines
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Mahakam",
+  "region": "KOVIR",
+  "spicy": false
+}
+
+###
+
+GET http://localhost:9080/api/servlet/recipes?cuisineId=d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T032940.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/recipes/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a01
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T032931.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/recipes
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T032902.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/recipes
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+POST http://localhost:9080/api/servlet/cuisines
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Mahakam",
+  "region": "KOVIR",
+  "spicy": false
+}
+
+###
+
+GET http://localhost:9080/api/servlet/cuisines/d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T030730.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/cuisines
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T030505.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/servlet/cuisine
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T025738.200.png
+
+###
+
+GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T025735.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-24T025728.200.json
+
+###
+
+GET http://localhost:9080/api/servlet/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-10-23T184739.200.json
+
+###
+
 GET http://localhost:9080/api/servlet/users
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -283,177 +453,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2026-10-22T011419.500.html
-
-###
-
-POST http://localhost:9080/api/servlet/users/
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "Triss Merigold",
-  "role": "admin"
-}
-
-###
-
-POST http://localhost:9080/api/servlet/users/
-Content-Type: application/json
-Content-Length: 53
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "Triss Merigold",
-  "role": "admin"
-}
-
-<> 2026-10-22T011211.500.html
-
-###
-
-GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011641.200.jpeg
-
-###
-
-POST http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-Content-Type: image/jpeg
-Content-Length: 23133
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/geralt.jpg
-
-###
-
-GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-POST http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
-Content-Type: image/png
-Content-Length: 120261
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011620.200.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011618.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011607.200.json
-
-###
-
-POST http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-Content-Type: image/jpeg
-Content-Length: 23133
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/geralt.jpg
-
-<> 2026-10-21T011440.404.html
-
-###
-
-GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011435.404.html
-
-###
-
-GET http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011419.404.html
-
-###
-
-DELETE http://localhost:9080/api/servlet/users/f4274889-1f42-4ac2-abf5-a6a7e53234fc/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-POST http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
-Content-Type: image/png
-Content-Length: 120261
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011409.200.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-21T011406.200.json
 
 ###
 
