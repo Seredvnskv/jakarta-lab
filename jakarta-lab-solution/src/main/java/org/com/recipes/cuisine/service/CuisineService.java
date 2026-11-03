@@ -34,12 +34,18 @@ public class CuisineService {
         return cuisineRepository.findById(id).orElseThrow(NotFoundException::new);
     }
 
-    public void createCuisine(Cuisine cuisine) {
+    public Cuisine createCuisine(Cuisine cuisine) {
         cuisineRepository.findById(cuisine.getId()).ifPresent(_ -> {
             throw new InvalidDataException("Cuisine already exists");
         });
-        cuisineRepository.save(cuisine);
+        Cuisine saved = cuisineRepository.save(cuisine);
         System.out.println("Created cuisine: %s (%s)".formatted(cuisine.getName(), cuisine.getId()));
+        return saved;
+    }
+
+    public Cuisine updateCuisine(Cuisine cuisine) {
+        cuisineRepository.findById(cuisine.getId()).orElseThrow(NotFoundException::new);
+        return cuisineRepository.save(cuisine);
     }
 
     public void createAllCuisines(Collection<Cuisine> cuisines) {

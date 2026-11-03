@@ -20,6 +20,15 @@ public class CuisineMapper {
                 .build();
     }
 
+    public static Cuisine toEntity(UUID id, CreateCuisineDto dto) {
+        return Cuisine.builder()
+                .id(id)
+                .name(dto.name())
+                .continent(Continent.valueOf(dto.continent()))
+                .spicy(dto.spicy())
+                .build();
+    }
+
     public static CuisineDto toDto(Cuisine entity) {
         return new CuisineDto(entity.getId().toString(), entity.getName(), entity.getContinent().toString(), entity.isSpicy());
     }

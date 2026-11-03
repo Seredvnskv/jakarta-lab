@@ -43,6 +43,17 @@ public final class RecipeMapper {
                 .build();
     }
 
+    public static Recipe applyUpdate(Recipe recipe, CreateRecipeDto dto, User author) {
+        recipe.setAuthor(author);
+        recipe.setIngredients(dto.ingredients());
+        recipe.setTitle(dto.title());
+        recipe.setDescription(dto.description());
+        recipe.setServings(dto.servings());
+        recipe.setCaloriesPerServing(dto.caloriesPerServing());
+        recipe.setVegetarian(dto.vegetarian());
+        return recipe;
+    }
+
     public static List<RecipeDto> toDtos(List<Recipe> recipes) {
         return recipes.stream().map(RecipeMapper::toDto).toList();
     }

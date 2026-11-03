@@ -22,30 +22,4 @@
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>UserRestServlet</servlet-name>
-        <servlet-class>org.com.recipes.user.servlet.UserRestServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>UserRestServlet</servlet-name>
-        <url-pattern>/api/servlet/users/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>CuisineRestServlet</servlet-name>
-        <servlet-class>org.com.recipes.cuisine.servlet.CuisineRestServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CuisineRestServlet</servlet-name>
-        <url-pattern>/api/servlet/cuisines/*</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
-        <servlet-name>RecipeRestServlet</servlet-name>
-        <servlet-class>org.com.recipes.recipe.servlet.RecipeRestServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>RecipeRestServlet</servlet-name>
-        <url-pattern>/api/servlet/recipes/*</url-pattern>
-    </servlet-mapping>
 </web-app>

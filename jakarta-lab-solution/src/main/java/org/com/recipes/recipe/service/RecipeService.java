@@ -35,20 +35,22 @@ public class RecipeService {
         return recipeRepository.findByCuisineId(cuisineId);
     }
 
-    public void createRecipe(Recipe recipe) {
+    public Recipe createRecipe(Recipe recipe) {
         recipeRepository.findById(recipe.getId()).ifPresent(_ -> {
             throw new InvalidDataException("Recipe already exists");
         });
-        recipeRepository.save(recipe);
+        Recipe saved = recipeRepository.save(recipe);
         System.out.println("Created recipe: %s (%s)".formatted(recipe.getTitle(), recipe.getId()));
+        return saved;
     }
 
     public void createAllRecipes(Collection<Recipe> recipes) {
         recipeRepository.saveAll(recipes);
     }
 
-    public void updateRecipe(Recipe recipe) {
-        recipeRepository.save(recipe);
+    public Recipe updateRecipe(Recipe recipe) {
+        recipeRepository.findById(recipe.getId()).orElseThrow(NotFoundException::new);
+        return recipeRepository.save(recipe);
     }
 
     public void deleteRecipe(UUID id) {

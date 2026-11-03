@@ -5,6 +5,7 @@
         <feature>jsonb-3.0</feature>
         <feature>cdi-4.1</feature>
         <feature>faces-4.1</feature>
+        <feature>restfulWS-4.0</feature>
     </featureManager>
 
     <library id="h2Lib">

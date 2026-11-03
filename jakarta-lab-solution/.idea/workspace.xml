@@ -7,12 +7,20 @@
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/view/CuisineList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/view/CuisineList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisines_list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisines_list.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/recipes/recipes_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/recipes/recipes_form.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/filter/ExceptionFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/mapper/CuisineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/mapper/CuisineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/servlet/CuisineRestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/CreateRecipeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/dto/CreateRecipeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/service/RecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/servlet/RecipeRestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/servlet/UserRestServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,74 +84,86 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.All in requests.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | #1.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | #4.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | #6.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create avatar that already exists (409).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create avatar with empty body (400).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create avator of non-existing user ().executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create avator of non-existing user (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create cuisine (Mahakam).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create recipe with non-existing cuisine (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create user avatar (200) - Geralt.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create user avatar (201) - Geralt.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Create user avatar.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete avatar (Geralt).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete avatar.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete deleted avatar (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Delete user (Jaskier).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get all cuisines.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get all recipes.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get all users.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get created avatar.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get cuisine by uuid (Temerian).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get deleted avatar (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get deleted user (404) - Jaskier.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get non-existing user (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get recipe by uuid (Bigos).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get recipes by cuisine (Temerian).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get updated avatar.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user avatar (Triss).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user avatar.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user by uuid (Triss).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user by uuid.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Get user with invalid uuid (400).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Update deleted avatar (404).executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Update user avatar - Geralt.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.requests | Update user avatar.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.jakarta-lab-solution [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.jakarta-lab-solution [compile].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lab-3&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/webapp/resources/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.All in requests.executor": "Run",
+    "HTTP Request.requests | #1.executor": "Run",
+    "HTTP Request.requests | #4.executor": "Run",
+    "HTTP Request.requests | #6.executor": "Run",
+    "HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data.executor": "Run",
+    "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
+    "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
+    "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
+    "HTTP Request.requests | Create avator of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Create cuisine (Mahakam).executor": "Run",
+    "HTTP Request.requests | Create cuisine (Mexican).executor": "Run",
+    "HTTP Request.requests | Create recipe with non-existing cuisine (404).executor": "Run",
+    "HTTP Request.requests | Create user avatar (200) - Geralt.executor": "Run",
+    "HTTP Request.requests | Create user avatar (201) - Geralt.executor": "Run",
+    "HTTP Request.requests | Create user avatar.executor": "Run",
+    "HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below).executor": "Run",
+    "HTTP Request.requests | Delete avatar (Geralt).executor": "Run",
+    "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Delete avatar.executor": "Run",
+    "HTTP Request.requests | Delete cuisine (Moroccan) - should cascade delete its recipes.executor": "Run",
+    "HTTP Request.requests | Delete deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Delete non-existing cuisine (404).executor": "Run",
+    "HTTP Request.requests | Delete user (Jaskier).executor": "Run",
+    "HTTP Request.requests | Get all cuisines (no nested recipes).executor": "Run",
+    "HTTP Request.requests | Get all cuisines again (Mexican should now be included).executor": "Run",
+    "HTTP Request.requests | Get all cuisines.executor": "Run",
+    "HTTP Request.requests | Get all recipes.executor": "Run",
+    "HTTP Request.requests | Get all users.executor": "Run",
+    "HTTP Request.requests | Get avatar of non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Get created avatar.executor": "Run",
+    "HTTP Request.requests | Get cuisine by uuid (Polish).executor": "Run",
+    "HTTP Request.requests | Get cuisine by uuid (Temerian).executor": "Run",
+    "HTTP Request.requests | Get cuisine with invalid uuid.executor": "Run",
+    "HTTP Request.requests | Get deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Get deleted cuisine (404).executor": "Run",
+    "HTTP Request.requests | Get deleted user (404) - Jaskier.executor": "Run",
+    "HTTP Request.requests | Get non-existing cuisine (404).executor": "Run",
+    "HTTP Request.requests | Get non-existing user (404).executor": "Run",
+    "HTTP Request.requests | Get recipe by uuid (Bigos).executor": "Run",
+    "HTTP Request.requests | Get recipes by cuisine (Temerian).executor": "Run",
+    "HTTP Request.requests | Get updated avatar.executor": "Run",
+    "HTTP Request.requests | Get updated cuisine (Scandinavian).executor": "Run",
+    "HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor": "Run",
+    "HTTP Request.requests | Get user avatar (Triss).executor": "Run",
+    "HTTP Request.requests | Get user avatar.executor": "Run",
+    "HTTP Request.requests | Get user by uuid (Triss).executor": "Run",
+    "HTTP Request.requests | Get user by uuid.executor": "Run",
+    "HTTP Request.requests | Get user with invalid uuid (400).executor": "Run",
+    "HTTP Request.requests | Update cuisine (Scandinavian -> now spicy and continent ASIA).executor": "Run",
+    "HTTP Request.requests | Update deleted avatar (404).executor": "Run",
+    "HTTP Request.requests | Update non-existing cuisine (404).executor": "Run",
+    "HTTP Request.requests | Update user avatar - Geralt.executor": "Run",
+    "HTTP Request.requests | Update user avatar.executor": "Run",
+    "Maven.jakarta-lab-solution [clean].executor": "Run",
+    "Maven.jakarta-lab-solution [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "lab-4",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/webapp/resources/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;h2&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.com.recipes.cuisine.entity" />
@@ -165,40 +185,40 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="requests | Create cuisine (Mahakam)" value="STOPPED" />
-              <entry key="requests | Create recipe with non-existing cuisine (404)" value="STOPPED" />
-              <entry key="requests | Get all cuisines" value="STOPPED" />
-              <entry key="requests | Get recipe by uuid (Bigos)" value="STOPPED" />
-              <entry key="requests | Get recipes by cuisine (Temerian)" value="STOPPED" />
+              <entry key="requests | Delete cuisine (Moroccan) - should cascade delete its recipes" value="STOPPED" />
+              <entry key="requests | Delete non-existing cuisine (404)" value="STOPPED" />
+              <entry key="requests | Get deleted cuisine (404)" value="STOPPED" />
+              <entry key="requests | Get updated cuisine (Scandinavian)" value="STOPPED" />
+              <entry key="requests | Update non-existing cuisine (404)" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requests | Get recipes by cuisine (Temerian)">
-    <configuration name="requests | Create cuisine (Mahakam)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create cuisine (Mahakam)" index="16" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.requests | Get all recipes for Polish cuisine">
+    <configuration name="requests | Create recipe under French cuisine" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create recipe under French cuisine" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Create recipe with non-existing cuisine (404)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Create recipe with non-existing cuisine (404)" index="25" runType="Run single request">
+    <configuration name="requests | Delete recipe (Krupnik, Polish)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Delete recipe (Krupnik, Polish)" index="10" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get all cuisines" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get all cuisines" index="14" runType="Run single request">
+    <configuration name="requests | Get all recipes for Polish cuisine" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get all recipes for Polish cuisine" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get recipe by uuid (Bigos)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get recipe by uuid (Bigos)" index="22" runType="Run single request">
+    <configuration name="requests | Get recipe by uuid within its cuisine (Bigos, Polish)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get recipe by uuid within its cuisine (Bigos, Polish)" index="7" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Get recipes by cuisine (Temerian)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Get recipes by cuisine (Temerian)" index="23" runType="Run single request">
+    <configuration name="requests | Update recipe (Zurek, Polish) - change title and servings" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/requests.http" executionIdentifier="Update recipe (Zurek, Polish) - change title and servings" index="9" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.requests | Get recipes by cuisine (Temerian)" />
-        <item itemvalue="HTTP Request.requests | Create recipe with non-existing cuisine (404)" />
-        <item itemvalue="HTTP Request.requests | Get all cuisines" />
-        <item itemvalue="HTTP Request.requests | Create cuisine (Mahakam)" />
-        <item itemvalue="HTTP Request.requests | Get recipe by uuid (Bigos)" />
+        <item itemvalue="HTTP Request.requests | Get all recipes for Polish cuisine" />
+        <item itemvalue="HTTP Request.requests | Delete recipe (Krupnik, Polish)" />
+        <item itemvalue="HTTP Request.requests | Update recipe (Zurek, Polish) - change title and servings" />
+        <item itemvalue="HTTP Request.requests | Create recipe under French cuisine" />
+        <item itemvalue="HTTP Request.requests | Get recipe by uuid within its cuisine (Bigos, Polish)" />
       </list>
     </recent_temporary>
   </component>

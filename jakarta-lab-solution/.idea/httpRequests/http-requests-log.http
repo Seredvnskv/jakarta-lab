@@ -1,3 +1,244 @@
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T194407.200.json
+
+###
+
+DELETE http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a04
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T194346.200.json
+
+###
+
+PUT http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a02
+Content-Type: application/json
+Content-Length: 336
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "authorId": "6b04e739-3251-4f8a-a962-5e1d8b1a592d",
+  "ingredients": ["fermented rye starter", "white sausage", "potatoes", "marjoram", "garlic", "hard-boiled egg"],
+  "title": "Zurek Deluxe",
+  "description": "Tangy fermented rye soup, now with extra sausage.",
+  "servings": 6,
+  "caloriesPerServing": 450,
+  "vegetarian": false
+}
+
+<> 2026-11-03T194336.200.json
+
+###
+
+POST http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0003/recipe
+Content-Type: application/json
+Content-Length: 290
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "authorId": "6b04e739-3251-4f8a-a962-5e1d8b1a592d",
+  "ingredients": ["snails", "garlic", "butter", "parsley", "white wine"],
+  "title": "Garlic Snail Stew",
+  "description": "A classic French escargot preparation.",
+  "servings": 2,
+  "caloriesPerServing": 410,
+  "vegetarian": false
+}
+
+<> 2026-11-03T194321.201.json
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe/a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a01
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T194258.200.json
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001/recipe
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T194247.200.json
+
+###
+
+DELETE http://localhost:9080/api/cuisine/00000000-0000-0000-0000-000000000000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0005
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+DELETE http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0005
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+PUT http://localhost:9080/api/cuisine/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Ghost",
+  "continent": "EUROPE",
+  "spicy": false
+}
+
+###
+
+PUT http://localhost:9080/api/cuisine/00000000-0000-0000-0000-000000000000
+Content-Type: application/json
+Content-Length: 64
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Ghost",
+  "continent": "EUROPE",
+  "spicy": false
+}
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0004
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191654.200.json
+
+###
+
+PUT http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0004
+Content-Type: application/json
+Content-Length: 68
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Scandinavian",
+  "continent": "ASIA",
+  "spicy": true
+}
+
+<> 2026-11-03T191616.200.json
+
+###
+
+GET http://localhost:9080/api/cuisine
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191547.200.json
+
+###
+
+POST http://localhost:9080/api/cuisine
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Mexican",
+  "continent": "NORTH_AMERICA",
+  "spicy": true
+}
+
+<> 2026-11-03T191527.201.json
+
+###
+
+GET http://localhost:9080/api/cuisine/abc
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/cuisine/00000000-0000-0000-0000-000000000000
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191510.200.json
+
+###
+
+GET http://localhost:9080/api/cuisine
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191502.200.json
+
+###
+
+GET http://localhost:9080/api/cuisine/d290f1ee-6c54-4b01-90e6-d701748f0001
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191138.500.txt
+
+###
+
+GET http://localhost:9080/api/cuisine
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-03T191107.500.txt
+
+###
+
 GET http://localhost:9080/api/servlet/recipes?cuisineId=d290f1ee-6c54-4b01-90e6-d701748f0001
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -252,207 +493,6 @@ User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
 Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 content-length: 0
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T205425.200.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T205420.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T205415.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T205343.200.png
-
-###
-
-POST http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-Content-Type: image/png
-Content-Length: 120261
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T191008.200.jpeg
-
-###
-
-PUT http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-Content-Type: image/jpeg
-Content-Length: 20830
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/jaskier.jpg
-
-###
-
-GET http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190959.200.jpeg
-
-###
-
-POST http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-Content-Type: image/jpeg
-Content-Length: 23133
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/geralt.jpg
-
-###
-
-GET http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-DELETE http://localhost:9080/api/servlet/users/439af2a7-9196-429e-a02d-aedc09b66f96/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190916.200.png
-
-###
-
-POST http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-Content-Type: image/png
-Content-Length: 120261
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-< C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/assets/triss.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190849.200.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190837.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190812.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T190603.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users/6b04e739-3251-4f8a-a962-5e1d8b1a592d/avatar
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T152145.200.png
-
-###
-
-GET http://localhost:9080/api/servlet/users/d1edfd91-3bf6-451b-8cfd-fed9b23f3278
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T025018.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T011459.200.json
-
-###
-
-GET http://localhost:9080/api/servlet/users
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-10-22T011419.500.html
 
 ###
 
