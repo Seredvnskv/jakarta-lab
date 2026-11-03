@@ -35,4 +35,7 @@ public class CuisineList implements Serializable {
         return "cuisines_view?faces-redirect=true&cuisineId=" + cuisine.id();
     }
 
+    public String addCuisine() {
+        return "cuisines_form?faces-redirect=true";
+    }
 }

@@ -34,6 +34,10 @@
                     <h:commandButton value="Delete" styleClass="btn btn-danger" action="#{cuisineList.deleteCuisine(cuisine)}"/>
                 </h:column>
             </h:dataTable>
+
+            <div class="actions">
+                <h:commandButton value="Add cuisine" styleClass="btn" action="#{cuisineList.addCuisine()}"/>
+            </div>
         </h:form>
     </ui:define>
 </ui:composition>

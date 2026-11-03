@@ -19,8 +19,9 @@
         <h:form id="recipeForm">
             <div class="card form-card">
                 <div class="field">
-                    <h:outputLabel for="title" value="Title *"/>
-                    <h:inputText id="title" value="#{recipeFormView.title}" required="true"/>
+                    <h:outputLabel for="title" value="Title"/>
+                    <h:inputText id="title" value="#{recipeFormView.title}" required="true" requiredMessage="Title is required."/>
+                    <h:message for="title"/>
                 </div>
 
                 <div class="field">
@@ -36,12 +37,22 @@
                 <div class="form-row">
                     <div class="field">
                         <h:outputLabel for="servings" value="Servings"/>
-                        <h:inputText id="servings" value="#{recipeFormView.servings}"/>
+                        <h:inputText id="servings" value="#{recipeFormView.servings}"
+                                     converterMessage="Servings must be a whole number."
+                                     validatorMessage="Servings must be between 1 and 50.">
+                            <f:validateLongRange minimum="1" maximum="50"/>
+                        </h:inputText>
+                        <h:message for="servings"/>
                     </div>
 
                     <div class="field">
                         <h:outputLabel for="calories" value="Calories per serving"/>
-                        <h:inputText id="calories" value="#{recipeFormView.caloriesPerServing}"/>
+                        <h:inputText id="calories" value="#{recipeFormView.caloriesPerServing}"
+                                     converterMessage="Calories must be a valid number."
+                                     validatorMessage="Calories must be between 1 and 5000.">
+                            <f:validateLongRange minimum="1" maximum="5000"/>
+                        </h:inputText>
+                        <h:message for="calories"/>
                     </div>
 
                     <div class="field">

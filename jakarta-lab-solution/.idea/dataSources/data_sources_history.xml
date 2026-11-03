@@ -1,12 +1,13 @@
 <DataSourcesHistory>
-  <DataSourceFromHistory isRemovedFromProject="false">
-    <data-source source="LOCAL" name="recipes" uuid="d260a901-584b-4b16-b8b8-82d5ed4eb833">
+  <DataSourceFromHistory isRemovedFromProject="true">
+    <data-source source="LOCAL" name="recipes" uuid="cc4fd2e2-a981-4ea9-9374-522e27adefb3">
       <database-info product="H2" version="2.3.232 (2024-08-11)" jdbc-version="4.3" driver-name="H2 JDBC Driver" driver-version="2.3.232 (2024-08-11)" dbms="H2" exact-version="2.3.232" exact-driver-version="2.3">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:file:/tmp/recipes;AUTO_SERVER=TRUE</jdbc-url>
       <jdbc-additional-properties>

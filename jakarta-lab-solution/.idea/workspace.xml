@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/core/data/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Region.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/dto/CreateCuisineDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/dto/CreateCuisineDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/dto/CuisineDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/dto/CuisineDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/mapper/CuisineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/mapper/CuisineMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/mapper/RecipeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/service/RecipeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/servlet/RecipeRestServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/servlet/RecipeRestServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/view/CuisineList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/view/CuisineList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/template.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisines_list.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisines_list.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/recipes/recipes_form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/recipes/recipes_form.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="lab-2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -77,74 +76,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.All in requests.executor": "Run",
-    "HTTP Request.requests | #1.executor": "Run",
-    "HTTP Request.requests | #4.executor": "Run",
-    "HTTP Request.requests | #6.executor": "Run",
-    "HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data.executor": "Run",
-    "HTTP Request.requests | Create avatar that already exists (409).executor": "Run",
-    "HTTP Request.requests | Create avatar with empty body (400).executor": "Run",
-    "HTTP Request.requests | Create avator of non-existing user ().executor": "Run",
-    "HTTP Request.requests | Create avator of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Create cuisine (Mahakam).executor": "Run",
-    "HTTP Request.requests | Create recipe with non-existing cuisine (404).executor": "Run",
-    "HTTP Request.requests | Create user avatar (200) - Geralt.executor": "Run",
-    "HTTP Request.requests | Create user avatar (201) - Geralt.executor": "Run",
-    "HTTP Request.requests | Create user avatar.executor": "Run",
-    "HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below).executor": "Run",
-    "HTTP Request.requests | Delete avatar (Geralt).executor": "Run",
-    "HTTP Request.requests | Delete avatar of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Delete avatar.executor": "Run",
-    "HTTP Request.requests | Delete deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Delete user (Jaskier).executor": "Run",
-    "HTTP Request.requests | Get all cuisines.executor": "Run",
-    "HTTP Request.requests | Get all recipes.executor": "Run",
-    "HTTP Request.requests | Get all users.executor": "Run",
-    "HTTP Request.requests | Get avatar of non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Get created avatar.executor": "Run",
-    "HTTP Request.requests | Get cuisine by uuid (Temerian).executor": "Run",
-    "HTTP Request.requests | Get deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Get deleted user (404) - Jaskier.executor": "Run",
-    "HTTP Request.requests | Get non-existing user (404).executor": "Run",
-    "HTTP Request.requests | Get recipe by uuid (Bigos).executor": "Run",
-    "HTTP Request.requests | Get recipes by cuisine (Temerian).executor": "Run",
-    "HTTP Request.requests | Get updated avatar.executor": "Run",
-    "HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor": "Run",
-    "HTTP Request.requests | Get user avatar (Triss).executor": "Run",
-    "HTTP Request.requests | Get user avatar.executor": "Run",
-    "HTTP Request.requests | Get user by uuid (Triss).executor": "Run",
-    "HTTP Request.requests | Get user by uuid.executor": "Run",
-    "HTTP Request.requests | Get user with invalid uuid (400).executor": "Run",
-    "HTTP Request.requests | Update deleted avatar (404).executor": "Run",
-    "HTTP Request.requests | Update user avatar - Geralt.executor": "Run",
-    "HTTP Request.requests | Update user avatar.executor": "Run",
-    "Maven.jakarta-lab-solution [clean].executor": "Run",
-    "Maven.jakarta-lab-solution [compile].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "lab-3",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/webapp/resources/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.All in requests.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar that already exists (409) - Triss already has one from seed data.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar that already exists (409).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avatar with empty body (400).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avator of non-existing user ().executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create avator of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create cuisine (Mahakam).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create recipe with non-existing cuisine (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create user avatar (200) - Geralt.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create user avatar (201) - Geralt.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Create user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar (Geralt - clears the seeded avatar for the create/update flow below).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar (Geralt).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Delete user (Jaskier).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get all cuisines.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get all recipes.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get all users.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get avatar of non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get created avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get cuisine by uuid (Temerian).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get deleted user (404) - Jaskier.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get non-existing user (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get recipe by uuid (Bigos).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get recipes by cuisine (Temerian).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get updated avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user avatar (Triss - seeded on startup).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user avatar (Triss).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user by uuid (Triss).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user by uuid.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Get user with invalid uuid (400).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Update deleted avatar (404).executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Update user avatar - Geralt.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.requests | Update user avatar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jakarta-lab-solution [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jakarta-lab-solution [compile].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab-3&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/webapp/resources/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.com.recipes.cuisine.entity" />
@@ -206,8 +205,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.27258.48" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.27258.48" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>

@@ -1,0 +1,39 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+    <ui:define name="title">Add cuisine</ui:define>
+
+    <ui:define name="content">
+        <h2>Add cuisine</h2>
+
+        <h:form>
+            <div class="card form-card">
+                <div class="field">
+                    <h:outputLabel for="name" value="Name"/>
+                    <h:inputText id="name" value="#{cuisineFormView.name}" required="true" requiredMessage="Title is required."/>
+                    <h:message for="title"/>
+                </div>
+
+                <div class="field">
+                    <h:outputLabel for="continent" value="Continent"/>
+                    <h:selectOneMenu id="continent" value="#{cuisineFormView.continent}">
+                        <f:selectItems value="#{cuisineFormView.continents()}" var="c" itemValue="#{c}" itemLabel="#{c}"/>
+                    </h:selectOneMenu>
+                </div>
+
+                <div class="checkbox-field">
+                    <h:selectBooleanCheckbox id="spicy" value="#{cuisineFormView.spicy}"/>
+                    <h:outputLabel for="spicy" value="Spicy"/>
+                </div>
+            </div>
+
+            <div class="actions">
+                <h:commandButton value="Save" styleClass="btn" action="#{cuisineFormView.save()}"/>
+                <h:commandButton value="Cancel" styleClass="btn btn-secondary" action="#{cuisineFormView.cancel()}" immediate="true"/>
+            </div>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
