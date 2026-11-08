@@ -1,5 +1,7 @@
 package org.com.recipes.recipe.view;
 
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
@@ -111,8 +113,15 @@ public class RecipeFormView implements Serializable {
     }
 
     public String save() {
+        Set<Ingredient> ingredients = parseIngredients(ingredientsText);
+        if (ingredients.isEmpty()) {
+            FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
+                    "Provide at least one valid ingredient, one per line, in the format: name, quantity, unit.", null));
+            return null;
+        }
+
         CreateRecipeDto dto = new CreateRecipeDto(title, description, cuisine.id(), authorId,
-                parseIngredients(ingredientsText), servings, calories, vegetarian);
+                ingredients, servings, calories, vegetarian);
         RecipeDto saved = isEditing()
                 ? recipeService.updateRecipe(RecipeId.of(id), dto)
                 : recipeService.createRecipe(dto);

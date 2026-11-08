@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0705eba8-de38-4c6f-87f0-c51f4055d177" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/entity/Continent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Continent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/Cuisine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/cuisine/entity/Cuisine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/entity/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/user/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/view/RecipeFormView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/com/recipes/recipe/view/RecipeFormView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisine-details-view.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisine-details-view.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisine-form-view.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cuisines/cuisine-form-view.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/recipes/recipe-form-view.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/recipes/recipe-form-view.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +225,7 @@
       <workItem from="1794168157954" duration="7039000" />
       <workItem from="1794175392013" duration="8000" />
       <workItem from="1794175414248" duration="4799000" />
-      <workItem from="1794180254181" duration="872000" />
+      <workItem from="1794180254181" duration="2109000" />
     </task>
     <servers />
   </component>

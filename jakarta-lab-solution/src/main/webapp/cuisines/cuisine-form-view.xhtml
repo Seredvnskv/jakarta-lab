@@ -15,17 +15,25 @@
 
     <ui:define name="content">
         <h:form>
+            <h:messages globalOnly="true" styleClass="alert alert-danger" layout="table"/>
+
             <div class="mb-3">
                 <h:outputLabel for="name" value="Name" styleClass="form-label"/>
-                <h:inputText id="name" value="#{cuisineFormView.name}" styleClass="form-control" required="true"/>
+                <h:inputText id="name" value="#{cuisineFormView.name}" styleClass="form-control" required="true"
+                             requiredMessage="Name is required.">
+                    <f:validateLength minimum="2" maximum="50"/>
+                </h:inputText>
+                <h:message for="name" styleClass="text-danger small d-block"/>
             </div>
 
             <div class="mb-3">
                 <h:outputLabel for="continent" value="Continent" styleClass="form-label"/>
-                <h:selectOneMenu id="continent" value="#{cuisineFormView.continent}" styleClass="form-select" required="true">
-                    <f:selectItem itemLabel="-- select continent --" itemValue="" noSelectionOption="true"/>
+                <h:selectOneMenu id="continent" value="#{cuisineFormView.continent}" styleClass="form-select" required="true"
+                                  requiredMessage="Select a continent.">
+                    <f:selectItem itemLabel="Select Continent" itemValue="" noSelectionOption="true"/>
                     <f:selectItems value="#{cuisineFormView.continentOptions}" var="c" itemValue="#{c.name()}" itemLabel="#{c}"/>
                 </h:selectOneMenu>
+                <h:message for="continent" styleClass="text-danger small d-block"/>
             </div>
 
             <div class="mb-3 form-check">

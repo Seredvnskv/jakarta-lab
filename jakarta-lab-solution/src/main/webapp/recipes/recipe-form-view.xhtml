@@ -16,42 +16,62 @@
 
     <ui:define name="content">
         <h:form>
+            <h:messages globalOnly="true" styleClass="alert alert-danger" layout="table"/>
+
             <div class="mb-3">
                 <h:outputLabel for="title" value="Title" styleClass="form-label"/>
-                <h:inputText id="title" value="#{recipeFormView.title}" styleClass="form-control" required="true"/>
+                <h:inputText id="title" value="#{recipeFormView.title}" styleClass="form-control" required="true"
+                             requiredMessage="Title is required.">
+                    <f:validateLength minimum="2" maximum="100"/>
+                </h:inputText>
+                <h:message for="title" styleClass="text-danger small d-block"/>
             </div>
 
             <div class="mb-3">
                 <h:outputLabel for="description" value="Description" styleClass="form-label"/>
-                <h:inputTextarea id="description" value="#{recipeFormView.description}" styleClass="form-control" rows="2"/>
+                <h:inputTextarea id="description" value="#{recipeFormView.description}" styleClass="form-control" rows="2">
+                    <f:validateLength maximum="200"/>
+                </h:inputTextarea>
+                <h:message for="description" styleClass="text-danger small d-block"/>
             </div>
 
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <h:outputLabel for="cuisine" value="Cuisine" styleClass="form-label"/>
                     <h:selectOneMenu id="cuisine" value="#{recipeFormView.cuisine}" styleClass="form-select"
-                                      converter="cuisineConverter" required="true">
-                        <f:selectItem itemLabel="-- select cuisine --" noSelectionOption="true"/>
+                                      converter="cuisineConverter" required="true" requiredMessage="Select a cuisine.">
+                        <f:selectItem itemLabel="Select Cuisine" noSelectionOption="true"/>
                         <f:selectItems value="#{recipeFormView.cuisines}" var="c" itemValue="#{c}" itemLabel="#{c.name} (#{c.continent})"/>
                     </h:selectOneMenu>
+                    <h:message for="cuisine" styleClass="text-danger small d-block"/>
                 </div>
                 <div class="col-md-6 mb-3">
                     <h:outputLabel for="author" value="Author" styleClass="form-label"/>
-                    <h:selectOneMenu id="author" value="#{recipeFormView.authorId}" styleClass="form-select" required="true">
-                        <f:selectItem itemLabel="-- select author --" itemValue="" noSelectionOption="true"/>
+                    <h:selectOneMenu id="author" value="#{recipeFormView.authorId}" styleClass="form-select" required="true"
+                                      requiredMessage="Select an author.">
+                        <f:selectItem itemLabel="Select Author" itemValue="" noSelectionOption="true"/>
                         <f:selectItems value="#{recipeFormView.authors}" var="u" itemValue="#{u.id}" itemLabel="#{u.username}"/>
                     </h:selectOneMenu>
+                    <h:message for="author" styleClass="text-danger small d-block"/>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-4 mb-3">
                     <h:outputLabel for="servings" value="Servings" styleClass="form-label"/>
-                    <h:inputText id="servings" value="#{recipeFormView.servings}" styleClass="form-control" required="true"/>
+                    <h:inputText id="servings" value="#{recipeFormView.servings}" styleClass="form-control" required="true"
+                                 requiredMessage="Servings is required.">
+                        <f:validateLongRange minimum="1" maximum="100"/>
+                    </h:inputText>
+                    <h:message for="servings" styleClass="text-danger small d-block"/>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h:outputLabel for="calories" value="Calories" styleClass="form-label"/>
-                    <h:inputText id="calories" value="#{recipeFormView.calories}" styleClass="form-control" required="true"/>
+                    <h:inputText id="calories" value="#{recipeFormView.calories}" styleClass="form-control" required="true"
+                                 requiredMessage="Calories is required.">
+                        <f:validateLongRange minimum="0" maximum="4000"/>
+                    </h:inputText>
+                    <h:message for="calories" styleClass="text-danger small d-block"/>
                 </div>
                 <div class="col-md-4 mb-3 d-flex align-items-center">
                     <div class="form-check mt-4">
@@ -64,6 +84,7 @@
             <div class="mb-3">
                 <h:outputLabel for="ingredients" value="Ingredients (one per line: name, quantity, unit)" styleClass="form-label"/>
                 <h:inputTextarea id="ingredients" value="#{recipeFormView.ingredientsText}" styleClass="form-control" rows="5"/>
+                <h:message for="ingredients" styleClass="text-danger small d-block"/>
             </div>
 
             <div class="d-flex gap-2">
