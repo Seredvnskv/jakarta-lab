@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "1ab9cbe5-f058-4d5d-ae7d-14f1ba815566",
+      "recipes": [
+        {
+          "author": "Geralt",
+          "calories": 650,
+          "id": "d2edf752-440c-42bd-b801-b8beedb62dfb",
+          "servings": 4,
+          "title": "Tacos al Pastor",
+          "vegetarian": false
+        },
+        {
+          "author": "Geralt",
+          "calories": 750,
+          "id": "13ceda1a-e5fb-4e22-bba5-52d3fff8d007",
+          "servings": 6,
+          "title": "Bigos",
+          "vegetarian": false
+        }
+      ],
+      "registrationDate": "2025-06-05",
+      "role": "USER",
+      "username": "Geralt"
+    },
+    {
+      "id": "ae465760-2429-4dee-9867-1af7997c01de",
+      "recipes": [
+        {
+          "author": "Triss",
+          "calories": 800,
+          "id": "d2e6ebfd-a4c3-4073-848d-b95c1acd1a76",
+          "servings": 4,
+          "title": "Margherita Pizza",
+          "vegetarian": true
+        },
+        {
+          "author": "Triss",
+          "calories": 700,
+          "id": "1c8dc21a-78f3-4464-955b-5d1a149f33a7",
+          "servings": 3,
+          "title": "Green Curry",
+          "vegetarian": false
+        }
+      ],
+      "registrationDate": "2023-01-10",
+      "role": "ADMIN",
+      "username": "Triss"
+    },
+    {
+      "id": "c7355c2b-1106-4d4f-8c4b-6df1f77563b6",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 650,
+          "id": "13590e71-4be7-44d5-a8de-e5161266e678",
+          "servings": 2,
+          "title": "Ramen",
+          "vegetarian": false
+        },
+        {
+          "author": "Ciri",
+          "calories": 550,
+          "id": "4af569e0-ae4e-4635-b634-e17f145101ef",
+          "servings": 2,
+          "title": "Pad Thai",
+          "vegetarian": false
+        }
+      ],
+      "registrationDate": "2024-03-22",
+      "role": "USER",
+      "username": "Ciri"
+    },
+    {
+      "id": "44948556-104b-4c04-b026-d7e1031ed89b",
+      "recipes": [
+        {
+          "author": "Zoltan",
+          "calories": 600,
+          "id": "77c23b70-55c7-46a8-bf97-bed203b36ef5",
+          "servings": 4,
+          "title": "Pierogi ruskie",
+          "vegetarian": true
+        }
+      ],
+      "registrationDate": "2026-06-05",
+      "role": "USER",
+      "username": "Zoltan"
+    }
+  ],
+  "size": 4,
+  "time": "2026-11-08T20:40:26.0844516"
+}

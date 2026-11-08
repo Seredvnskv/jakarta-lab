@@ -1,0 +1,88 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:f="jakarta.faces.core"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{cuisineDetailsView.id}"/>
+        <f:viewAction action="#{cuisineDetailsView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{cuisineDetailsView.cuisine.name}</ui:define>
+    <ui:define name="heading">#{cuisineDetailsView.cuisine.name}</ui:define>
+    <ui:define name="subheading">#{cuisineDetailsView.cuisine.continent.toString()}</ui:define>
+
+    <ui:define name="content">
+        <div class="mb-3">
+            <h:form>
+                <h:commandButton value="Back to cuisines" styleClass="btn btn-outline-success btn-sm" action="#{cuisineDetailsView.back()}"/>
+            </h:form>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2 class="h5 mb-3">
+                        Details
+                        <h:panelGroup styleClass="badge bg-danger ms-2" rendered="#{cuisineDetailsView.cuisine.spicy}">Spicy</h:panelGroup>
+                    </h2>
+                    <div class="d-flex gap-2">
+                        <h:link outcome="/cuisines/cuisine-form-view" styleClass="btn btn-outline-primary btn-sm">
+                            <f:param name="id" value="#{cuisineDetailsView.cuisine.id}"/>
+                            Edit
+                        </h:link>
+                        <h:form>
+                            <h:commandButton value="Delete" styleClass="btn btn-outline-danger btn-sm" action="#{cuisineDetailsView.delete()}"/>
+                        </h:form>
+                    </div>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Continent:
+                        <span>#{cuisineDetailsView.cuisine.continent}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h5 mb-0">Recipes</h2>
+            <h:link outcome="/recipes/recipe-form-view" styleClass="btn btn-success btn-sm">
+                <f:param name="cuisineId" value="#{cuisineDetailsView.cuisine.id}"/>
+                Add recipe
+            </h:link>
+        </div>
+        <h:form>
+            <ul class="list-group">
+                <ui:repeat value="#{cuisineDetailsView.cuisine.recipes}" var="recipe">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start gap-3">
+                            <div>
+                                <h3 class="h6 mb-1">
+                                    #{recipe.title}
+                                    <h:panelGroup styleClass="badge bg-success ms-2" rendered="#{recipe.vegetarian}">Vegetarian</h:panelGroup>
+                                </h3>
+                                <p class="mb-0 small text-muted">
+                                    Author: #{recipe.author} &#183; Servings: #{recipe.servings} &#183; Calories: #{recipe.calories}
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <h:link outcome="/recipes/recipe-form-view" styleClass="btn btn-outline-primary btn-sm">
+                                    <f:param name="id" value="#{recipe.id}"/>
+                                    Edit
+                                </h:link>
+                                <h:commandButton value="Delete" styleClass="btn btn-outline-danger btn-sm"
+                                                  action="#{cuisineDetailsView.deleteRecipe(recipe.id)}"/>
+                            </div>
+                        </div>
+                    </li>
+                </ui:repeat>
+            </ul>
+            <h:panelGroup layout="block" styleClass="text-muted mt-3" rendered="#{empty cuisineDetailsView.cuisine.recipes}">
+                No recipes in this cuisine yet.
+            </h:panelGroup>
+        </h:form>
+    </ui:define>
+</ui:composition>

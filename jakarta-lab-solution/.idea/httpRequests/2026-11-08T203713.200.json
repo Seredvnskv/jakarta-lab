@@ -1,0 +1,102 @@
+{
+  "items": [
+    {
+      "continent": "EUROPE",
+      "id": "873ae588-e5e2-4658-ab63-87e20c8b8700",
+      "name": "Polish",
+      "recipes": [
+        {
+          "author": "Zoltan",
+          "calories": 600,
+          "id": "77c23b70-55c7-46a8-bf97-bed203b36ef5",
+          "servings": 4,
+          "title": "Pierogi ruskie",
+          "vegetarian": true
+        },
+        {
+          "author": "Geralt",
+          "calories": 750,
+          "id": "13ceda1a-e5fb-4e22-bba5-52d3fff8d007",
+          "servings": 6,
+          "title": "Bigos",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "EUROPE",
+      "id": "3c860a91-371d-428d-9c31-41a20dd5e0b3",
+      "name": "Italian",
+      "recipes": [
+        {
+          "author": "Triss",
+          "calories": 800,
+          "id": "d2e6ebfd-a4c3-4073-848d-b95c1acd1a76",
+          "servings": 4,
+          "title": "Margherita Pizza",
+          "vegetarian": true
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "AMERICA",
+      "id": "0dbb81d9-9eea-4fc9-9542-d0923b177876",
+      "name": "Mexican",
+      "recipes": [
+        {
+          "author": "Geralt",
+          "calories": 650,
+          "id": "d2edf752-440c-42bd-b801-b8beedb62dfb",
+          "servings": 4,
+          "title": "Tacos al Pastor",
+          "vegetarian": false
+        }
+      ],
+      "spicy": true
+    },
+    {
+      "continent": "ASIA",
+      "id": "fe2bfab6-5795-4f08-888b-a5594f390459",
+      "name": "Thai",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 550,
+          "id": "4af569e0-ae4e-4635-b634-e17f145101ef",
+          "servings": 2,
+          "title": "Pad Thai",
+          "vegetarian": false
+        },
+        {
+          "author": "Triss",
+          "calories": 700,
+          "id": "1c8dc21a-78f3-4464-955b-5d1a149f33a7",
+          "servings": 3,
+          "title": "Green Curry",
+          "vegetarian": false
+        }
+      ],
+      "spicy": true
+    },
+    {
+      "continent": "ASIA",
+      "id": "7faef4d5-4da8-4608-84b5-9314b5bdc9fd",
+      "name": "Japanese",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 650,
+          "id": "13590e71-4be7-44d5-a8de-e5161266e678",
+          "servings": 2,
+          "title": "Ramen",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    }
+  ],
+  "size": 5,
+  "time": "2026-11-08T20:37:13.729181"
+}

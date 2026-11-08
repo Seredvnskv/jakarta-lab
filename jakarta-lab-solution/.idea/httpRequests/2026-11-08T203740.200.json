@@ -1,0 +1,24 @@
+{
+  "continent": "EUROPE",
+  "id": "873ae588-e5e2-4658-ab63-87e20c8b8700",
+  "name": "Polish",
+  "recipes": [
+    {
+      "author": "Zoltan",
+      "calories": 600,
+      "id": "77c23b70-55c7-46a8-bf97-bed203b36ef5",
+      "servings": 4,
+      "title": "Pierogi ruskie",
+      "vegetarian": true
+    },
+    {
+      "author": "Geralt",
+      "calories": 750,
+      "id": "13ceda1a-e5fb-4e22-bba5-52d3fff8d007",
+      "servings": 6,
+      "title": "Bigos",
+      "vegetarian": false
+    }
+  ],
+  "spicy": false
+}

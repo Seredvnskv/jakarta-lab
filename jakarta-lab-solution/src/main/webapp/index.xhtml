@@ -1,0 +1,41 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <ui:define name="title">Home</ui:define>
+    <ui:define name="heading">Welcome to Recipes App</ui:define>
+    <ui:define name="subheading">Browse cuisines, recipes and authors</ui:define>
+
+    <ui:define name="content">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Cuisines</h2>
+                        <p class="card-text">World cuisines grouped by continent.</p>
+                        <h:link outcome="/cuisines/cuisine-list-view" styleClass="btn btn-dark">View cuisines</h:link>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Recipes</h2>
+                        <p class="card-text">All recipes added in the application.</p>
+                        <h:link outcome="/recipes/recipe-list-view" styleClass="btn btn-dark">View recipes</h:link>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title h5">Users</h2>
+                        <p class="card-text">Authors of recipes registered in the application.</p>
+                        <h:link outcome="/users/user-list-view" styleClass="btn btn-dark">View users</h:link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,17 @@
+{
+  "caloriesPerServing": 450.0,
+  "creationDate": "2026-11-03",
+  "cuisine": "Polish",
+  "description": "Tangy fermented rye soup, now with extra sausage.",
+  "ingredients": [
+    "fermented rye starter",
+    "white sausage",
+    "potatoes",
+    "marjoram",
+    "garlic",
+    "hard-boiled egg"
+  ],
+  "servings": 6,
+  "title": "Zurek Deluxe",
+  "vegetarian": false
+}

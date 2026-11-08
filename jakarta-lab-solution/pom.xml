@@ -21,7 +21,7 @@
         <!-- biblioteki -->
         <lombok.version>1.18.46</lombok.version>
         <annotations.version>26.1.0</annotations.version>
-        <h2.version>2.4.240</h2.version> <!-- na później, lab z bazą danych -->
+        <h2.version>2.4.240</h2.version>
 
         <!-- testy -->
         <junit-jupiter.version>6.1.3</junit-jupiter.version>
@@ -40,31 +40,30 @@
     </properties>
 
     <dependencies>
-        <!-- Jakarta EE - dostarcza serwer -->
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-web-api</artifactId>
             <version>${jakartaee-api.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- Lombok - tylko podczas kompilacji -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- adnotacje @NotNull/@Nullable od JetBrains -->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>${annotations.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- testy -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -111,6 +110,9 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${maven-war-plugin.version}</version>
+                    <configuration>
+                        <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -136,7 +138,6 @@
         </pluginManagement>
 
         <plugins>
-            <!-- kompilacja + przetwarzanie adnotacji Lomboka -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -151,13 +152,11 @@
                 </configuration>
             </plugin>
 
-            <!-- pakowanie do .war -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
             </plugin>
 
-            <!-- testy integracyjne (*IT.java) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -171,7 +170,6 @@
                 </executions>
             </plugin>
 
-            <!-- serwer Open Liberty (mvn liberty:dev) -->
             <plugin>
                 <groupId>io.openliberty.tools</groupId>
                 <artifactId>liberty-maven-plugin</artifactId>
@@ -182,6 +180,15 @@
                         <version>${liberty.runtime.version}</version>
                         <type>zip</type>
                     </runtimeArtifact>
+                    <copyDependencies>
+                        <dependencyGroup>
+                            <location>${project.build.directory}/liberty/wlp/usr/shared/resources/h2</location>
+                            <dependency>
+                                <groupId>com.h2database</groupId>
+                                <artifactId>h2</artifactId>
+                            </dependency>
+                        </dependencyGroup>
+                    </copyDependencies>
                 </configuration>
             </plugin>
         </plugins>

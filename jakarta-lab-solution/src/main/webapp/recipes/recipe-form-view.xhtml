@@ -1,0 +1,75 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:f="jakarta.faces.core"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{recipeFormView.id}"/>
+        <f:viewParam name="cuisineId" value="#{recipeFormView.presetCuisineId}"/>
+        <f:viewAction action="#{recipeFormView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{recipeFormView.editing ? 'Edit recipe' : 'New recipe'}</ui:define>
+    <ui:define name="heading">#{recipeFormView.editing ? 'Edit recipe' : 'New recipe'}</ui:define>
+    <ui:define name="subheading">Fill in the recipe details</ui:define>
+
+    <ui:define name="content">
+        <h:form>
+            <div class="mb-3">
+                <h:outputLabel for="title" value="Title" styleClass="form-label"/>
+                <h:inputText id="title" value="#{recipeFormView.title}" styleClass="form-control" required="true"/>
+            </div>
+
+            <div class="mb-3">
+                <h:outputLabel for="description" value="Description" styleClass="form-label"/>
+                <h:inputTextarea id="description" value="#{recipeFormView.description}" styleClass="form-control" rows="2"/>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h:outputLabel for="cuisine" value="Cuisine" styleClass="form-label"/>
+                    <h:selectOneMenu id="cuisine" value="#{recipeFormView.cuisine}" styleClass="form-select"
+                                      converter="cuisineConverter" required="true">
+                        <f:selectItem itemLabel="-- select cuisine --" noSelectionOption="true"/>
+                        <f:selectItems value="#{recipeFormView.cuisines}" var="c" itemValue="#{c}" itemLabel="#{c.name} (#{c.continent})"/>
+                    </h:selectOneMenu>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h:outputLabel for="author" value="Author" styleClass="form-label"/>
+                    <h:selectOneMenu id="author" value="#{recipeFormView.authorId}" styleClass="form-select" required="true">
+                        <f:selectItem itemLabel="-- select author --" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{recipeFormView.authors}" var="u" itemValue="#{u.id}" itemLabel="#{u.username}"/>
+                    </h:selectOneMenu>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h:outputLabel for="servings" value="Servings" styleClass="form-label"/>
+                    <h:inputText id="servings" value="#{recipeFormView.servings}" styleClass="form-control" required="true"/>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h:outputLabel for="calories" value="Calories" styleClass="form-label"/>
+                    <h:inputText id="calories" value="#{recipeFormView.calories}" styleClass="form-control" required="true"/>
+                </div>
+                <div class="col-md-4 mb-3 d-flex align-items-center">
+                    <div class="form-check mt-4">
+                        <h:selectBooleanCheckbox id="vegetarian" value="#{recipeFormView.vegetarian}" styleClass="form-check-input"/>
+                        <h:outputLabel for="vegetarian" value="Vegetarian" styleClass="form-check-label"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <h:outputLabel for="ingredients" value="Ingredients (one per line: name, quantity, unit)" styleClass="form-label"/>
+                <h:inputTextarea id="ingredients" value="#{recipeFormView.ingredientsText}" styleClass="form-control" rows="5"/>
+            </div>
+
+            <div class="d-flex gap-2">
+                <h:commandButton value="Save" styleClass="btn btn-success" action="#{recipeFormView.save()}"/>
+                <h:commandButton value="Cancel" styleClass="btn btn-outline-secondary" action="#{recipeFormView.cancel()}" immediate="true"/>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>

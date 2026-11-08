@@ -1,0 +1,211 @@
+GET http://localhost:9080/api/cuisines/not-uuid
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210916.400.txt
+
+###
+
+GET http://localhost:9080/api/cuisines/not-a-uuid
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210856.400.txt
+
+###
+
+GET http://localhost:9080/api/cuisines/99999999-9999-9999-9999-999999999999
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+PUT http://localhost:9080/api/recipes/756d2b00-b619-4955-a58b-cfa44534ea88
+Content-Type: application/json
+Content-Length: 347
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Pierogi ruskie (updated)",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+  "ingredients": [
+    { "name": "Potato", "quantity": 500, "unit": "g" },
+    { "name": "Cottage cheese", "quantity": 250, "unit": "g" }
+  ],
+  "servings": 5,
+  "calories": 650,
+  "vegetarian": true
+}
+
+###
+
+DELETE http://localhost:9080/api/recipes/756d2b00-b619-4955-a58b-cfa44534ea88
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/recipes/756d2b00-b619-4955-a58b-cfa44534ea88
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210834.200.json
+
+###
+
+PUT http://localhost:9080/api/recipes/756d2b00-b619-4955-a58b-cfa44534ea88
+Content-Type: application/json
+Content-Length: 347
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Pierogi ruskie (updated)",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+  "ingredients": [
+    { "name": "Potato", "quantity": 500, "unit": "g" },
+    { "name": "Cottage cheese", "quantity": 250, "unit": "g" }
+  ],
+  "servings": 5,
+  "calories": 650,
+  "vegetarian": true
+}
+
+<> 2026-11-08T210828.200.json
+
+###
+
+GET http://localhost:9080/api/recipes/756d2b00-b619-4955-a58b-cfa44534ea88
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210809.200.json
+
+###
+
+POST http://localhost:9080/api/recipes
+Content-Type: application/json
+Content-Length: 330
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Pierogi ruskie",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+  "ingredients": [
+    { "name": "Potato", "quantity": 400, "unit": "g" },
+    { "name": "Twaróg", "quantity": 200, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 600,
+  "vegetarian": true
+}
+
+<> 2026-11-08T210751.201.json
+
+###
+
+GET http://localhost:9080/api/recipes
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210702.200.json
+
+###
+
+GET http://localhost:9080/api/users/0ceb983a-1529-40c7-9d83-dc29acae7b55
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210651.200.json
+
+###
+
+GET http://localhost:9080/api/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210646.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines/01b14723-fe2a-4bd6-a63e-3cdc5c34df7d
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210639.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T210634.200.json
+
+###
+
+GET http://localhost:9080/api/recipes
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T204119.200.json
+
+###
+
+GET http://localhost:9080/api/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T204026.200.json
+
+###
+
+GET http://localhost:9080/api/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T203800.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines/873ae588-e5e2-4658-ab63-87e20c8b8700
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T203740.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-08T203713.200.json
+
+###
+

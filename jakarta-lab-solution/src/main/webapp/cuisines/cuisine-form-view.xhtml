@@ -1,0 +1,42 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:f="jakarta.faces.core"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{cuisineFormView.id}"/>
+        <f:viewAction action="#{cuisineFormView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{cuisineFormView.editing ? 'Edit cuisine' : 'New cuisine'}</ui:define>
+    <ui:define name="heading">#{cuisineFormView.editing ? 'Edit cuisine' : 'New cuisine'}</ui:define>
+    <ui:define name="subheading">Fill in the cuisine details</ui:define>
+
+    <ui:define name="content">
+        <h:form>
+            <div class="mb-3">
+                <h:outputLabel for="name" value="Name" styleClass="form-label"/>
+                <h:inputText id="name" value="#{cuisineFormView.name}" styleClass="form-control" required="true"/>
+            </div>
+
+            <div class="mb-3">
+                <h:outputLabel for="continent" value="Continent" styleClass="form-label"/>
+                <h:selectOneMenu id="continent" value="#{cuisineFormView.continent}" styleClass="form-select" required="true">
+                    <f:selectItem itemLabel="-- select continent --" itemValue="" noSelectionOption="true"/>
+                    <f:selectItems value="#{cuisineFormView.continentOptions}" var="c" itemValue="#{c.name()}" itemLabel="#{c}"/>
+                </h:selectOneMenu>
+            </div>
+
+            <div class="mb-3 form-check">
+                <h:selectBooleanCheckbox id="spicy" value="#{cuisineFormView.spicy}" styleClass="form-check-input"/>
+                <h:outputLabel for="spicy" value="Spicy" styleClass="form-check-label"/>
+            </div>
+
+            <div class="d-flex gap-2">
+                <h:commandButton value="Save" styleClass="btn btn-success" action="#{cuisineFormView.save()}"/>
+                <h:commandButton value="Cancel" styleClass="btn btn-outline-secondary" action="#{cuisineFormView.cancel()}" immediate="true"/>
+            </div>
+        </h:form>
+    </ui:define>
+</ui:composition>

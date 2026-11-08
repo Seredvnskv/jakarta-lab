@@ -1,0 +1,195 @@
+{
+  "items": [
+    {
+      "author": "1ab9cbe5-f058-4d5d-ae7d-14f1ba815566",
+      "calories": 750,
+      "createdAt": "2026-11-08T20:36:43.806296",
+      "cuisine": "873ae588-e5e2-4658-ab63-87e20c8b8700",
+      "id": "13ceda1a-e5fb-4e22-bba5-52d3fff8d007",
+      "ingredients": [
+        {
+          "name": "Dried plums",
+          "quantity": 50.0,
+          "unit": "g"
+        },
+        {
+          "name": "Sauerkraut",
+          "quantity": 500.0,
+          "unit": "g"
+        },
+        {
+          "name": "Kielbasa",
+          "quantity": 300.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 6,
+      "title": "Bigos",
+      "vegetarian": false
+    },
+    {
+      "author": "44948556-104b-4c04-b026-d7e1031ed89b",
+      "calories": 600,
+      "createdAt": "2026-11-08T20:36:43.805296",
+      "cuisine": "873ae588-e5e2-4658-ab63-87e20c8b8700",
+      "id": "77c23b70-55c7-46a8-bf97-bed203b36ef5",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "quantity": 400.0,
+          "unit": "g"
+        },
+        {
+          "name": "Twaróg",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Onion",
+          "quantity": 100.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Pierogi ruskie",
+      "vegetarian": true
+    },
+    {
+      "author": "1ab9cbe5-f058-4d5d-ae7d-14f1ba815566",
+      "calories": 650,
+      "createdAt": "2026-11-08T20:36:43.804297",
+      "cuisine": "0dbb81d9-9eea-4fc9-9542-d0923b177876",
+      "id": "d2edf752-440c-42bd-b801-b8beedb62dfb",
+      "ingredients": [
+        {
+          "name": "Tortilla",
+          "quantity": 8.0,
+          "unit": "pcs"
+        },
+        {
+          "name": "Pork",
+          "quantity": 500.0,
+          "unit": "g"
+        },
+        {
+          "name": "Pineapple",
+          "quantity": 100.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Tacos al Pastor",
+      "vegetarian": false
+    },
+    {
+      "author": "ae465760-2429-4dee-9867-1af7997c01de",
+      "calories": 800,
+      "createdAt": "2026-11-08T20:36:43.798297",
+      "cuisine": "3c860a91-371d-428d-9c31-41a20dd5e0b3",
+      "id": "d2e6ebfd-a4c3-4073-848d-b95c1acd1a76",
+      "ingredients": [
+        {
+          "name": "Basil",
+          "quantity": 5.0,
+          "unit": "leaves"
+        },
+        {
+          "name": "Mozzarella",
+          "quantity": 150.0,
+          "unit": "g"
+        },
+        {
+          "name": "Tomato",
+          "quantity": 200.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Margherita Pizza",
+      "vegetarian": true
+    },
+    {
+      "author": "c7355c2b-1106-4d4f-8c4b-6df1f77563b6",
+      "calories": 650,
+      "createdAt": "2026-11-08T20:36:43.807297",
+      "cuisine": "7faef4d5-4da8-4608-84b5-9314b5bdc9fd",
+      "id": "13590e71-4be7-44d5-a8de-e5161266e678",
+      "ingredients": [
+        {
+          "name": "Noodles",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Soy sauce",
+          "quantity": 30.0,
+          "unit": "ml"
+        },
+        {
+          "name": "Pork belly",
+          "quantity": 150.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 2,
+      "title": "Ramen",
+      "vegetarian": false
+    },
+    {
+      "author": "c7355c2b-1106-4d4f-8c4b-6df1f77563b6",
+      "calories": 550,
+      "createdAt": "2026-11-08T20:36:43.804297",
+      "cuisine": "fe2bfab6-5795-4f08-888b-a5594f390459",
+      "id": "4af569e0-ae4e-4635-b634-e17f145101ef",
+      "ingredients": [
+        {
+          "name": "Shrimp",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Peanuts",
+          "quantity": 50.0,
+          "unit": "g"
+        },
+        {
+          "name": "Rice noodles",
+          "quantity": 250.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 2,
+      "title": "Pad Thai",
+      "vegetarian": false
+    },
+    {
+      "author": "ae465760-2429-4dee-9867-1af7997c01de",
+      "calories": 700,
+      "createdAt": "2026-11-08T20:36:43.805296",
+      "cuisine": "fe2bfab6-5795-4f08-888b-a5594f390459",
+      "id": "1c8dc21a-78f3-4464-955b-5d1a149f33a7",
+      "ingredients": [
+        {
+          "name": "Coconut milk",
+          "quantity": 400.0,
+          "unit": "ml"
+        },
+        {
+          "name": "Green curry paste",
+          "quantity": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Chicken",
+          "quantity": 300.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 3,
+      "title": "Green Curry",
+      "vegetarian": false
+    }
+  ],
+  "size": 7,
+  "time": "2026-11-08T20:41:19.4134133"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "0ceb983a-1529-40c7-9d83-dc29acae7b55",
+  "recipes": [
+    {
+      "author": "Triss",
+      "calories": 700,
+      "id": "7540040c-720a-490c-affc-95f27c0c6c18",
+      "servings": 3,
+      "title": "Green Curry",
+      "vegetarian": false
+    },
+    {
+      "author": "Triss",
+      "calories": 800,
+      "id": "6d47df28-0f22-430f-bdb1-10025339892e",
+      "servings": 4,
+      "title": "Margherita Pizza",
+      "vegetarian": true
+    }
+  ],
+  "registrationDate": "2023-01-10",
+  "role": "ADMIN",
+  "username": "Triss"
+}

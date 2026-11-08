@@ -1,0 +1,136 @@
+[
+  {
+    "caloriesPerServing": 480.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Zerrikanian",
+    "description": "Fire-charred lamb skewers rubbed with exotic Zerrikanian spices.",
+    "ingredients": [
+      "lamb shoulder",
+      "cumin",
+      "chili",
+      "yogurt",
+      "saffron",
+      "lemon"
+    ],
+    "servings": 4,
+    "title": "Zerrikanian Spiced Lamb Skewers",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 420.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Redanian",
+    "description": "Tangy fermented rye soup served in a bread bowl, warming for long rides across Redania.",
+    "ingredients": [
+      "fermented rye starter",
+      "white sausage",
+      "potatoes",
+      "marjoram",
+      "garlic",
+      "hard-boiled egg"
+    ],
+    "servings": 4,
+    "title": "Zurek",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 720.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Nilfgaardian",
+    "description": "Slow-roasted boar marinated in imperial red wine, served at a Nilfgaardian officers' table.",
+    "ingredients": [
+      "wild boar leg",
+      "rosemary",
+      "garlic",
+      "red wine",
+      "root vegetables"
+    ],
+    "servings": 8,
+    "title": "Nilfgaardian Roast Boar",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 380.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Kovirian",
+    "description": "Dumplings stuffed with potato and curd cheese, a traveler's favorite on the road to Kovir.",
+    "ingredients": [
+      "potatoes",
+      "twarog cheese",
+      "onion",
+      "flour",
+      "butter"
+    ],
+    "servings": 6,
+    "title": "Pierogi Ruskie",
+    "vegetarian": true
+  },
+  {
+    "caloriesPerServing": 290.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Temerian",
+    "description": "A simple barley soup, the kind served in every Temerian village inn.",
+    "ingredients": [
+      "barley",
+      "potatoes",
+      "carrots",
+      "celery",
+      "butter",
+      "marjoram"
+    ],
+    "servings": 4,
+    "title": "Krupnik",
+    "vegetarian": true
+  },
+  {
+    "caloriesPerServing": 310.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Skelligan",
+    "description": "Salted herring and rye, the staple of Skellige longship crews.",
+    "ingredients": [
+      "pickled herring",
+      "rye bread",
+      "onion",
+      "sour cream",
+      "dill"
+    ],
+    "servings": 2,
+    "title": "Skellige Herring Platter",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 650.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Temerian",
+    "description": "A hearty hunter's stew of sauerkraut and smoked meats, favored by witchers resting between contracts.",
+    "ingredients": [
+      "sauerkraut",
+      "cabbage",
+      "smoked bacon",
+      "kielbasa",
+      "wild boar meat",
+      "prunes",
+      "juniper berries",
+      "onion"
+    ],
+    "servings": 4,
+    "title": "Bigos",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 540.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Toussaintois",
+    "description": "Duck glazed in Toussaint's famed blood-red wine, fit for a knight's feast.",
+    "ingredients": [
+      "duck breast",
+      "Est Est blood wine",
+      "honey",
+      "thyme",
+      "shallots"
+    ],
+    "servings": 2,
+    "title": "Toussaint Duck with Blood Wine Reduction",
+    "vegetarian": false
+  }
+]

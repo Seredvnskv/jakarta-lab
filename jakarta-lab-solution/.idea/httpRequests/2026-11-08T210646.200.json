@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "3802ef10-9f04-41cb-a3ad-3729a9da5c7a",
+      "recipes": [
+        {
+          "author": "Geralt",
+          "calories": 750,
+          "id": "89249ef6-819b-425b-87b5-a24c5c8c26d4",
+          "servings": 6,
+          "title": "Bigos",
+          "vegetarian": false
+        },
+        {
+          "author": "Geralt",
+          "calories": 650,
+          "id": "18aa231f-5124-4aec-a64f-86bfb8bfa760",
+          "servings": 4,
+          "title": "Tacos al Pastor",
+          "vegetarian": false
+        }
+      ],
+      "registrationDate": "2025-06-05",
+      "role": "USER",
+      "username": "Geralt"
+    },
+    {
+      "id": "25ea3783-7cf8-41d7-b9e6-fdb1760dacae",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 650,
+          "id": "2e1be034-af08-4d89-8720-fdd45602e890",
+          "servings": 2,
+          "title": "Ramen",
+          "vegetarian": false
+        },
+        {
+          "author": "Ciri",
+          "calories": 550,
+          "id": "aa8113d3-2c81-417f-8af0-212fc8d63108",
+          "servings": 2,
+          "title": "Pad Thai",
+          "vegetarian": false
+        }
+      ],
+      "registrationDate": "2024-03-22",
+      "role": "USER",
+      "username": "Ciri"
+    },
+    {
+      "id": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+      "recipes": [
+        {
+          "author": "Zoltan",
+          "calories": 600,
+          "id": "28027200-05ac-4d82-b3ff-c481e4ce76fe",
+          "servings": 4,
+          "title": "Pierogi ruskie",
+          "vegetarian": true
+        }
+      ],
+      "registrationDate": "2026-06-05",
+      "role": "USER",
+      "username": "Zoltan"
+    },
+    {
+      "id": "0ceb983a-1529-40c7-9d83-dc29acae7b55",
+      "recipes": [
+        {
+          "author": "Triss",
+          "calories": 700,
+          "id": "7540040c-720a-490c-affc-95f27c0c6c18",
+          "servings": 3,
+          "title": "Green Curry",
+          "vegetarian": false
+        },
+        {
+          "author": "Triss",
+          "calories": 800,
+          "id": "6d47df28-0f22-430f-bdb1-10025339892e",
+          "servings": 4,
+          "title": "Margherita Pizza",
+          "vegetarian": true
+        }
+      ],
+      "registrationDate": "2023-01-10",
+      "role": "ADMIN",
+      "username": "Triss"
+    }
+  ],
+  "size": 4,
+  "time": "2026-11-08T21:06:46.3676966"
+}

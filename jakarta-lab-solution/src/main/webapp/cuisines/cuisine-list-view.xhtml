@@ -1,0 +1,50 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                 xmlns="http://www.w3.org/1999/xhtml"
+                 xmlns:h="jakarta.faces.html"
+                 xmlns:f="jakarta.faces.core"
+                 xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewAction action="#{cuisineListView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">Cuisines</ui:define>
+    <ui:define name="heading">Cuisines</ui:define>
+    <ui:define name="subheading">List of world cuisines</ui:define>
+
+    <ui:define name="content">
+        <h:link outcome="/cuisines/cuisine-form-view" styleClass="btn btn-success mb-3">Add cuisine</h:link>
+        <h:form>
+            <ul class="list-group">
+                <ui:repeat value="#{cuisineListView.cuisines.items}" var="cuisine">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start gap-3">
+                            <div>
+                                <h2 class="h5 mb-1">
+                                    #{cuisine.name}
+                                    <h:panelGroup styleClass="badge bg-secondary ms-2">#{cuisine.continent}</h:panelGroup>
+                                    <h:panelGroup styleClass="badge bg-danger ms-2" rendered="#{cuisine.spicy}">Spicy</h:panelGroup>
+                                </h2>
+                                <p class="mb-0 small text-muted">
+                                    <h:panelGroup rendered="#{empty cuisine.recipes}">No recipes yet.</h:panelGroup>
+                                    <ui:repeat value="#{cuisine.recipes}" var="recipe" varStatus="status">
+                                        #{recipe.title} (#{recipe.author})<h:outputText value=", " rendered="#{!status.last}"/>
+                                    </ui:repeat>
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <h:commandButton value="View" styleClass="btn btn-outline-primary btn-sm"
+                                                  action="#{cuisineListView.viewCuisine(cuisine.id)}"/>
+                                <h:commandButton value="Delete" styleClass="btn btn-outline-danger btn-sm"
+                                                  action="#{cuisineListView.deleteCuisine(cuisine.id)}"/>
+                            </div>
+                        </div>
+                    </li>
+                </ui:repeat>
+            </ul>
+            <h:panelGroup layout="block" styleClass="text-muted mt-3" rendered="#{empty cuisineListView.cuisines.items}">
+                No cuisines yet.
+            </h:panelGroup>
+        </h:form>
+    </ui:define>
+</ui:composition>

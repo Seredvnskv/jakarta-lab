@@ -1,0 +1,38 @@
+[
+  {
+    "caloriesPerServing": 290.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Temerian",
+    "description": "A simple barley soup, the kind served in every Temerian village inn.",
+    "ingredients": [
+      "barley",
+      "potatoes",
+      "carrots",
+      "celery",
+      "butter",
+      "marjoram"
+    ],
+    "servings": 4,
+    "title": "Krupnik",
+    "vegetarian": true
+  },
+  {
+    "caloriesPerServing": 650.0,
+    "creationDate": "2026-10-24",
+    "cuisine": "Temerian",
+    "description": "A hearty hunter's stew of sauerkraut and smoked meats, favored by witchers resting between contracts.",
+    "ingredients": [
+      "sauerkraut",
+      "cabbage",
+      "smoked bacon",
+      "kielbasa",
+      "wild boar meat",
+      "prunes",
+      "juniper berries",
+      "onion"
+    ],
+    "servings": 4,
+    "title": "Bigos",
+    "vegetarian": false
+  }
+]

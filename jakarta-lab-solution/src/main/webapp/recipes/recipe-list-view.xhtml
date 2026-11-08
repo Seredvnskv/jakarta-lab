@@ -1,0 +1,53 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewAction action="#{recipeListView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">Recipes</ui:define>
+    <ui:define name="heading">Recipes</ui:define>
+    <ui:define name="subheading">List of all recipes</ui:define>
+
+    <ui:define name="content">
+        <h:link outcome="/recipes/recipe-form-view" styleClass="btn btn-success mb-3">Add recipe</h:link>
+        <h:form>
+            <ul class="list-group">
+                <ui:repeat value="#{recipeListView.recipes.items}" var="recipe">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-start gap-3">
+                            <div>
+                                <h2 class="h5 mb-1">
+                                    #{recipe.title}
+                                    <h:panelGroup styleClass="badge bg-success ms-2" rendered="#{recipe.vegetarian}">Vegetarian</h:panelGroup>
+                                </h2>
+                                <p class="mb-1 text-secondary">
+                                    Servings: #{recipe.servings} &#183; Calories: #{recipe.calories}
+                                </p>
+                                <p class="mb-0 small text-muted">
+                                    <ui:repeat value="#{recipe.ingredients}" var="ingredient" varStatus="status">
+                                        #{ingredient.name} (#{ingredient.quantity} #{ingredient.unit})<h:outputText value=", " rendered="#{!status.last}"/>
+                                    </ui:repeat>
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <h:commandButton value="View" styleClass="btn btn-outline-primary btn-sm" action="#{recipeListView.viewRecipe(recipe.id)}"/>
+                                <h:link outcome="/recipes/recipe-form-view" styleClass="btn btn-outline-secondary btn-sm">
+                                    <f:param name="id" value="#{recipe.id}"/>
+                                    Edit
+                                </h:link>
+                                <h:commandButton value="Delete" styleClass="btn btn-outline-danger btn-sm" action="#{recipeListView.deleteRecipe(recipe.id)}"/>
+                            </div>
+                        </div>
+                    </li>
+                </ui:repeat>
+            </ul>
+            <h:panelGroup layout="block" styleClass="text-muted mt-3" rendered="#{empty recipeListView.recipes.items}">
+                No recipes yet.
+            </h:panelGroup>
+        </h:form>
+    </ui:define>
+</ui:composition>

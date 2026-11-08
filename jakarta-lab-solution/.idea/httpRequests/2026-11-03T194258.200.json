@@ -1,0 +1,19 @@
+{
+  "caloriesPerServing": 650.0,
+  "creationDate": "2026-11-03",
+  "cuisine": "Polish",
+  "description": "A hearty hunter's stew of sauerkraut and smoked meats - the kind Geralt swears is the only thing that chases away a Kaer Morhen winter.",
+  "ingredients": [
+    "sauerkraut",
+    "cabbage",
+    "smoked bacon",
+    "kielbasa",
+    "wild boar meat",
+    "prunes",
+    "juniper berries",
+    "onion"
+  ],
+  "servings": 4,
+  "title": "Bigos",
+  "vegetarian": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "continent": "Europe",
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0003",
+    "name": "French",
+    "spicy": false
+  },
+  {
+    "continent": "Europe",
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0001",
+    "name": "Polish",
+    "spicy": false
+  },
+  {
+    "continent": "Europe",
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0002",
+    "name": "Italian",
+    "spicy": false
+  },
+  {
+    "continent": "Africa",
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0005",
+    "name": "Moroccan",
+    "spicy": true
+  },
+  {
+    "continent": "Europe",
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0004",
+    "name": "Scandinavian",
+    "spicy": false
+  }
+]

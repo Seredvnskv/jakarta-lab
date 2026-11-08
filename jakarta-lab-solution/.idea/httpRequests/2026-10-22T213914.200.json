@@ -1,0 +1,23 @@
+[
+  {
+    "id": "439af2a7-9196-429e-a02d-aedc09b66f96",
+    "recipes": [],
+    "registrationDate": "2026-10-22",
+    "role": "USER",
+    "username": "Geralt"
+  },
+  {
+    "id": "58449fe0-5e39-42ab-b1a4-f94e8c50849d",
+    "recipes": [],
+    "registrationDate": "2026-10-22",
+    "role": "USER",
+    "username": "Ciri"
+  },
+  {
+    "id": "8285f6d1-3dc9-46a6-9c5d-0484634e5458",
+    "recipes": [],
+    "registrationDate": "2026-10-22",
+    "role": "USER",
+    "username": "Zoltan"
+  }
+]

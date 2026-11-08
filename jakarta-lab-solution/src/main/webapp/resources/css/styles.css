@@ -1,0 +1,118 @@
+:root {
+    --med-terracotta: #c1502e;
+    --med-terracotta-dark: #9c3f24;
+    --med-olive: #74813f;
+    --med-olive-dark: #5c6730;
+    --med-light-blue: #4096b6;
+    --med-blue: #1c5d73;
+    --med-blue-dark: #15485a;
+    --med-sand: #f4ead9;
+    --med-gold: #d9a441;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--med-sand);
+}
+
+footer {
+    margin-top: auto;
+}
+
+.bg-dark {
+    background-color: var(--med-blue) !important;
+}
+
+.page-banner {
+    background: var(--med-light-blue) !important;
+}
+
+.card {
+    border-color: rgba(28, 93, 115, 0.15);
+    background-color: #fffbf3;
+}
+
+.btn-dark,
+.btn-success {
+    background-color: var(--med-olive);
+    border-color: var(--med-olive);
+}
+
+.btn-dark:hover,
+.btn-success:hover {
+    background-color: var(--med-olive-dark);
+    border-color: var(--med-olive-dark);
+}
+
+.btn-danger {
+    background-color: var(--med-terracotta);
+    border-color: var(--med-terracotta);
+}
+
+.btn-danger:hover {
+    background-color: var(--med-terracotta-dark);
+    border-color: var(--med-terracotta-dark);
+}
+
+.btn-outline-primary {
+    color: var(--med-blue);
+    border-color: var(--med-blue);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--med-blue);
+    border-color: var(--med-blue);
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: var(--med-olive);
+    border-color: var(--med-olive);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--med-olive);
+    border-color: var(--med-olive);
+    color: #fff;
+}
+
+.btn-outline-success {
+    color: var(--med-olive);
+    border-color: var(--med-olive);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--med-olive);
+    border-color: var(--med-olive);
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: var(--med-terracotta);
+    border-color: var(--med-terracotta);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--med-terracotta);
+    border-color: var(--med-terracotta);
+    color: #fff;
+}
+
+.badge.bg-secondary {
+    background-color: var(--med-gold) !important;
+    color: #3b2f1e;
+}
+
+.badge.bg-danger {
+    background-color: var(--med-terracotta) !important;
+}
+
+.badge.bg-success {
+    background-color: var(--med-olive) !important;
+}

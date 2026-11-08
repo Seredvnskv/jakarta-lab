@@ -1,0 +1,68 @@
+<ui:composition template="/WEB-INF/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="jakarta.faces.html"
+                xmlns:f="jakarta.faces.core"
+                xmlns:ui="jakarta.faces.facelets">
+
+    <f:metadata>
+        <f:viewParam name="id" value="#{recipeDetailsView.id}"/>
+        <f:viewAction action="#{recipeDetailsView.init()}"/>
+    </f:metadata>
+
+    <ui:define name="title">#{recipeDetailsView.recipe.title}</ui:define>
+    <ui:define name="heading">#{recipeDetailsView.recipe.title}</ui:define>
+    <ui:define name="subheading">#{recipeDetailsView.recipe.description}</ui:define>
+
+    <ui:define name="content">
+        <div class="mb-3">
+            <h:form>
+                <h:commandButton value="Back to recipes" styleClass="btn btn-outline-success btn-sm" action="#{recipeDetailsView.back()}"/>
+            </h:form>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <h2 class="h5 mb-3">
+                        Details
+                        <h:panelGroup styleClass="badge bg-success ms-2" rendered="#{recipeDetailsView.recipe.vegetarian}">Vegetarian</h:panelGroup>
+                    </h2>
+                    <div class="d-flex gap-2">
+                        <h:link outcome="/recipes/recipe-form-view" styleClass="btn btn-outline-primary btn-sm">
+                            <f:param name="id" value="#{recipeDetailsView.recipe.id}"/>
+                            Edit
+                        </h:link>
+                        <h:form>
+                            <h:commandButton value="Delete" styleClass="btn btn-outline-danger btn-sm" action="#{recipeDetailsView.delete()}"/>
+                        </h:form>
+                    </div>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        Servings:
+                        <span>#{recipeDetailsView.recipe.servings}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Calories:
+                        <span>#{recipeDetailsView.recipe.calories}</span>
+                    </li>
+                    <li class="list-group-item">
+                        Ingredients:
+                        <ul class="mb-0">
+                            <ui:repeat value="#{recipeDetailsView.recipe.ingredients}" var="ingredient">
+                                <li>#{ingredient.name} &#8211; #{ingredient.quantity} #{ingredient.unit}</li>
+                            </ui:repeat>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        Created At:
+                        <h:outputText value="#{recipeDetailsView.recipe.createdAt}">
+                            <f:convertDateTime type="localDateTime" pattern="yyyy-MM-dd HH:mm"/>
+                        </h:outputText>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

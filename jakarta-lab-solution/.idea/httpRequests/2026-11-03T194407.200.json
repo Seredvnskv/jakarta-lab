@@ -1,0 +1,54 @@
+[
+  {
+    "caloriesPerServing": 380.0,
+    "creationDate": "2026-11-03",
+    "cuisine": "Polish",
+    "description": "Dumplings stuffed with potato and curd cheese - Ciri begs for a plate at every Northern Kingdoms inn she passes.",
+    "ingredients": [
+      "potatoes",
+      "twarog cheese",
+      "onion",
+      "flour",
+      "butter"
+    ],
+    "servings": 6,
+    "title": "Pierogi Ruskie",
+    "vegetarian": true
+  },
+  {
+    "caloriesPerServing": 650.0,
+    "creationDate": "2026-11-03",
+    "cuisine": "Polish",
+    "description": "A hearty hunter's stew of sauerkraut and smoked meats - the kind Geralt swears is the only thing that chases away a Kaer Morhen winter.",
+    "ingredients": [
+      "sauerkraut",
+      "cabbage",
+      "smoked bacon",
+      "kielbasa",
+      "wild boar meat",
+      "prunes",
+      "juniper berries",
+      "onion"
+    ],
+    "servings": 4,
+    "title": "Bigos",
+    "vegetarian": false
+  },
+  {
+    "caloriesPerServing": 450.0,
+    "creationDate": "2026-11-03",
+    "cuisine": "Polish",
+    "description": "Tangy fermented rye soup, now with extra sausage.",
+    "ingredients": [
+      "fermented rye starter",
+      "white sausage",
+      "potatoes",
+      "marjoram",
+      "garlic",
+      "hard-boiled egg"
+    ],
+    "servings": 6,
+    "title": "Zurek Deluxe",
+    "vegetarian": false
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "author": "Triss",
+  "caloriesPerServing": 410.0,
+  "creationDate": "2026-11-03",
+  "cuisine": "French",
+  "description": "A classic French escargot preparation.",
+  "ingredients": [
+    "snails",
+    "garlic",
+    "butter",
+    "parsley",
+    "white wine"
+  ],
+  "servings": 2,
+  "title": "Garlic Snail Stew",
+  "vegetarian": false
+}

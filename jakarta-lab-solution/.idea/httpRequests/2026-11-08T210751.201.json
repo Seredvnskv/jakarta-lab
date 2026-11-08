@@ -1,0 +1,22 @@
+{
+  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+  "calories": 600,
+  "createdAt": "2026-11-08T21:07:51.4992836",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "id": "756d2b00-b619-4955-a58b-cfa44534ea88",
+  "ingredients": [
+    {
+      "name": "Potato",
+      "quantity": 400.0,
+      "unit": "g"
+    },
+    {
+      "name": "Twaróg",
+      "quantity": 200.0,
+      "unit": "g"
+    }
+  ],
+  "servings": 4,
+  "title": "Pierogi ruskie",
+  "vegetarian": true
+}

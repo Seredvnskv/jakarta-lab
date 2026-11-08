@@ -1,0 +1,44 @@
+[
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0004",
+    "name": "Toussaintois",
+    "region": "TOUSSAINT",
+    "spicy": false
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0003",
+    "name": "Nilfgaardian",
+    "region": "NILFGAARD",
+    "spicy": true
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0006",
+    "name": "Kovirian",
+    "region": "KOVIR",
+    "spicy": false
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0007",
+    "name": "Zerrikanian",
+    "region": "ZERRIKANIA",
+    "spicy": true
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0002",
+    "name": "Redanian",
+    "region": "REDANIA",
+    "spicy": false
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0001",
+    "name": "Temerian",
+    "region": "TEMERIA",
+    "spicy": false
+  },
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0005",
+    "name": "Skelligan",
+    "region": "SKELLIGE",
+    "spicy": false
+  }
+]
