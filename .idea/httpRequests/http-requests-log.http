@@ -1,3 +1,217 @@
+PUT http://localhost:9080/api/recipes/5edfb3de-2c5a-43bb-bf3a-b33678a873eb
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDg1Niwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTExNTYsImlhdCI6MTc5NDk1MDg1NiwianRpIjoiNWI1MDI1NTYtNzMzZS00OTFiLWJmYjktYzIzNTA5ODUzZTUyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.Uz7QjwYdWZD9X3uFeo0lr40cLOeiD5e8DOO1irOTBsAplhyXJI2uxsXircHqILiY0HNynhT1r894BqjLvxbllGQo5-YIOCQW2J33Fmi2jxVS7XaMS3-oswdl8F1f0Odp-BkQVJiMl5gi92B-y8jQyX4wmUP5ZPVUmyYv3E9vME41udXsSA1-1mynIT0e060prHkBy98iEgfCfLBjXtzfUPqEUiP-qRgEj8WZDdaSKSh_3iLyyLw9-ztdDTOP8hGgyIMOMLWKIbNo46ZPRgtLDywH1YxAWhYZ5TxU3zpG7rY6fpOWukB7rH0Oco0qZv51TYFsG0OZ38sP2DTWmhOy2A
+Content-Type: application/json
+
+{
+  "title": "Pad Thai (updated by admin)",
+  "description": "Stir-fried rice noodles with shrimp, peanuts and lime.",
+  "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+  "ingredients": [
+    { "name": "Rice noodles", "quantity": 250, "unit": "g" },
+    { "name": "Shrimp", "quantity": 200, "unit": "g" },
+    { "name": "Peanuts", "quantity": 50, "unit": "g" },
+    { "name": "Lime", "quantity": 1, "unit": "pcs" }
+  ],
+  "servings": 2,
+  "calories": 570,
+  "vegetarian": false
+}
+
+###
+PUT http://localhost:9080/api/recipes/b2fa2cae-dd8a-45a4-b616-ae186b770421
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDQxNywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTA3MTcsImlhdCI6MTc5NDk1MDQxNywianRpIjoiYWE5YjA5NjctYzI0OC00ZDc3LTlkMzItNjMyYzdhNzNlYWY3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.y71Rm-f3_0wRqpiJDi-dvkO2QU-mCtJcNe6MD5acJRuqum5TYSojt_HcO9EYwBW8GWSYFz_LrzYunOPW93WRnf35R1Wye-99aIkZVdpFr6JvMcgbQZhVmgbxmko_ipIS18JP75ALOyvmbZoc6cyL5zh4NBBO3W-b0BrvFHF-VZ0VPdAoaYTDOxR4b1zgwBX4ovcnVXzFTvkhYmETxj8wInQXvQjHljgwMYhrpmCy6u4su_QBiqvcEnNBZWq1iyK9US89NKB3-dnvaWAb8RWvpuO8x8I5Nlr1SSInRWpS2UyFbjVWSOUC8U1QPjd48ffxJ0CAqRwxw57RfjswMpaX4Q
+Content-Type: application/json
+
+{
+  "title": "Pad Thai (updated by admin)",
+  "description": "Stir-fried rice noodles with shrimp, peanuts and lime.",
+  "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+  "ingredients": [
+    { "name": "Rice noodles", "quantity": 250, "unit": "g" },
+    { "name": "Shrimp", "quantity": 200, "unit": "g" },
+    { "name": "Peanuts", "quantity": 50, "unit": "g" },
+    { "name": "Lime", "quantity": 1, "unit": "pcs" }
+  ],
+  "servings": 2,
+  "calories": 570,
+  "vegetarian": false
+}
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDQxNywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTA3MTcsImlhdCI6MTc5NDk1MDQxNywianRpIjoiYWE5YjA5NjctYzI0OC00ZDc3LTlkMzItNjMyYzdhNzNlYWY3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.y71Rm-f3_0wRqpiJDi-dvkO2QU-mCtJcNe6MD5acJRuqum5TYSojt_HcO9EYwBW8GWSYFz_LrzYunOPW93WRnf35R1Wye-99aIkZVdpFr6JvMcgbQZhVmgbxmko_ipIS18JP75ALOyvmbZoc6cyL5zh4NBBO3W-b0BrvFHF-VZ0VPdAoaYTDOxR4b1zgwBX4ovcnVXzFTvkhYmETxj8wInQXvQjHljgwMYhrpmCy6u4su_QBiqvcEnNBZWq1iyK9US89NKB3-dnvaWAb8RWvpuO8x8I5Nlr1SSInRWpS2UyFbjVWSOUC8U1QPjd48ffxJ0CAqRwxw57RfjswMpaX4Q
+
+<> 2026-11-17T222023.200.json
+
+###
+DELETE http://localhost:9080/api/recipes/4c9b5551-784b-4528-920e-140c974eee52
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDQxNywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTA3MTcsImlhdCI6MTc5NDk1MDQxNywianRpIjoiYWE5YjA5NjctYzI0OC00ZDc3LTlkMzItNjMyYzdhNzNlYWY3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.y71Rm-f3_0wRqpiJDi-dvkO2QU-mCtJcNe6MD5acJRuqum5TYSojt_HcO9EYwBW8GWSYFz_LrzYunOPW93WRnf35R1Wye-99aIkZVdpFr6JvMcgbQZhVmgbxmko_ipIS18JP75ALOyvmbZoc6cyL5zh4NBBO3W-b0BrvFHF-VZ0VPdAoaYTDOxR4b1zgwBX4ovcnVXzFTvkhYmETxj8wInQXvQjHljgwMYhrpmCy6u4su_QBiqvcEnNBZWq1iyK9US89NKB3-dnvaWAb8RWvpuO8x8I5Nlr1SSInRWpS2UyFbjVWSOUC8U1QPjd48ffxJ0CAqRwxw57RfjswMpaX4Q
+
+###
+PUT http://localhost:9080/api/recipes/4c9b5551-784b-4528-920e-140c974eee52
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+Content-Type: application/json
+
+{
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 470,
+  "vegetarian": false
+}
+
+<> 2026-11-17T221812.200.json
+
+###
+PUT http://localhost:9080/api/recipes/4c9b5551-784b-4528-920e-140c974eee52
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+Content-Type: application/json
+
+{
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": -1,
+  "vegetarian": false
+}
+
+<> 2026-11-17T221801.200.json
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+
+<> 2026-11-17T221741.200.json
+
+###
+PUT http://localhost:9080/api/recipes/4c9b5551-784b-4528-920e-140c974eee52
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+Content-Type: application/json
+
+{
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 470,
+  "vegetarian": false
+}
+
+<> 2026-11-17T221731.200.json
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+
+<> 2026-11-17T221720.200.json
+
+###
+POST http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+Content-Type: application/json
+
+{
+  "title": "Żurek",
+  "description": "Sour rye soup with sausage and egg.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 450,
+  "vegetarian": false
+}
+
+<> 2026-11-17T221713.201.json
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+
+<> 2026-11-17T221517.200.json
+
+###
+DELETE http://localhost:9080/api/cuisines/d21aebd5-07f0-4a38-9551-53cc08db21e6
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+
+###
+POST http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+Content-Type: application/json
+
+{
+  "id": "d21aebd5-07f0-4a38-9551-53cc08db21e6",
+  "continent": "AFRICA",
+  "name": "Moroccan",
+  "spicy": true
+}
+
+###
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiI0Y2VkNjY4Zi0zNzRhLTQ0MTktYTQyZi04MmY2NDViMzZhMWEiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJab2x0YW4iLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IlpvbHRhbiIsIm5iZiI6MTc5NDk1MDA4MSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NTAzODEsImlhdCI6MTc5NDk1MDA4MSwianRpIjoiMjljM2E5MzYtM2VhZS00YTk4LWE3YzAtNDFiZDUwYzI4MDgyIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.MpNIUy9BFLp0gVoUnfz0WxT8OyzYr2NOMV1iStWXzbhie1n4LCaDfTdjJERkOeI9JpG4BEqHDgDYXCenSTOz8dnbY2C61ROEcGW2fNVr1pDfRxzp_x0emHRFjC5Z4qlqNVUqWNRdp4_cxbxvfpJXr0iCHj3FE-ntFo6bWL7Cx0w7s6iU97lu4vVv5qzn5BkkowjimYo6dyzSYLOS9uIcxVFpvNAO7sa75AkfeAH2NyerMKNfMsgEumKFfjGPr_SQqw70N0VJqV6Zzqa_iFMZgFwKv_N60gl0j968flpsv-ivbrtyx_7VTJU2Me3cfyESh9OJkmXJUXjDNcOyjIsgXQ
+
+<> 2026-11-17T221447.200.json
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiJjZmM0MmI4YS00MDdjLTRkYzEtYTdjZi04NTNlY2Q3NTc2ZmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDk4NDEsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk1MDE0MSwiaWF0IjoxNzk0OTQ5ODQxLCJqdGkiOiIxYTExNzc2ZS03MjA2LTQ0ZTUtYWQ4Mi1kMjhhYWI2ZDY5ZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.sgZOBeXzHMEEA5w1EdxqMTsfXnrfCZtKSlANLsYOzIsv-WZ7hbJMN0vU0vazBoyYvTgjTAGwJ05HZ3YDNWq73LiU3oNoi_-SezkJNGdklCDKZBYnOqBonJzLDxNUDNNXgdPREVMzg7Qk4OYt2iU7Y7xmJO7zN63YNdstrj15Hcdd9jnHr9gp9vlnmM92F2ua745TjjHOJgM28Wv4OYgyfmzM5R-r9FT7OAgQqWfovOn3J3lV8JpQU4DzmKmaRAAObqJf8HpBOf-Xlu9EwtSXKojL8XIuGfrlLz9lrnDQDNQzv-1ggBrSiTTv3lgKY9Aj1OAcrykTG6QIjdTfnW7iEg
+
+<> 2026-11-17T221156.200.json
+
+###
+DELETE http://localhost:9080/api/recipes/b2fa2cae-dd8a-45a4-b616-ae186b770421
+Authorization: Bearer eyJraWQiOiJjZmM0MmI4YS00MDdjLTRkYzEtYTdjZi04NTNlY2Q3NTc2ZmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDk4NDEsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk1MDE0MSwiaWF0IjoxNzk0OTQ5ODQxLCJqdGkiOiIxYTExNzc2ZS03MjA2LTQ0ZTUtYWQ4Mi1kMjhhYWI2ZDY5ZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.sgZOBeXzHMEEA5w1EdxqMTsfXnrfCZtKSlANLsYOzIsv-WZ7hbJMN0vU0vazBoyYvTgjTAGwJ05HZ3YDNWq73LiU3oNoi_-SezkJNGdklCDKZBYnOqBonJzLDxNUDNNXgdPREVMzg7Qk4OYt2iU7Y7xmJO7zN63YNdstrj15Hcdd9jnHr9gp9vlnmM92F2ua745TjjHOJgM28Wv4OYgyfmzM5R-r9FT7OAgQqWfovOn3J3lV8JpQU4DzmKmaRAAObqJf8HpBOf-Xlu9EwtSXKojL8XIuGfrlLz9lrnDQDNQzv-1ggBrSiTTv3lgKY9Aj1OAcrykTG6QIjdTfnW7iEg
+
+###
+PUT http://localhost:9080/api/recipes/b2fa2cae-dd8a-45a4-b616-ae186b770421
+Authorization: Bearer eyJraWQiOiJjZmM0MmI4YS00MDdjLTRkYzEtYTdjZi04NTNlY2Q3NTc2ZmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDk4NDEsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk1MDE0MSwiaWF0IjoxNzk0OTQ5ODQxLCJqdGkiOiIxYTExNzc2ZS03MjA2LTQ0ZTUtYWQ4Mi1kMjhhYWI2ZDY5ZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.sgZOBeXzHMEEA5w1EdxqMTsfXnrfCZtKSlANLsYOzIsv-WZ7hbJMN0vU0vazBoyYvTgjTAGwJ05HZ3YDNWq73LiU3oNoi_-SezkJNGdklCDKZBYnOqBonJzLDxNUDNNXgdPREVMzg7Qk4OYt2iU7Y7xmJO7zN63YNdstrj15Hcdd9jnHr9gp9vlnmM92F2ua745TjjHOJgM28Wv4OYgyfmzM5R-r9FT7OAgQqWfovOn3J3lV8JpQU4DzmKmaRAAObqJf8HpBOf-Xlu9EwtSXKojL8XIuGfrlLz9lrnDQDNQzv-1ggBrSiTTv3lgKY9Aj1OAcrykTG6QIjdTfnW7iEg
+Content-Type: application/json
+
+{
+  "title": "Pad Thai (updated by admin)",
+  "description": "Stir-fried rice noodles with shrimp, peanuts and lime.",
+  "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+  "ingredients": [
+    { "name": "Rice noodles", "quantity": 250, "unit": "g" },
+    { "name": "Shrimp", "quantity": 200, "unit": "g" },
+    { "name": "Peanuts", "quantity": 50, "unit": "g" },
+    { "name": "Lime", "quantity": 1, "unit": "pcs" }
+  ],
+  "servings": 2,
+  "calories": 570,
+  "vegetarian": false
+}
+
+<> 2026-11-17T221139.200.json
+
+###
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiJjZmM0MmI4YS00MDdjLTRkYzEtYTdjZi04NTNlY2Q3NTc2ZmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDk4NDEsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk1MDE0MSwiaWF0IjoxNzk0OTQ5ODQxLCJqdGkiOiIxYTExNzc2ZS03MjA2LTQ0ZTUtYWQ4Mi1kMjhhYWI2ZDY5ZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.sgZOBeXzHMEEA5w1EdxqMTsfXnrfCZtKSlANLsYOzIsv-WZ7hbJMN0vU0vazBoyYvTgjTAGwJ05HZ3YDNWq73LiU3oNoi_-SezkJNGdklCDKZBYnOqBonJzLDxNUDNNXgdPREVMzg7Qk4OYt2iU7Y7xmJO7zN63YNdstrj15Hcdd9jnHr9gp9vlnmM92F2ua745TjjHOJgM28Wv4OYgyfmzM5R-r9FT7OAgQqWfovOn3J3lV8JpQU4DzmKmaRAAObqJf8HpBOf-Xlu9EwtSXKojL8XIuGfrlLz9lrnDQDNQzv-1ggBrSiTTv3lgKY9Aj1OAcrykTG6QIjdTfnW7iEg
+
+<> 2026-11-17T221107.200.json
+
+###
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiJjZmM0MmI4YS00MDdjLTRkYzEtYTdjZi04NTNlY2Q3NTc2ZmQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDk4NDEsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk1MDE0MSwiaWF0IjoxNzk0OTQ5ODQxLCJqdGkiOiIxYTExNzc2ZS03MjA2LTQ0ZTUtYWQ4Mi1kMjhhYWI2ZDY5ZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.sgZOBeXzHMEEA5w1EdxqMTsfXnrfCZtKSlANLsYOzIsv-WZ7hbJMN0vU0vazBoyYvTgjTAGwJ05HZ3YDNWq73LiU3oNoi_-SezkJNGdklCDKZBYnOqBonJzLDxNUDNNXgdPREVMzg7Qk4OYt2iU7Y7xmJO7zN63YNdstrj15Hcdd9jnHr9gp9vlnmM92F2ua745TjjHOJgM28Wv4OYgyfmzM5R-r9FT7OAgQqWfovOn3J3lV8JpQU4DzmKmaRAAObqJf8HpBOf-Xlu9EwtSXKojL8XIuGfrlLz9lrnDQDNQzv-1ggBrSiTTv3lgKY9Aj1OAcrykTG6QIjdTfnW7iEg
+
+<> 2026-11-17T221042.200.json
+
+###
 GET http://localhost:9080/api/recipes
 Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5

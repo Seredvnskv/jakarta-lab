@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a98dc2a-53ae-4cf8-a40f-d8faee70221e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/requests.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/core/config/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/core/config/ApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/core/rest/RestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/core/rest/RestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/cuisine/controller/CuisineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/cuisine/controller/CuisineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources/68dd9379-d4ba-483a-a0aa-0b13a269922b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources/68dd9379-d4ba-483a-a0aa-0b13a269922b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources/data_sources_history.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/cuisine/service/CuisineService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/controller/RecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/controller/RecipeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/repository/RecipeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/repository/RecipeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/entity/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/entity/Recipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/recipe/service/RecipeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/dto/RegisterUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/dto/RegisterUserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/mapper/UserEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/mapper/UserEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/java/org/com/recipes/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/liberty/config/server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/liberty/config/server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jakarta-lab-solution/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jakarta-lab-solution/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,7 @@
     "HTTP Request.requests | Bez tokena - oczekiwane 401.executor": "Run",
     "HTTP Request.requests | Create cuisine.executor": "Run",
     "HTTP Request.requests | Create recipe.executor": "Run",
+    "HTTP Request.requests | Delete Pad Thai (Ciri's recipe).executor": "Run",
     "HTTP Request.requests | Delete cuisine.executor": "Run",
     "HTTP Request.requests | Delete recipe.executor": "Run",
     "HTTP Request.requests | Get all users.executor": "Run",
@@ -98,6 +97,7 @@
     "HTTP Request.requests | USER - get Polish cuisine, embedded recipes limited to own ones (200).executor": "Run",
     "HTTP Request.requests | USER - get own recipe (200).executor": "Run",
     "HTTP Request.requests | USER - update own recipe (200).executor": "Run",
+    "HTTP Request.requests | Update Pad Thai (Ciri's recipe).executor": "Run",
     "HTTP Request.requests | Update recipe.executor": "Run",
     "HTTP Request.requests | Wszystkie kategorie - 200.executor": "Run",
     "HTTP Request.requests | Zaloguj jako Ciri: tylko wlasne przepisy - 200.executor": "Run",
@@ -116,7 +116,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "lab-6",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sambor/IdeaProjects/MyProjects/jakarta-lab/jakarta-lab-solution/src/main/resources/avatars",
+    "last_opened_file_path": "C:/Users/Sered/Desktop/jakarta-lab",
     "rest.client.default.execution.environment": "dev",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -138,11 +138,11 @@
         <entry key="HttpClient.HttpRequestRunConfigurationType">
           <value>
             <map>
-              <entry key="requests | Create cuisine" value="STOPPED" />
               <entry key="requests | Create recipe" value="STOPPED" />
-              <entry key="requests | Delete cuisine" value="STOPPED" />
-              <entry key="requests | Get cuisines" value="STOPPED" />
+              <entry key="requests | Delete recipe" value="STOPPED" />
               <entry key="requests | Get recipes" value="STOPPED" />
+              <entry key="requests | Update Pad Thai (Ciri's recipe)" value="STOPPED" />
+              <entry key="requests | Update recipe" value="STOPPED" />
             </map>
           </value>
         </entry>
@@ -150,19 +150,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.JakartaLabAuthApplication">
-    <configuration name="requests | Create cuisine" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Create cuisine" index="3" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="requests | Create recipe" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Create recipe" index="6" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requests | Delete cuisine" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Delete cuisine" index="4" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="requests | Get cuisines" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Get cuisines" index="2" runType="Run single request">
+    <configuration name="requests | Delete recipe" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Delete recipe" index="8" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="requests | Get recipes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Get recipes" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Update Pad Thai (Ciri's recipe)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Update Pad Thai (Ciri's recipe)" index="9" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requests | Update recipe" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/jakarta-lab-solution/requests.http" executionIdentifier="Update recipe" index="7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
@@ -183,19 +183,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.requests | Update Pad Thai (Ciri's recipe)" />
         <item itemvalue="HTTP Request.requests | Get recipes" />
+        <item itemvalue="HTTP Request.requests | Delete recipe" />
+        <item itemvalue="HTTP Request.requests | Update recipe" />
         <item itemvalue="HTTP Request.requests | Create recipe" />
-        <item itemvalue="HTTP Request.requests | Get cuisines" />
-        <item itemvalue="HTTP Request.requests | Delete cuisine" />
-        <item itemvalue="HTTP Request.requests | Create cuisine" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.27258.48" />
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.27258.48" />
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
       </set>
     </attachedChunks>
   </component>

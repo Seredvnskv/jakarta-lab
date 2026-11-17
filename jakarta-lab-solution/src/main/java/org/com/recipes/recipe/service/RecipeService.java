@@ -27,10 +27,6 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Optional;
 
-/**
- * Recipes: ADMIN reads and modifies all recipes, USER only own ones (filtered in the database query).
- * The owner of a new recipe is always the caller; only ADMIN may assign a different author.
- */
 @ApplicationScoped
 @NoArgsConstructor
 public class RecipeService {
@@ -65,8 +61,6 @@ public class RecipeService {
 
     @Transactional
     public RecipeDto createRecipe(CreateRecipeDto dto) {
-        // Resolve everything before linking: the caller lookup is a JPQL query, which flushes the persistence
-        // context and would fail on a not yet persisted recipe already attached to the cuisine.
         User caller = requireCaller();
         User owner = isAdmin() && dto.author() != null ? resolveAuthor(dto.author()) : caller;
         Cuisine cuisine = resolveCuisine(dto.cuisine());
@@ -109,9 +103,6 @@ public class RecipeService {
         recipeRepository.delete(existing);
     }
 
-    /**
-     * ADMIN gets any recipe, USER only own one - other users' recipes behave as if they did not exist (404).
-     */
     private Optional<Recipe> findAccessible(RecipeId id) {
         User caller = requireCaller();
         return isAdmin()
@@ -123,9 +114,6 @@ public class RecipeService {
         return securityContext.isCallerInRole(Role.ADMIN.name());
     }
 
-    /**
-     * Logged-in caller with role USER or ADMIN, existing in the database.
-     */
     private User requireCaller() {
         if (securityContext.getCallerPrincipal() == null) {
             throw new UnauthorizedAccessException("Authentication required");

@@ -50,9 +50,6 @@ public class UserEntityMapper implements EntityMapper<User, UserDto> {
                 .build();
     }
 
-    /**
-     * Maps everything except the password, which must be hashed by the service before storing.
-     */
     public User toEntity(CreateUserDto dto) {
         return User.builder()
                 .id(dto.id() != null ? UserId.of(dto.id()) : null)

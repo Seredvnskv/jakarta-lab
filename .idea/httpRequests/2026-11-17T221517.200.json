@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+      "calories": 600,
+      "createdAt": "2026-11-17T22:13:08.927611",
+      "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "description": "Dumplings filled with potato and cottage cheese.",
+      "id": "d2d7a8b6-809e-42ce-baad-110c7f4485a5",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "quantity": 400.0,
+          "unit": "g"
+        },
+        {
+          "name": "Twaróg",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Onion",
+          "quantity": 100.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Pierogi ruskie",
+      "vegetarian": true
+    }
+  ],
+  "size": 1,
+  "time": "2026-11-17T22:15:17.9237695"
+}

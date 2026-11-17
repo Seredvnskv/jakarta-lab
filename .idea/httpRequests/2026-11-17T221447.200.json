@@ -1,0 +1,50 @@
+{
+  "items": [
+    {
+      "continent": "AMERICA",
+      "id": "acb2ccef-e60f-462f-896f-5a7a3ac8c15d",
+      "name": "Mexican",
+      "recipes": [],
+      "spicy": true
+    },
+    {
+      "continent": "ASIA",
+      "id": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+      "name": "Thai",
+      "recipes": [],
+      "spicy": true
+    },
+    {
+      "continent": "ASIA",
+      "id": "726537f2-48bf-4275-adb8-f5188bef27f5",
+      "name": "Japanese",
+      "recipes": [],
+      "spicy": false
+    },
+    {
+      "continent": "EUROPE",
+      "id": "0b5a2470-efa8-4b61-a106-70663055ad9a",
+      "name": "Italian",
+      "recipes": [],
+      "spicy": false
+    },
+    {
+      "continent": "EUROPE",
+      "id": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "name": "Polish",
+      "recipes": [
+        {
+          "author": "Zoltan",
+          "calories": 600,
+          "id": "d2d7a8b6-809e-42ce-baad-110c7f4485a5",
+          "servings": 4,
+          "title": "Pierogi ruskie",
+          "vegetarian": true
+        }
+      ],
+      "spicy": false
+    }
+  ],
+  "size": 5,
+  "time": "2026-11-17T22:14:46.9093317"
+}

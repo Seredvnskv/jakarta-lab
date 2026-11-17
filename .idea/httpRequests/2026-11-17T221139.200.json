@@ -1,0 +1,33 @@
+{
+  "author": "25ea3783-7cf8-41d7-b9e6-fdb1760dacae",
+  "calories": 570,
+  "createdAt": "2026-11-17T22:09:53.75599",
+  "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+  "description": "Stir-fried rice noodles with shrimp, peanuts and lime.",
+  "id": "b2fa2cae-dd8a-45a4-b616-ae186b770421",
+  "ingredients": [
+    {
+      "name": "Lime",
+      "quantity": 1.0,
+      "unit": "pcs"
+    },
+    {
+      "name": "Shrimp",
+      "quantity": 200.0,
+      "unit": "g"
+    },
+    {
+      "name": "Peanuts",
+      "quantity": 50.0,
+      "unit": "g"
+    },
+    {
+      "name": "Rice noodles",
+      "quantity": 250.0,
+      "unit": "g"
+    }
+  ],
+  "servings": 2,
+  "title": "Pad Thai (updated by admin)",
+  "vegetarian": false
+}

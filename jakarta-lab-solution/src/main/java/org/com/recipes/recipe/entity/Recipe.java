@@ -31,15 +31,15 @@ public class Recipe {
     @JoinColumn(name = "author_id", referencedColumnName = "id")
     private User author;
 
-    @ElementCollection
-    @CollectionTable(name = "recipe_ingredients", joinColumns = @JoinColumn(name = "recipe_id", referencedColumnName = "id"))
-    @Builder.Default
-    Set<Ingredient> ingredients = new HashSet<>();
-
     private String title;
     private String description;
     private int servings;
     private int calories;
     private boolean vegetarian;
     private LocalDateTime creationTime;
+
+    @ElementCollection
+    @CollectionTable(name = "recipe_ingredients", joinColumns = @JoinColumn(name = "recipe_id", referencedColumnName = "id"))
+    @Builder.Default
+    Set<Ingredient> ingredients = new HashSet<>();
 }

@@ -24,10 +24,6 @@ import org.com.recipes.user.repository.UserRepository;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * Cuisines (categories): every logged-in user can read them, only ADMIN can add, edit and delete them.
- * Recipes embedded in a cuisine are limited to the caller's own ones for USER (filtered in the database).
- */
 @ApplicationScoped
 @NoArgsConstructor
 public class CuisineService {

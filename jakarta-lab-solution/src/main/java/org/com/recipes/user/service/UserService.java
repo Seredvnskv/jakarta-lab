@@ -26,9 +26,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/**
- * Users: registration is open to everybody, USER may read only own account, everything else requires ADMIN.
- */
 @ApplicationScoped
 @NoArgsConstructor
 public class UserService {
@@ -63,18 +60,12 @@ public class UserService {
         return userEntityMapper.toDto(user);
     }
 
-    /**
-     * Creates a user with explicitly given id and role - administrators only.
-     */
     @Transactional
     public UserDto createUser(CreateUserDto dto) {
         requireAdmin();
         return doCreateUser(dto);
     }
 
-    /**
-     * Public self-registration: always creates a regular user with a generated id and current date.
-     */
     @Transactional
     public UserDto registerUser(RegisterUserDto dto) {
         if (dto == null) {
@@ -120,9 +111,6 @@ public class UserService {
         userRepository.delete(existing);
     }
 
-    /**
-     * Stores the user with a hashed password (plain text password expected in the dto), without any access check.
-     */
     private UserDto doCreateUser(CreateUserDto dto) {
         validateCredentials(dto.username(), dto.password());
         if (dto.id() != null && userRepository.findById(UserId.of(dto.id())).isPresent()) {

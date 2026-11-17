@@ -1,0 +1,102 @@
+{
+  "items": [
+    {
+      "continent": "ASIA",
+      "id": "726537f2-48bf-4275-adb8-f5188bef27f5",
+      "name": "Japanese",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 650,
+          "id": "51522084-18c1-4e15-a9a7-63febf16ef96",
+          "servings": 2,
+          "title": "Ramen",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "EUROPE",
+      "id": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "name": "Polish",
+      "recipes": [
+        {
+          "author": "Zoltan",
+          "calories": 600,
+          "id": "18cf8d29-e1a6-4b90-9794-78ba8497f370",
+          "servings": 4,
+          "title": "Pierogi ruskie",
+          "vegetarian": true
+        },
+        {
+          "author": "Jaskier",
+          "calories": 750,
+          "id": "3c759382-d98a-4fca-818f-5b3ce42dc8ac",
+          "servings": 6,
+          "title": "Bigos",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "AMERICA",
+      "id": "acb2ccef-e60f-462f-896f-5a7a3ac8c15d",
+      "name": "Mexican",
+      "recipes": [
+        {
+          "author": "Jaskier",
+          "calories": 650,
+          "id": "c4264a51-b6fe-4406-921c-5f28b1fe5b69",
+          "servings": 4,
+          "title": "Tacos al Pastor",
+          "vegetarian": false
+        }
+      ],
+      "spicy": true
+    },
+    {
+      "continent": "EUROPE",
+      "id": "0b5a2470-efa8-4b61-a106-70663055ad9a",
+      "name": "Italian",
+      "recipes": [
+        {
+          "author": "Triss",
+          "calories": 800,
+          "id": "138eafd1-6025-48aa-8fa0-e4a209b66681",
+          "servings": 4,
+          "title": "Margherita Pizza",
+          "vegetarian": true
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "ASIA",
+      "id": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+      "name": "Thai",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 550,
+          "id": "b2fa2cae-dd8a-45a4-b616-ae186b770421",
+          "servings": 2,
+          "title": "Pad Thai",
+          "vegetarian": false
+        },
+        {
+          "author": "Triss",
+          "calories": 700,
+          "id": "8a94b827-a491-4542-8a88-5928093bc35c",
+          "servings": 3,
+          "title": "Green Curry",
+          "vegetarian": false
+        }
+      ],
+      "spicy": true
+    }
+  ],
+  "size": 5,
+  "time": "2026-11-17T22:10:42.2272628"
+}
