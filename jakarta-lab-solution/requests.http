@@ -1,66 +1,107 @@
-### Get all cuisines
-GET http://localhost:9080/api/cuisines
-
-### Get Polish cuisine by id
-GET http://localhost:9080/api/cuisines/01b14723-fe2a-4bd6-a63e-3cdc5c34df7d
-
-### Get all users
-GET http://localhost:9080/api/users
-
-### Triss by id
-GET http://localhost:9080/api/users/0ceb983a-1529-40c7-9d83-dc29acae7b55
-
-### Get all recipes
-GET http://localhost:9080/api/recipes
-
-### Create a recipe
-POST http://localhost:9080/api/recipes
+### Register
+POST http://localhost:9080/api/users
 Content-Type: application/json
 
 {
-  "title": "Pierogi ruskie",
-  "description": "Dumplings filled with potato and cottage cheese.",
+  "username": "Geralt",
+  "password": "geralt"
+}
+
+### Get cuisines
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+
+### Create cuisine
+POST http://localhost:9080/api/cuisines
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+Content-Type: application/json
+
+{
+  "id": "d21aebd5-07f0-4a38-9551-53cc08db21e6",
+  "continent": "AFRICA",
+  "name": "Moroccan",
+  "spicy": true
+}
+
+### Delete cuisine
+DELETE http://localhost:9080/api/cuisines/d21aebd5-07f0-4a38-9551-53cc08db21e6
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+
+### Get recipes
+GET http://localhost:9080/api/recipes
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+
+> {%
+    const padThai = response.body.items.find(recipe => recipe.title.startsWith("Pad Thai"));
+    if (padThai) {
+        client.global.set("padThaiId", padThai.id);
+    }
+%}
+
+### Create recipe
+POST http://localhost:9080/api/recipes
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+Content-Type: application/json
+
+{
+  "title": "Żurek",
+  "description": "Sour rye soup with sausage and egg.",
   "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
-  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
   "ingredients": [
-    { "name": "Potato", "quantity": 400, "unit": "g" },
-    { "name": "Cottage", "quantity": 200, "unit": "g" }
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
   ],
   "servings": 4,
-  "calories": 600,
-  "vegetarian": true
+  "calories": 450,
+  "vegetarian": false
 }
 
 > {%
     client.global.set("recipeId", response.body.id);
 %}
 
-### Get the created recipe by id
-GET http://localhost:9080/api/recipes/{{recipeId}}
-
-### Update the created recipe
+### Update recipe
 PUT http://localhost:9080/api/recipes/{{recipeId}}
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
 Content-Type: application/json
 
 {
-  "title": "Pierogi ruskie (updated)",
-  "description": "Dumplings filled with potato and cottage cheese, extra creamy.",
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
   "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
-  "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
   "ingredients": [
-    { "name": "Potato", "quantity": 500, "unit": "g" },
-    { "name": "Cottage", "quantity": 250, "unit": "g" }
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
   ],
-  "servings": 5,
-  "calories": 800,
-  "vegetarian": true
+  "servings": 4,
+  "calories": 470,
+  "vegetarian": false
 }
 
-### Delete the created recipe
+### Delete recipe
 DELETE http://localhost:9080/api/recipes/{{recipeId}}
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
 
-### Not found - unknown but valid UUID
-GET http://localhost:9080/api/cuisines/99999999-9999-9999-9999-999999999999
+### Update Pad Thai (Ciri's recipe)
+PUT http://localhost:9080/api/recipes/{{padThaiId}}
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}
+Content-Type: application/json
 
-### Bad request - malformed id
-GET http://localhost:9080/api/cuisines/not-uuid
+{
+  "title": "Pad Thai (updated by admin)",
+  "description": "Stir-fried rice noodles with shrimp, peanuts and lime.",
+  "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+  "ingredients": [
+    { "name": "Rice noodles", "quantity": 250, "unit": "g" },
+    { "name": "Shrimp", "quantity": 200, "unit": "g" },
+    { "name": "Peanuts", "quantity": 50, "unit": "g" },
+    { "name": "Lime", "quantity": 1, "unit": "pcs" }
+  ],
+  "servings": 2,
+  "calories": 570,
+  "vegetarian": false
+}
+
+### Delete Pad Thai (Ciri's recipe)
+DELETE http://localhost:9080/api/recipes/{{padThaiId}}
+Authorization: Bearer {{$auth.token("jakarta-lab-auth")}}

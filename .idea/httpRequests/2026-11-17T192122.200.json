@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "continent": "EUROPE",
+      "id": "0b5a2470-efa8-4b61-a106-70663055ad9a",
+      "name": "Italian",
+      "recipes": [],
+      "spicy": false
+    },
+    {
+      "continent": "ASIA",
+      "id": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+      "name": "Thai",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 550,
+          "id": "2aed0b43-dbab-4645-9ad9-fa807897cae4",
+          "servings": 2,
+          "title": "Pad Thai",
+          "vegetarian": false
+        }
+      ],
+      "spicy": true
+    },
+    {
+      "continent": "EUROPE",
+      "id": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "name": "Polish",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 470,
+          "id": "ed8318f9-f2e6-426f-b8b8-2184ac07d589",
+          "servings": 4,
+          "title": "Żurek (updated)",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "ASIA",
+      "id": "726537f2-48bf-4275-adb8-f5188bef27f5",
+      "name": "Japanese",
+      "recipes": [
+        {
+          "author": "Ciri",
+          "calories": 650,
+          "id": "cf95a87e-9972-486a-a108-77ffbbb3c55b",
+          "servings": 2,
+          "title": "Ramen",
+          "vegetarian": false
+        }
+      ],
+      "spicy": false
+    },
+    {
+      "continent": "AMERICA",
+      "id": "acb2ccef-e60f-462f-896f-5a7a3ac8c15d",
+      "name": "Mexican",
+      "recipes": [],
+      "spicy": true
+    }
+  ],
+  "size": 5,
+  "time": "2026-11-17T19:21:22.9830802"
+}

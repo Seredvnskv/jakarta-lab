@@ -1,0 +1,202 @@
+{
+  "items": [
+    {
+      "author": "0ceb983a-1529-40c7-9d83-dc29acae7b55",
+      "calories": 700,
+      "createdAt": "2026-11-17T20:02:25.798032",
+      "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+      "description": "Thai curry with chicken and coconut milk.",
+      "id": "935ecce0-9d73-400b-9f04-32f9d38f2eab",
+      "ingredients": [
+        {
+          "name": "Coconut milk",
+          "quantity": 400.0,
+          "unit": "ml"
+        },
+        {
+          "name": "Green curry paste",
+          "quantity": 2.0,
+          "unit": "tbsp"
+        },
+        {
+          "name": "Chicken",
+          "quantity": 300.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 3,
+      "title": "Green Curry",
+      "vegetarian": false
+    },
+    {
+      "author": "3802ef10-9f04-41cb-a3ad-3729a9da5c7a",
+      "calories": 650,
+      "createdAt": "2026-11-17T20:02:25.797032",
+      "cuisine": "acb2ccef-e60f-462f-896f-5a7a3ac8c15d",
+      "description": "Marinated pork tacos with pineapple and tortillas.",
+      "id": "260e1efa-2dbd-4e04-a4c1-eb0921cfc1e2",
+      "ingredients": [
+        {
+          "name": "Tortilla",
+          "quantity": 8.0,
+          "unit": "pcs"
+        },
+        {
+          "name": "Pork",
+          "quantity": 500.0,
+          "unit": "g"
+        },
+        {
+          "name": "Pineapple",
+          "quantity": 100.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Tacos al Pastor",
+      "vegetarian": false
+    },
+    {
+      "author": "3802ef10-9f04-41cb-a3ad-3729a9da5c7a",
+      "calories": 750,
+      "createdAt": "2026-11-17T20:02:25.798032",
+      "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "description": "Traditional Polish hunter's stew with sauerkraut and kielbasa.",
+      "id": "5c74c0c7-35e1-4d3c-9cd0-5386f1a706e1",
+      "ingredients": [
+        {
+          "name": "Dried plums",
+          "quantity": 50.0,
+          "unit": "g"
+        },
+        {
+          "name": "Sauerkraut",
+          "quantity": 500.0,
+          "unit": "g"
+        },
+        {
+          "name": "Kielbasa",
+          "quantity": 300.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 6,
+      "title": "Bigos",
+      "vegetarian": false
+    },
+    {
+      "author": "0ceb983a-1529-40c7-9d83-dc29acae7b55",
+      "calories": 800,
+      "createdAt": "2026-11-17T20:02:25.796028",
+      "cuisine": "0b5a2470-efa8-4b61-a106-70663055ad9a",
+      "description": "Classic Neapolitan pizza with tomato, mozzarella and basil.",
+      "id": "22bbe5f9-61e8-4f66-b9ba-2784174c833c",
+      "ingredients": [
+        {
+          "name": "Basil",
+          "quantity": 5.0,
+          "unit": "leaves"
+        },
+        {
+          "name": "Mozzarella",
+          "quantity": 150.0,
+          "unit": "g"
+        },
+        {
+          "name": "Tomato",
+          "quantity": 200.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Margherita Pizza",
+      "vegetarian": true
+    },
+    {
+      "author": "deb9a5f8-fec3-4d98-b8fb-f78965e16700",
+      "calories": 600,
+      "createdAt": "2026-11-17T20:02:25.798032",
+      "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+      "description": "Dumplings filled with potato and cottage cheese.",
+      "id": "558bbb45-12be-4cec-b4a5-b1b78dc44bc3",
+      "ingredients": [
+        {
+          "name": "Potato",
+          "quantity": 400.0,
+          "unit": "g"
+        },
+        {
+          "name": "Twaróg",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Onion",
+          "quantity": 100.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 4,
+      "title": "Pierogi ruskie",
+      "vegetarian": true
+    },
+    {
+      "author": "25ea3783-7cf8-41d7-b9e6-fdb1760dacae",
+      "calories": 550,
+      "createdAt": "2026-11-17T20:02:25.797032",
+      "cuisine": "c5a72611-0b8b-40f8-85a6-28389c3b4a4d",
+      "description": "Stir-fried rice noodles with shrimp and peanuts.",
+      "id": "3a84df65-b229-4141-8cfe-e09a2eff4016",
+      "ingredients": [
+        {
+          "name": "Shrimp",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Peanuts",
+          "quantity": 50.0,
+          "unit": "g"
+        },
+        {
+          "name": "Rice noodles",
+          "quantity": 250.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 2,
+      "title": "Pad Thai",
+      "vegetarian": false
+    },
+    {
+      "author": "25ea3783-7cf8-41d7-b9e6-fdb1760dacae",
+      "calories": 650,
+      "createdAt": "2026-11-17T20:02:25.799032",
+      "cuisine": "726537f2-48bf-4275-adb8-f5188bef27f5",
+      "description": "Japanese noodle soup with pork belly and soy sauce broth.",
+      "id": "253e989e-7409-4055-afb9-f1fdb090397b",
+      "ingredients": [
+        {
+          "name": "Noodles",
+          "quantity": 200.0,
+          "unit": "g"
+        },
+        {
+          "name": "Soy sauce",
+          "quantity": 30.0,
+          "unit": "ml"
+        },
+        {
+          "name": "Pork belly",
+          "quantity": 150.0,
+          "unit": "g"
+        }
+      ],
+      "servings": 2,
+      "title": "Ramen",
+      "vegetarian": false
+    }
+  ],
+  "size": 7,
+  "time": "2026-11-17T20:04:07.2348165"
+}

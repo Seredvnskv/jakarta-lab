@@ -5,6 +5,7 @@ import jakarta.inject.Inject;
 import lombok.NoArgsConstructor;
 import org.com.recipes.core.mapper.EntityMapper;
 import org.com.recipes.recipe.mapper.RecipeEntityMapper;
+import org.com.recipes.user.dto.CreateUserDto;
 import org.com.recipes.user.dto.UserDto;
 import org.com.recipes.user.entity.Role;
 import org.com.recipes.user.entity.User;
@@ -45,6 +46,18 @@ public class UserEntityMapper implements EntityMapper<User, UserDto> {
                 .id(UserId.of(dto.id()))
                 .username(dto.username())
                 .role(Role.valueOf(dto.role()))
+                .registrationDate(dto.registrationDate())
+                .build();
+    }
+
+    /**
+     * Maps everything except the password, which must be hashed by the service before storing.
+     */
+    public User toEntity(CreateUserDto dto) {
+        return User.builder()
+                .id(dto.id() != null ? UserId.of(dto.id()) : null)
+                .username(dto.username())
+                .role(dto.role() != null ? Role.valueOf(dto.role()) : null)
                 .registrationDate(dto.registrationDate())
                 .build();
     }

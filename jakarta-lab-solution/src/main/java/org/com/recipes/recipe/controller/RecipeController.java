@@ -1,5 +1,6 @@
 package org.com.recipes.recipe.controller;
 
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
@@ -13,6 +14,7 @@ import org.com.recipes.recipe.entity.id.RecipeId;
 import org.com.recipes.recipe.service.RecipeService;
 
 @Path("/recipes")
+@RolesAllowed({"USER", "ADMIN"})
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class RecipeController {

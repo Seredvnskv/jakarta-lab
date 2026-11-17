@@ -1,0 +1,400 @@
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200443.200.json
+
+###
+
+POST http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+Content-Type: application/json
+Content-Length: 344
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Żurek",
+  "description": "Sour rye soup with sausage and egg.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 450,
+  "vegetarian": false
+}
+
+<> 2026-11-17T200432.201.json
+
+###
+
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200407.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200354.200.json
+
+###
+
+DELETE http://localhost:9080/api/cuisines/d21aebd5-07f0-4a38-9551-53cc08db21e6
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200344.200.json
+
+###
+
+POST http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+Content-Type: application/json
+Content-Length: 114
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": "d21aebd5-07f0-4a38-9551-53cc08db21e6",
+  "continent": "AFRICA",
+  "name": "Moroccan",
+  "spicy": true
+}
+
+<> 2026-11-17T200341.201.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiJkOWI0OTVjMy1jZjA5LTQ0NmEtODM3MC1lNTA4N2Y2MGIyMjIiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJUcmlzcyIsImF1ZCI6Impha2FydGEtbGFiIiwidXBuIjoiVHJpc3MiLCJuYmYiOjE3OTQ5NDIyMDAsInNjb3BlIjpbIm9wZW5pZCIsInJlYWQtd3JpdGUiXSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo5MDkwIiwiZ3JvdXBzIjpbIkFETUlOIl0sImV4cCI6MTc5NDk0MjUwMCwiaWF0IjoxNzk0OTQyMjAwLCJqdGkiOiJjNTM1Y2VhOC1mMjQxLTRlZGEtYmJlZC03YzQyOWE2N2U2OGEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX0FETUlOIl19.GY232NZoNbZIBf-_jm8avnuYVF9BDhn4IztovRUSZZmfjw7NRHMaOInfsK6yVCkLhoOGmscUbeoy9iQgy5dn-xv5GziYqK_xOKVSb_u_3OALKQaoWaSMnsUELzhzuyZrklimeo4sWNj-mX4hguvAEaafhGQrc3Pqr9wWszS9tmhZnyV5S5PS-bAh7k6q1-lHETAsBq_xoERXEZ1Lk7H1BxGEd9YFEPjTe22gUZo4hekGSUcoJtm-YtjZyxGGWc635QiwnFWk-Mw1v2DQ93hSq2Byh34ao2UkA_HEhvWa6UiVCGnfHBuK6lwG6n4BbnfA5R8ZkgWkRRfUUDeqU_K3qQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200326.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200255.403.html
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200248.403.html
+
+###
+
+DELETE http://localhost:9080/api/cuisines/d21aebd5-07f0-4a38-9551-53cc08db21e6
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+DELETE http://localhost:9080/api/recipes/7366ac29-9110-4269-8f2f-31a1e96e3de8
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200121.200.json
+
+###
+
+PUT http://localhost:9080/api/recipes/7366ac29-9110-4269-8f2f-31a1e96e3de8
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+Content-Type: application/json
+Content-Length: 364
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 470,
+  "vegetarian": false
+}
+
+<> 2026-11-17T200115.200.json
+
+###
+
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200110.200.json
+
+###
+
+POST http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+Content-Type: application/json
+Content-Length: 344
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Żurek",
+  "description": "Sour rye soup with sausage and egg.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 450,
+  "vegetarian": false
+}
+
+<> 2026-11-17T200054.201.json
+
+###
+
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MjA1MCwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDIzNTAsImlhdCI6MTc5NDk0MjA1MCwianRpIjoiMjc5MzhmYTgtZmU2ZC00YTU3LTllZTQtMTNmMThhOWNhNjBiIiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.G8xjWkLdjdMw3TyWzdnxeggn-lXj33rmWmmqF7hwgI0Q98927rKrXCRIvkLN9i96cunxmidNvx1c6ydJHjXJciCPwgpsojvmx0JWyX9GZP2hzznhI3txxyjztN70G99i5WJW_s0duP1H65d4ZwMH9fb4U7xpsQcuK-noyweEhlLn2wkYanbp6PPwh55yxwYvKyxFcnKPIQ-fTFrDl-J7smG30rCfUlphYKZSvo03lCsGL2f30J9gD1dLi7glimqHZRDMgzj9kxQo7EsRN9RpBVGmzAblRIkQ_rWgmnhuKmR4MFsTPF9CXZij91v4JXKCK8VTFdQ8VQwKThTt8-zoUQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T200050.200.json
+
+###
+
+GET http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MTE2Mywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDE0NjMsImlhdCI6MTc5NDk0MTE2MywianRpIjoiN2YwZjlhMTgtOWEzOS00NzliLThjYjQtYzMyOTA2YTJmYjg3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.0xFTGmfBqccLMQa07LXcKIFfDYw-SEjdx2jHvjTb1zRjP_jy5PsDV2jk9arM6_Xr-kPl58uNZhfnaEsqZ1hA2pnxMSTilF8CH1UsRpErALeU7kJt4CNfBvXG5YniPlL3mYlzQ3ZgNY9JhRj3WJNjKKn2NQLm_aRBzQWnB-X-hgxHluc9UDDCJnywGWEWKzSn5z81GKOIb1Ce9v4ccqrHXRLnf1krkRw2olgWc2bsOx_yGkr2xXcjHsWgjyVN_WkjbP7xbHwUSaRQYqaGjvUzdXOk0F66DzTemhBfZqPrMoAXc0c7iyC70RIAAJ56jB0DesqYr24SifWqalBLhJ9dUw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T194614.200.json
+
+###
+
+DELETE http://localhost:9080/api/cuisines/d21aebd5-07f0-4a38-9551-53cc08db21e6
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MTE2Mywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDE0NjMsImlhdCI6MTc5NDk0MTE2MywianRpIjoiN2YwZjlhMTgtOWEzOS00NzliLThjYjQtYzMyOTA2YTJmYjg3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.0xFTGmfBqccLMQa07LXcKIFfDYw-SEjdx2jHvjTb1zRjP_jy5PsDV2jk9arM6_Xr-kPl58uNZhfnaEsqZ1hA2pnxMSTilF8CH1UsRpErALeU7kJt4CNfBvXG5YniPlL3mYlzQ3ZgNY9JhRj3WJNjKKn2NQLm_aRBzQWnB-X-hgxHluc9UDDCJnywGWEWKzSn5z81GKOIb1Ce9v4ccqrHXRLnf1krkRw2olgWc2bsOx_yGkr2xXcjHsWgjyVN_WkjbP7xbHwUSaRQYqaGjvUzdXOk0F66DzTemhBfZqPrMoAXc0c7iyC70RIAAJ56jB0DesqYr24SifWqalBLhJ9dUw
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+POST http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MTE2Mywic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDE0NjMsImlhdCI6MTc5NDk0MTE2MywianRpIjoiN2YwZjlhMTgtOWEzOS00NzliLThjYjQtYzMyOTA2YTJmYjg3IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.0xFTGmfBqccLMQa07LXcKIFfDYw-SEjdx2jHvjTb1zRjP_jy5PsDV2jk9arM6_Xr-kPl58uNZhfnaEsqZ1hA2pnxMSTilF8CH1UsRpErALeU7kJt4CNfBvXG5YniPlL3mYlzQ3ZgNY9JhRj3WJNjKKn2NQLm_aRBzQWnB-X-hgxHluc9UDDCJnywGWEWKzSn5z81GKOIb1Ce9v4ccqrHXRLnf1krkRw2olgWc2bsOx_yGkr2xXcjHsWgjyVN_WkjbP7xbHwUSaRQYqaGjvUzdXOk0F66DzTemhBfZqPrMoAXc0c7iyC70RIAAJ56jB0DesqYr24SifWqalBLhJ9dUw
+Content-Type: application/json
+Content-Length: 114
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "id": "d21aebd5-07f0-4a38-9551-53cc08db21e6",
+  "continent": "AFRICA",
+  "name": "Moroccan",
+  "spicy": true
+}
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiIzMWE4OGJmMS02NmYwLTQ3MzktYTdhZi0wZWY0NDU3OTc0NmUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJHZXJhbHQiLCJhdWQiOiJqYWthcnRhLWxhYiIsInVwbiI6IkdlcmFsdCIsIm5iZiI6MTc5NDk0MDMzNSwic2NvcGUiOlsib3BlbmlkIiwicmVhZC13cml0ZSJdLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjkwOTAiLCJncm91cHMiOlsiVVNFUiJdLCJleHAiOjE3OTQ5NDA2MzUsImlhdCI6MTc5NDk0MDMzNSwianRpIjoiNzI2ZTM3MzUtNDJmNi00MmRlLThjODYtMTgxOTUyMDhkNzY0IiwiYXV0aG9yaXRpZXMiOlsiRkFDVE9SX1BBU1NXT1JEIiwiUk9MRV9VU0VSIl19.rKKFRwiC8QDkUjfV6QT9NwYhw6c0dmK0C3XkopvKvWHDuQIutfPIV2miPBm2wgFhIt3etSay7rdJGCxwpAQHhHzgfyCnlugAEwOM78p2Na6Qta7NUldj9H4d2mWjcqA7Dr_GWhbM-51f6QBBzth6Lq8Ue0crXkzTLu-KJrBdAfBpmqA70LLnEg9atRhsnosn2bh_Ow3nxhim9o5z0UKBAdL-lrdtI2R1PMadrkuQZW-ugYLRmmS3niwMaIgnFuDvv9p17vxAUYMRZs74evvnyvkqIGCagQzRVV9AVHBXZGTHtD-rHUR4xdNQaq7Sbr_8qvKTImm3fvrbCN6qqdDBvg
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T193215.200.json
+
+###
+
+POST http://localhost:9080/api/users
+Content-Type: application/json
+Content-Length: 50
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "Geralt",
+  "password": "geralt"
+}
+
+<> 2026-11-17T193201.201.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM5NjgyLCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTk4MiwiaWF0IjoxNzk0OTM5NjgyLCJqdGkiOiI3OWNjN2Y2NC1kYTQ3LTQyMTYtOTYxZi0xOWZmOGRhZmVlZjUiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.oGpcIrzZfDtaYtYx-8bHA115U7UzABGcZs27fJCE9mPTzvcsvqASES4UKmGGlEHFDg9s5heJw1WLcroYWO2ogEM9rL8hr6P56LOEc37TG2bte4ASCh_LgQhRGhYpO8c0-kMR2jsIxmMc3jVtO2F5bdZMNK0za34D4bQBcFCuDoQnf5Dz_XX1PoTgnXAMVqW9_BPoKsty_ZQPsBy6jwZdWZpb5x6r_GmyaKp3Dn6uMObGcEIhKpRo-B38KAyVS4d_2gziljaaG8bwfVY2tvIgR_auZ2bwt6XHZmMGydvK7SHAPRpViB-9vvPX18TYr7WhqPQCWLOyhsbNsSEWzLPcEA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T192122.200.json
+
+###
+
+PUT http://localhost:9080/api/recipes/ed8318f9-f2e6-426f-b8b8-2184ac07d589
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM5MzAxLCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTYwMSwiaWF0IjoxNzk0OTM5MzAxLCJqdGkiOiI3NDg2YzIyMi04NTFkLTQ5Y2UtYWFhZi1kZjE2ZDg2Nzk0ZDMiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.Iz1ByCJzqTJ-rBROi7eUBOVkvg-LC2MfUKtHxS2LWYhxA7BYiK1bJofetLr6NvF5XrPP5kKwBrsZ6jUyL-paaR3XErSF3bLlqtFwqs6Ojpn2i5RNjKwxx-QL45ofs7hdlXh_bbYjHFaiKTt_hT1cRYqEHJEjuif3hvSg4T_evo0z85WXgDUSDxDHyAxQUDF_rMzI9TRGM5oUJ2a0QxvbjK6GAORsV0Vuliq-pgCKwEQROCtCjBM8iQxeI1VZLtOMxDAi66MdfcyLfWTPcNzspG7w1o9vesshwMs6RwuBMXlT6Giutu0rLbsfX87Y4K1O1RHJ6hgEdQ92IZt-HtJSwQ
+Content-Type: application/json
+Content-Length: 422
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Żurek (updated)",
+  "description": "Sour rye soup with sausage, egg and marjoram.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" },
+    { "name": "Marjoram", "quantity": 1, "unit": "tsp" }
+  ],
+  "servings": 4,
+  "calories": 470,
+  "vegetarian": false
+}
+
+<> 2026-11-17T191529.200.json
+
+###
+
+GET http://localhost:9080/api/recipes/ed8318f9-f2e6-426f-b8b8-2184ac07d589
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM5MzAxLCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTYwMSwiaWF0IjoxNzk0OTM5MzAxLCJqdGkiOiI3NDg2YzIyMi04NTFkLTQ5Y2UtYWFhZi1kZjE2ZDg2Nzk0ZDMiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.Iz1ByCJzqTJ-rBROi7eUBOVkvg-LC2MfUKtHxS2LWYhxA7BYiK1bJofetLr6NvF5XrPP5kKwBrsZ6jUyL-paaR3XErSF3bLlqtFwqs6Ojpn2i5RNjKwxx-QL45ofs7hdlXh_bbYjHFaiKTt_hT1cRYqEHJEjuif3hvSg4T_evo0z85WXgDUSDxDHyAxQUDF_rMzI9TRGM5oUJ2a0QxvbjK6GAORsV0Vuliq-pgCKwEQROCtCjBM8iQxeI1VZLtOMxDAi66MdfcyLfWTPcNzspG7w1o9vesshwMs6RwuBMXlT6Giutu0rLbsfX87Y4K1O1RHJ6hgEdQ92IZt-HtJSwQ
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T191521.200.json
+
+###
+
+POST http://localhost:9080/api/recipes
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM5MzAxLCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTYwMSwiaWF0IjoxNzk0OTM5MzAxLCJqdGkiOiI3NDg2YzIyMi04NTFkLTQ5Y2UtYWFhZi1kZjE2ZDg2Nzk0ZDMiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.Iz1ByCJzqTJ-rBROi7eUBOVkvg-LC2MfUKtHxS2LWYhxA7BYiK1bJofetLr6NvF5XrPP5kKwBrsZ6jUyL-paaR3XErSF3bLlqtFwqs6Ojpn2i5RNjKwxx-QL45ofs7hdlXh_bbYjHFaiKTt_hT1cRYqEHJEjuif3hvSg4T_evo0z85WXgDUSDxDHyAxQUDF_rMzI9TRGM5oUJ2a0QxvbjK6GAORsV0Vuliq-pgCKwEQROCtCjBM8iQxeI1VZLtOMxDAi66MdfcyLfWTPcNzspG7w1o9vesshwMs6RwuBMXlT6Giutu0rLbsfX87Y4K1O1RHJ6hgEdQ92IZt-HtJSwQ
+Content-Type: application/json
+Content-Length: 396
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "title": "Żurek",
+  "description": "Sour rye soup with sausage and egg.",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "author": "3802ef10-9f04-41cb-a3ad-3729a9da5c7a",
+  "ingredients": [
+    { "name": "Sour rye starter", "quantity": 500, "unit": "ml" },
+    { "name": "White sausage", "quantity": 300, "unit": "g" }
+  ],
+  "servings": 4,
+  "calories": 450,
+  "vegetarian": false
+}
+
+<> 2026-11-17T191501.201.json
+
+###
+
+DELETE http://localhost:9080/api/cuisines/726537f2-48bf-4275-adb8-f5188bef27f5
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM4OTk3LCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTI5NywiaWF0IjoxNzk0OTM4OTk3LCJqdGkiOiI1ZjMxYWI4My01NjcyLTRkY2YtYTE3YS0zOGI2ZGU2MmIyZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.uWbAv1ITksF5b4xqhHMMS9iCtPsFlNZz_TAP1NP75T4h_xYPgk8l5flyanrQ7Uw7IKqoOOeQVXVoSvyQvQSZBDwhI556SGuVXiilKqIJRdcFOhOX5RW9mYYdloyV2o9AYBsfD1apFYX8Q7TXmJO9hRAcQiSogjsflrtZP5q1QadoxcqLyv2_jviEgexBJkz6LY-kS823HfXKA497ZEbzCLarmNmjLq32tnA-YS4tMPs4ssdpn6SHb4qfUab5gEoneECfIkRhVvm7Sb5yFNfYKwueAlXYhST465L1ot-EwUxBOjT9xcbcts63sdRoz313leFGBJJUJSO_-a3-Em2OiA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+###
+
+GET http://localhost:9080/api/cuisines/01b14723-fe2a-4bd6-a63e-3cdc5c34df7d
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM4OTk3LCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTI5NywiaWF0IjoxNzk0OTM4OTk3LCJqdGkiOiI1ZjMxYWI4My01NjcyLTRkY2YtYTE3YS0zOGI2ZGU2MmIyZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.uWbAv1ITksF5b4xqhHMMS9iCtPsFlNZz_TAP1NP75T4h_xYPgk8l5flyanrQ7Uw7IKqoOOeQVXVoSvyQvQSZBDwhI556SGuVXiilKqIJRdcFOhOX5RW9mYYdloyV2o9AYBsfD1apFYX8Q7TXmJO9hRAcQiSogjsflrtZP5q1QadoxcqLyv2_jviEgexBJkz6LY-kS823HfXKA497ZEbzCLarmNmjLq32tnA-YS4tMPs4ssdpn6SHb4qfUab5gEoneECfIkRhVvm7Sb5yFNfYKwueAlXYhST465L1ot-EwUxBOjT9xcbcts63sdRoz313leFGBJJUJSO_-a3-Em2OiA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T191422.200.json
+
+###
+
+GET http://localhost:9080/api/cuisines
+Authorization: Bearer eyJraWQiOiI1ZTM3ODI1Ny0zNDNjLTQxMjAtODUxOS1lMTNkOTgxYjAxMjMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJDaXJpIiwiYXVkIjoiamFrYXJ0YS1sYWIiLCJ1cG4iOiJDaXJpIiwibmJmIjoxNzk0OTM4OTk3LCJzY29wZSI6WyJvcGVuaWQiLCJyZWFkLXdyaXRlIl0sImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCIsImdyb3VwcyI6WyJVU0VSIl0sImV4cCI6MTc5NDkzOTI5NywiaWF0IjoxNzk0OTM4OTk3LCJqdGkiOiI1ZjMxYWI4My01NjcyLTRkY2YtYTE3YS0zOGI2ZGU2MmIyZjEiLCJhdXRob3JpdGllcyI6WyJGQUNUT1JfUEFTU1dPUkQiLCJST0xFX1VTRVIiXX0.uWbAv1ITksF5b4xqhHMMS9iCtPsFlNZz_TAP1NP75T4h_xYPgk8l5flyanrQ7Uw7IKqoOOeQVXVoSvyQvQSZBDwhI556SGuVXiilKqIJRdcFOhOX5RW9mYYdloyV2o9AYBsfD1apFYX8Q7TXmJO9hRAcQiSogjsflrtZP5q1QadoxcqLyv2_jviEgexBJkz6LY-kS823HfXKA497ZEbzCLarmNmjLq32tnA-YS4tMPs4ssdpn6SHb4qfUab5gEoneECfIkRhVvm7Sb5yFNfYKwueAlXYhST465L1ot-EwUxBOjT9xcbcts63sdRoz313leFGBJJUJSO_-a3-Em2OiA
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T190958.200.json
+
+###
+
+GET http://localhost:9080/api/users
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+###
+
+GET http://localhost:9080/api/users/0ceb983a-1529-40c7-9d83-dc29acae7b55/avatar
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2026.1.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-11-17T004408.200.png
+
+###
+

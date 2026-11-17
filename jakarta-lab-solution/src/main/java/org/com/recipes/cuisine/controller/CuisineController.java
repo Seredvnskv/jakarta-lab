@@ -1,5 +1,6 @@
 package org.com.recipes.cuisine.controller;
 
+import jakarta.annotation.security.RolesAllowed;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
@@ -12,6 +13,7 @@ import org.com.recipes.cuisine.entity.id.CuisineId;
 import org.com.recipes.cuisine.service.CuisineService;
 
 @Path("/cuisines")
+@RolesAllowed({"USER", "ADMIN"})
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class CuisineController {
@@ -34,6 +36,7 @@ public class CuisineController {
     }
 
     @POST
+    @RolesAllowed("ADMIN")
     public Response createCuisine(CuisineDto dto, @Context UriInfo uriInfo) {
         CuisineDto created = cuisineService.createCuisine(dto);
         return Response.created(uriInfo.getAbsolutePathBuilder().path(created.id()).build())
@@ -42,12 +45,14 @@ public class CuisineController {
     }
 
     @PUT
+    @RolesAllowed("ADMIN")
     @Path("/{id}")
     public CuisineDto updateCuisine(@PathParam("id") String id, CuisineDto dto) {
         return cuisineService.updateCuisine(CuisineId.of(id), dto);
     }
 
     @DELETE
+    @RolesAllowed("ADMIN")
     @Path("/{id}")
     public Response deleteCuisine(@PathParam("id") String id) {
         cuisineService.deleteCuisine(CuisineId.of(id));

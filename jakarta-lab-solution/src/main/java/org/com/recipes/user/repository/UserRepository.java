@@ -29,6 +29,13 @@ public class UserRepository implements Repository<User, UserId> {
         return Optional.ofNullable(entityManager.find(User.class, id));
     }
 
+    public Optional<User> findByUsername(String username) {
+        return entityManager.createQuery("select u from User u where u.username = :username", User.class)
+                .setParameter("username", username)
+                .getResultStream()
+                .findFirst();
+    }
+
     @Override
     public Collection<User> findAll() {
         return entityManager.createQuery("select u from User u", User.class).getResultList();

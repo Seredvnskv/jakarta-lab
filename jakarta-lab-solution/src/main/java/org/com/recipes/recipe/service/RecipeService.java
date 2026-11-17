@@ -2,10 +2,13 @@ package org.com.recipes.recipe.service;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.security.enterprise.SecurityContext;
 import jakarta.transaction.Transactional;
 import lombok.NoArgsConstructor;
 import org.com.recipes.core.collection.CollectionRepresentation;
+import org.com.recipes.core.exception.AccessForbiddenException;
 import org.com.recipes.core.exception.NotFoundException;
+import org.com.recipes.core.exception.UnauthorizedAccessException;
 import org.com.recipes.cuisine.entity.Cuisine;
 import org.com.recipes.cuisine.entity.id.CuisineId;
 import org.com.recipes.cuisine.repository.CuisineRepository;
@@ -15,13 +18,19 @@ import org.com.recipes.recipe.entity.Recipe;
 import org.com.recipes.recipe.entity.id.RecipeId;
 import org.com.recipes.recipe.mapper.RecipeEntityMapper;
 import org.com.recipes.recipe.repository.RecipeRepository;
+import org.com.recipes.user.entity.Role;
 import org.com.recipes.user.entity.User;
 import org.com.recipes.user.entity.id.UserId;
 import org.com.recipes.user.repository.UserRepository;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Optional;
 
+/**
+ * Recipes: ADMIN reads and modifies all recipes, USER only own ones (filtered in the database query).
+ * The owner of a new recipe is always the caller; only ADMIN may assign a different author.
+ */
 @ApplicationScoped
 @NoArgsConstructor
 public class RecipeService {
@@ -29,37 +38,49 @@ public class RecipeService {
     private RecipeEntityMapper recipeEntityMapper;
     private CuisineRepository cuisineRepository;
     private UserRepository userRepository;
+    private SecurityContext securityContext;
 
     @Inject
     public RecipeService(RecipeRepository recipeRepository, RecipeEntityMapper recipeEntityMapper,
-                          CuisineRepository cuisineRepository, UserRepository userRepository) {
+                         CuisineRepository cuisineRepository, UserRepository userRepository,
+                         SecurityContext securityContext) {
         this.recipeRepository = recipeRepository;
         this.recipeEntityMapper = recipeEntityMapper;
         this.cuisineRepository = cuisineRepository;
         this.userRepository = userRepository;
+        this.securityContext = securityContext;
     }
 
     public CollectionRepresentation<RecipeDto> getRecipes() {
-        Collection<Recipe> recipes = recipeRepository.findAll();
+        User caller = requireCaller();
+        Collection<Recipe> recipes = isAdmin()
+                ? recipeRepository.findAll()
+                : recipeRepository.findAllByAuthor(caller);
         return CollectionRepresentation.of(recipeEntityMapper.toDtos(recipes));
     }
 
     public RecipeDto getRecipe(RecipeId id) {
-        return recipeRepository.findById(id).map(recipeEntityMapper::toDto).orElseThrow(NotFoundException::new);
+        return findAccessible(id).map(recipeEntityMapper::toDto).orElseThrow(NotFoundException::new);
     }
 
     @Transactional
     public RecipeDto createRecipe(CreateRecipeDto dto) {
+        // Resolve everything before linking: the caller lookup is a JPQL query, which flushes the persistence
+        // context and would fail on a not yet persisted recipe already attached to the cuisine.
+        User caller = requireCaller();
+        User owner = isAdmin() && dto.author() != null ? resolveAuthor(dto.author()) : caller;
+        Cuisine cuisine = resolveCuisine(dto.cuisine());
+
         Recipe recipe = recipeEntityMapper.toEntity(dto);
-        resolveCuisine(dto.cuisine()).addRecipe(recipe);
-        resolveAuthor(dto.author()).addRecipe(recipe);
+        cuisine.addRecipe(recipe);
+        owner.addRecipe(recipe);
         Recipe saved = recipeRepository.save(recipe);
         return recipeEntityMapper.toDto(saved);
     }
 
     @Transactional
     public RecipeDto updateRecipe(RecipeId id, CreateRecipeDto dto) {
-        Recipe existing = recipeRepository.findById(id).orElseThrow(NotFoundException::new);
+        Recipe existing = findAccessible(id).orElseThrow(NotFoundException::new);
         existing.setTitle(dto.title());
         existing.setDescription(dto.description());
         existing.setIngredients(new HashSet<>(dto.ingredients()));
@@ -70,8 +91,11 @@ public class RecipeService {
         existing.getCuisine().removeRecipe(existing);
         resolveCuisine(dto.cuisine()).addRecipe(existing);
 
-        existing.getAuthor().removeRecipe(existing);
-        resolveAuthor(dto.author()).addRecipe(existing);
+        // only ADMIN may change the owner, for USER the author in the request is ignored
+        if (isAdmin() && dto.author() != null) {
+            existing.getAuthor().removeRecipe(existing);
+            resolveAuthor(dto.author()).addRecipe(existing);
+        }
 
         Recipe saved = recipeRepository.save(existing);
         return recipeEntityMapper.toDto(saved);
@@ -79,10 +103,39 @@ public class RecipeService {
 
     @Transactional
     public void deleteRecipe(RecipeId id) {
-        Recipe existing = recipeRepository.findById(id).orElseThrow(NotFoundException::new);
+        Recipe existing = findAccessible(id).orElseThrow(NotFoundException::new);
         existing.getCuisine().removeRecipe(existing);
         existing.getAuthor().removeRecipe(existing);
         recipeRepository.delete(existing);
+    }
+
+    /**
+     * ADMIN gets any recipe, USER only own one - other users' recipes behave as if they did not exist (404).
+     */
+    private Optional<Recipe> findAccessible(RecipeId id) {
+        User caller = requireCaller();
+        return isAdmin()
+                ? recipeRepository.findById(id)
+                : recipeRepository.findByIdAndAuthor(id, caller);
+    }
+
+    private boolean isAdmin() {
+        return securityContext.isCallerInRole(Role.ADMIN.name());
+    }
+
+    /**
+     * Logged-in caller with role USER or ADMIN, existing in the database.
+     */
+    private User requireCaller() {
+        if (securityContext.getCallerPrincipal() == null) {
+            throw new UnauthorizedAccessException("Authentication required");
+        }
+        if (!isAdmin() && !securityContext.isCallerInRole(Role.USER.name())) {
+            throw new AccessForbiddenException("Role USER or ADMIN required");
+        }
+        String username = securityContext.getCallerPrincipal().getName();
+        return userRepository.findByUsername(username)
+                .orElseThrow(() -> new AccessForbiddenException("Caller " + username + " is not a registered user"));
     }
 
     private Cuisine resolveCuisine(String cuisineId) {

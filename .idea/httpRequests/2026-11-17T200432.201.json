@@ -1,0 +1,23 @@
+{
+  "author": "0ceb983a-1529-40c7-9d83-dc29acae7b55",
+  "calories": 450,
+  "createdAt": "2026-11-17T20:04:32.4712778",
+  "cuisine": "01b14723-fe2a-4bd6-a63e-3cdc5c34df7d",
+  "description": "Sour rye soup with sausage and egg.",
+  "id": "d17d4b08-1dab-4a83-8ff9-52afc54f9df8",
+  "ingredients": [
+    {
+      "name": "White sausage",
+      "quantity": 300.0,
+      "unit": "g"
+    },
+    {
+      "name": "Sour rye starter",
+      "quantity": 500.0,
+      "unit": "ml"
+    }
+  ],
+  "servings": 4,
+  "title": "Żurek",
+  "vegetarian": false
+}

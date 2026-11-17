@@ -7,7 +7,20 @@
         <feature>faces-4.1</feature>
         <feature>restfulWS-4.0</feature>
         <feature>enterpriseBeansLite-4.0</feature>
+        <feature>appSecurity-6.0</feature>
     </featureManager>
+
+    <logging consoleLogLevel="INFO"/>
+
+    <webAppSecurity allowInMemoryIdentityStores="true"/>
+
+    <httpSession cookieName="RECIPESSESSIONID"/>
+
+    <variable name="runAs.user" defaultValue="system"/>
+    <variable name="runAs.password" defaultValue="system-password"/>
+    <basicRegistry id="basic" realm="BasicRealm">
+        <user name="${runAs.user}" password="${runAs.password}"/>
+    </basicRegistry>
 
     <library id="h2Lib">
         <fileset dir="${shared.resource.dir}/h2" includes="*.jar"/>
@@ -20,5 +33,18 @@
 
     <httpEndpoint id="defaultHttpEndpoint" httpPort="9080" httpsPort="9443"/>
 
-    <webApplication location="jakarta-lab-solution.war" contextRoot="/"/>
+    <webApplication location="jakarta-lab-solution.war" contextRoot="/">
+        <application-bnd>
+            <security-role name="ADMIN">
+                <group name="ADMIN" access-id="group:http://localhost:9090/ADMIN"/>
+                <group name="ADMIN" access-id="group:jdbc/recipes/ADMIN"/>
+                <user name="${runAs.user}" access-id="user:BasicRealm/${runAs.user}"/>
+                <run-as userid="${runAs.user}" password="${runAs.password}"/>
+            </security-role>
+            <security-role name="USER">
+                <group name="USER" access-id="group:http://localhost:9090/USER"/>
+                <group name="USER" access-id="group:jdbc/recipes/USER"/>
+            </security-role>
+        </application-bnd>
+    </webApplication>
 </server>

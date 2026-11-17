@@ -1,21 +1,34 @@
 package org.com.recipes.core.config;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
+import jakarta.ejb.TransactionAttribute;
+import jakarta.ejb.TransactionAttributeType;
 import jakarta.inject.Inject;
+import jakarta.security.enterprise.identitystore.Pbkdf2PasswordHash;
 import lombok.NoArgsConstructor;
 import lombok.extern.java.Log;
 import org.com.recipes.cuisine.dto.CuisineDto;
-import org.com.recipes.cuisine.service.CuisineService;
+import org.com.recipes.cuisine.entity.Cuisine;
+import org.com.recipes.cuisine.entity.id.CuisineId;
+import org.com.recipes.cuisine.mapper.CuisineEntityMapper;
+import org.com.recipes.cuisine.repository.CuisineRepository;
 import org.com.recipes.recipe.dto.CreateRecipeDto;
-import org.com.recipes.recipe.dto.RecipeDto;
 import org.com.recipes.recipe.entity.Ingredient;
-import org.com.recipes.recipe.entity.id.RecipeId;
-import org.com.recipes.recipe.service.RecipeService;
+import org.com.recipes.recipe.entity.Recipe;
+import org.com.recipes.recipe.mapper.RecipeEntityMapper;
+import org.com.recipes.recipe.repository.RecipeRepository;
+import org.com.recipes.user.dto.CreateUserDto;
 import org.com.recipes.user.dto.UserDto;
-import org.com.recipes.user.service.UserService;
+import org.com.recipes.user.entity.User;
+import org.com.recipes.user.entity.id.UserId;
+import org.com.recipes.user.mapper.UserEntityMapper;
+import org.com.recipes.user.repository.UserRepository;
+import org.com.recipes.user.service.AvatarService;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,15 +39,25 @@ import java.util.Set;
 @Log
 @NoArgsConstructor
 public class ApplicationInitializer {
-    private UserService userService;
-    private RecipeService recipeService;
-    private CuisineService cuisineService;
+    private UserRepository userRepository;
+    private RecipeRepository recipeRepository;
+    private CuisineRepository cuisineRepository;
+    private UserEntityMapper userEntityMapper;
+    private RecipeEntityMapper recipeEntityMapper;
+    private CuisineEntityMapper cuisineEntityMapper;
+    private AvatarService avatarService;
+    private Pbkdf2PasswordHash passwordHash;
 
     @Inject
-    public ApplicationInitializer(UserService userService, RecipeService recipeService, CuisineService cuisineService) {
-        this.userService = userService;
-        this.recipeService = recipeService;
-        this.cuisineService = cuisineService;
+    public ApplicationInitializer(UserRepository userRepository, RecipeRepository recipeRepository, CuisineRepository cuisineRepository, UserEntityMapper userEntityMapper, RecipeEntityMapper recipeEntityMapper, CuisineEntityMapper cuisineEntityMapper, AvatarService avatarService, Pbkdf2PasswordHash passwordHash) {
+        this.userRepository = userRepository;
+        this.recipeRepository = recipeRepository;
+        this.cuisineRepository = cuisineRepository;
+        this.userEntityMapper = userEntityMapper;
+        this.recipeEntityMapper = recipeEntityMapper;
+        this.cuisineEntityMapper = cuisineEntityMapper;
+        this.avatarService = avatarService;
+        this.passwordHash = passwordHash;
     }
 
     private final List<String> cuisineIds = new ArrayList<>();
@@ -43,12 +66,10 @@ public class ApplicationInitializer {
 
     @PostConstruct
     public void init() {
-        clearExistingData();
-
-        UserDto triss = createUser("0ceb983a-1529-40c7-9d83-dc29acae7b55", "Triss", "ADMIN", LocalDate.of(2023, 1, 10));
-        UserDto ciri = createUser("25ea3783-7cf8-41d7-b9e6-fdb1760dacae", "Ciri", "USER", LocalDate.of(2024, 3, 22));
-        UserDto geralt = createUser("3802ef10-9f04-41cb-a3ad-3729a9da5c7a", "Geralt", "USER", LocalDate.of(2025, 6, 5));
-        UserDto zoltan = createUser("deb9a5f8-fec3-4d98-b8fb-f78965e16700", "Zoltan", "USER", LocalDate.of(2026, 6, 5));
+        UserDto triss = createUser("0ceb983a-1529-40c7-9d83-dc29acae7b55", "Triss", "ADMIN", LocalDate.of(2023, 1, 10), "triss.png");
+        UserDto ciri = createUser("25ea3783-7cf8-41d7-b9e6-fdb1760dacae", "Ciri", "USER", LocalDate.of(2024, 3, 22), "ciri.jpg");
+        UserDto jaskier = createUser("3802ef10-9f04-41cb-a3ad-3729a9da5c7a", "Jaskier", "USER", LocalDate.of(2025, 6, 5), "jaskier.jpg");
+        UserDto zoltan = createUser("deb9a5f8-fec3-4d98-b8fb-f78965e16700", "Zoltan", "USER", LocalDate.of(2026, 6, 5), "zoltan.jpg");
 
         CuisineDto italian = createCuisine("0b5a2470-efa8-4b61-a106-70663055ad9a", "EUROPE", "Italian", false);
         CuisineDto mexican = createCuisine("acb2ccef-e60f-462f-896f-5a7a3ac8c15d", "AMERICA", "Mexican", true);
@@ -60,7 +81,7 @@ public class ApplicationInitializer {
                 Set.of(new Ingredient("Tomato", 200, "g"), new Ingredient("Mozzarella", 150, "g"), new Ingredient("Basil", 5, "leaves")),
                 4, 800, true);
 
-        createRecipe("Tacos al Pastor", "Marinated pork tacos with pineapple and tortillas.", mexican.id(), geralt.id(),
+        createRecipe("Tacos al Pastor", "Marinated pork tacos with pineapple and tortillas.", mexican.id(), jaskier.id(),
                 Set.of(new Ingredient("Pork", 500, "g"), new Ingredient("Pineapple", 100, "g"), new Ingredient("Tortilla", 8, "pcs")),
                 4, 650, false);
 
@@ -76,7 +97,7 @@ public class ApplicationInitializer {
                 Set.of(new Ingredient("Potato", 400, "g"), new Ingredient("Twaróg", 200, "g"), new Ingredient("Onion", 100, "g")),
                 4, 600, true);
 
-        createRecipe("Bigos", "Traditional Polish hunter's stew with sauerkraut and kielbasa.", polish.id(), geralt.id(),
+        createRecipe("Bigos", "Traditional Polish hunter's stew with sauerkraut and kielbasa.", polish.id(), jaskier.id(),
                 Set.of(new Ingredient("Sauerkraut", 500, "g"), new Ingredient("Kielbasa", 300, "g"), new Ingredient("Dried plums", 50, "g")),
                 6, 750, false);
 
@@ -87,8 +108,18 @@ public class ApplicationInitializer {
         log.info(() -> "Seeded " + cuisineIds.size() + " cuisines, " + userIds.size() + " users, " + recipeIds.size() + " recipes.");
     }
 
-    private void clearExistingData() {
-        recipeService.getRecipes().items().forEach(recipe -> recipeService.deleteRecipe(RecipeId.of(recipe.id())));
+    @PreDestroy
+    @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
+    public void cleanup() {
+        for (Recipe recipe : recipeRepository.findAll()) {
+            recipe.getCuisine().removeRecipe(recipe);
+            recipe.getAuthor().removeRecipe(recipe);
+            recipeRepository.delete(recipe);
+        }
+        cuisineRepository.findAll().forEach(cuisineRepository::delete);
+        userRepository.findAll().forEach(userRepository::delete);
+        avatarService.deleteAllAvatars();
+        log.info("Deleted all recipes, cuisines, users and avatars.");
     }
 
     private CuisineDto createCuisine(String id, String continent, String name, boolean spicy) {
@@ -98,26 +129,46 @@ public class ApplicationInitializer {
                 .name(name)
                 .spicy(spicy)
                 .build();
-        CuisineDto saved = cuisineService.createCuisine(dto);
-        cuisineIds.add(saved.id());
-        return saved;
+        Cuisine saved = cuisineRepository.save(cuisineEntityMapper.toEntity(dto));
+        cuisineIds.add(saved.getId().id().toString());
+        return cuisineEntityMapper.toDto(saved);
     }
 
-    private UserDto createUser(String id, String username, String role, LocalDate registrationDate) {
-        UserDto dto = UserDto.builder()
+    private UserDto createUser(String id, String username, String role, LocalDate registrationDate, String filename) {
+        CreateUserDto dto = CreateUserDto.builder()
                 .id(id)
                 .username(username)
                 .role(role)
                 .registrationDate(registrationDate)
                 .build();
-        UserDto saved = userService.createUser(dto);
-        userIds.add(saved.id());
-        return saved;
+        User user = userEntityMapper.toEntity(dto);
+        user.setPassword(passwordHash.generate(username.toLowerCase().toCharArray()));
+        User saved = userRepository.save(user);
+        userIds.add(saved.getId().id().toString());
+        createAvatar(id, filename);
+        return userEntityMapper.toDto(saved);
     }
 
     private void createRecipe(String title, String description, String cuisineId, String authorId, Set<Ingredient> ingredients, int servings, int calories, boolean vegetarian) {
         CreateRecipeDto dto = new CreateRecipeDto(title, description, cuisineId, authorId, ingredients, servings, calories, vegetarian);
-        RecipeDto saved = recipeService.createRecipe(dto);
-        recipeIds.add(saved.id());
+        Cuisine cuisine = cuisineRepository.findById(CuisineId.of(cuisineId)).orElseThrow();
+        User author = userRepository.findById(UserId.of(authorId)).orElseThrow();
+        Recipe recipe = recipeEntityMapper.toEntity(dto);
+        cuisine.addRecipe(recipe);
+        author.addRecipe(recipe);
+        Recipe saved = recipeRepository.save(recipe);
+        recipeIds.add(saved.getId().id().toString());
+    }
+
+    private void createAvatar(String id, String filename) {
+        try (var in = getClass().getResourceAsStream("/avatars/" + filename)) {
+            if (in == null) {
+                throw new IllegalStateException("Avatar file not found: " + filename);
+            }
+            avatarService.createAvatar(UserId.of(id), in.readAllBytes());
+        }
+        catch (IOException e) {
+            throw new IllegalStateException("Could not read avatar file: " + filename, e);
+        }
     }
 }
